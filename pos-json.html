@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/theme-style-tablesorter.css">
+  <link rel="stylesheet" href="css/pure-min.css">
+  <style>
+    tr:hover td {
+      background-color: #eee !important; 
+    }
+  </style>
+</head>
+<body>
+  <table id="pos" class="tablesorter pure-table pure-table-bordered">
+    <thead>
+      <tr>
+        <th>Código do Programa</th>
+        <th>Programa</th>
+        <th>IES</th>
+        <th>UF</th>
+        <th>M</th>
+        <th>D</th>
+        <th>F</th>
+        <th>Homepage</th>
+        <th>Docentes</th>
+        <th>Linhas de Pesquisa</th>
+        <th>Dissertação & Tese</th>
+        <th>Disciplina</th>
+        <th>Lattes</th>
+      </tr>
+    </thead>
+    <tbody>
+    </tbody>
+  </table>
+  <script src="js/jquery-1.11.1.min.js"></script>
+  <script src="js/jquery.tablesorter.min.js"></script>
+  <script>
+    $.getJSON("data/pos.json", function(pos){
+      for(var posIndex in pos){
+        
+        var row = '<td><a href="http://conteudoweb.capes.gov.br/conteudoweb/ProjetoRelacaoCursosServlet?acao=detalhamentoIes&codigoPrograma='+posIndex+'&descricaoGrandeArea=CI%CANCIAS+EXATAS+E+DA+TERRA++++++++++++++++++++++++++++++++++&descricaoAreaConhecimento=CI%CANCIA+DA+COMPUTA%C7%C3O" target="_blank">'+posIndex+'</a></td>';
+
+        for(var fieldIndex in pos[posIndex]){
+          if(fieldIndex == 'crawlerSchema')
+            continue;
+          
+          var size = (fieldIndex == 'program')?60:20;
+
+          var content = (pos[posIndex][fieldIndex].length < size)?
+            pos[posIndex][fieldIndex]:
+            pos[posIndex][fieldIndex].substring(0, 20) + "...";
+          
+          content = (content.indexOf("http") > -1)?
+            '<a href="'+pos[posIndex][fieldIndex]+'" target="_blank">'+content+'</a>':
+            content;
+          
+          row += '<td>'+content+'</td>';
+        }
+        $('table#pos tbody').append(
+          '<tr>'+row+'<td><a href="lattes-json.html#id'+posIndex+'" target="_blank">lattes</a></td></tr>'
+        );
+        $('#pos').tablesorter();
+      }
+    });
+  </script>
+</body>
+</html>

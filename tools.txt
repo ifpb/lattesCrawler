@@ -1,0 +1,107 @@
+===TODO
+crawler infor pos e professores
+checar links
+
+??????
+	sucupira
+	info capes
+
+padronizar id lattes
+	paser de id 16, 10, 7
+consulta id do lattes por nome
+extrair nome do lattes por id
+
+testar links offline
+
+hash/array to json formatado e no arquivo - ruby
+
+quebrar as requisições por threads
+http://stackoverflow.com/questions/8246848/multiple-nokogiri-requests-at-once
+
+criar schema genérico para crawler
+
+remove domain at schema and extract info from domain homepage
+
+log dos output ou redis/mongodb
+
+===TOOLS
+
+#CAPES
+Links através do Código Programa
+http://conteudoweb.capes.gov.br/conteudoweb/ProjetoRelacaoCursosServlet?acao=detalhamentoIes&codigoPrograma=28001010095P3&descricaoGrandeArea=CI%CANCIAS+EXATAS+E+DA+TERRA++++++++++++++++++++++++++++++++++&descricaoAreaConhecimento=CI%CANCIA+DA+COMPUTA%C7%C3O
+
+#csv
+http://www.convertcsv.com/
+http://www.convertcsv.com/json-to-csv.htm
+http://www.convertcsv.com/csv-to-html.htm
+http://www.convertcsv.com/csv-to-json.htm
+
+http://papaparse.com/demo.html
+
+#JSON
+http://jsonformatter.curiousconcept.com/
+
+#quality js
+http://www.jslint.com/
+http://www.jshint.com/
+
+#table
+https://labs.mbrooks.info/demos/Tidy-Table/
+http://www.dynatable.com/
+
+#sort table
+http://tablesorter.com/docs/
+http://www.kryogenix.org/code/browser/sorttable/
+http://tristen.ca/tablesort/demo/
+http://lua-users.org/wiki/TableLibraryTutorial
+http://github.hubspot.com/sortable/docs/welcome/
+http://joequery.github.io/Stupid-Table-Plugin/
+
+http://tympanus.net/codrops/2009/10/03/33-javascript-solutions-for-sorting-tables/	
+
+#web crawler/scrapy tool
+https://www.npmjs.org/package/crawler
+https://github.com/sylvinus/node-crawler
+
+https://code.google.com/p/crawler4j/
+
+http://scrapy.org/
+
+THREADING
+http://jondot.github.io/sneakers/
+	https://github.com/jondot/sneakers/wiki/How-To:-Scrape-Web-Pages
+ruby
+	http://www.tutorialspoint.com/ruby/ruby_multithreading.htm
+nokogiri multithreading
+	https://gist.github.com/aselder/2766012
+	http://stackoverflow.com/questions/8246848/multiple-nokogiri-requests-at-once
+Anemone multithreading??
+
+https://www.ruby-toolbox.com/categories/Web_Content_Scrapers
+http://nokogiri.org/
+	https://blog.engineyard.com/2010/getting-started-with-nokogiri/
+	http://ruby.bastardsbook.com/chapters/web-crawling/
+	http://chauhansudhir.blogspot.com.br/2011/01/ruby-nokogiri-example-with-css-selector.html
+	http://crabonature.pl/posts/21-scraping-data-with-nokogiri-and-ruby
+https://github.com/chriskite/anemone
+	http://armoredcode.com/blog/create-a-quick-and-dirty-web-crawler-with-ruby/	
+	http://www.danneu.com/posts/8-scraping-a-blog-with-anemone-ruby-web-crawler-and-mongodb/
+	http://snippets.aktagon.com/snippets/566-how-to-crawl-and-scrape-a-site-with-ruby-and-anemone
+https://github.com/taganaka/polipus
+	http://www.slideshare.net/francescolaurita/roll-your-own-web-crawler-rubyday
+https://github.com/stewartmckee/cobweb
+https://github.com/felipecsl/wombat
+https://github.com/postmodern/spidr
+http://stackoverflow.com/questions/4981379/what-are-some-good-ruby-based-web-crawlers
+
+https://www.kimonolabs.com/
+https://scraperwiki.com/
+https://import.io/features
+https://chrome.google.com/webstore/detail/web-scraper/jnhgnonknehpejjnehehllkliplmbmhn?hl=en
+http://deepcrawl.co.uk/
+https://www.mozenda.com/
+http://www.outwit.com/products/hub/
+
+http://scraping.pro/software-for-web-scraping/
+http://blog.marcua.net/post/74655674340
+http://www.notprovided.eu/six-tools-web-scraping-use-data-journalism-creating-insightful-content/

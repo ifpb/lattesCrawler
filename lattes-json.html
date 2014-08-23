@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/theme-style-tablesorter.css">
+  <link rel="stylesheet" href="css/pure-min.css">
+  <style>
+    .program {
+      width: 80%;
+      margin: auto;
+    }
+    /*
+    http://www.princexml.com/doc/tables/
+    table { 
+      counter-reset: row 
+    }
+    tbody tr { 
+      counter-increment: row 
+    }
+    tbody tr::before {
+        content: counter(row);
+        display: table-cell
+    }
+    */
+    .tablesorter td:nth-child(1) {
+      width: 5%;
+    }
+    .tablesorter td:nth-child(2) {
+      width: 30%;
+    }
+    tr:hover td {
+      background-color: #eee !important; 
+    }
+  </style>
+</head>
+<body>
+  <div id="lattes">
+    
+  </div>
+  <script src="js/jquery-1.11.1.min.js"></script>
+  <script src="js/jquery.tablesorter.min.js"></script>
+  <script>
+    $.getJSON("data/pos.json", function(pos){
+      createRow(pos);
+    });
+
+    function createRow(pos){
+      $.getJSON("crawler/lattes.json", function(lattes){
+        $.each(lattes, function(idPos,researchs){
+          var program = '<div id="id'+idPos+'" class="program">'+
+            '<header>'+
+              '<a href="'+pos[idPos]['researchers']+'" target="_blank" class="pure-button pure-button-primary">'+
+                pos[idPos]['program']+' - '+pos[idPos]['IES']+
+              '</a> \
+            </header> \
+            <table class="tablesorter pure-table pure-table-bordered"> \
+              <thead> \
+                <tr> \
+                  <th></th> \
+                  <th>Nome</th> \
+                  <th>Lattes</th> \
+                </tr> \
+              </thead> \
+              <tbody>';
+          var flag = 0;
+          for(var idResearch in researchs){
+            flag++;
+            var research = researchs[idResearch];
+            program +=
+              '<tr id="'+idResearch+'">'+
+                '<td>'+flag+'</td>'+
+                '<td>'+research['names']+'</td>'+
+                '<td><a href="'+research['lattes']+'" target="_blank">'+research['lattes']+'</a></td>'+
+              '</tr>';
+          };
+          
+          program += '</tbody></table></div>';
+
+          document.querySelector('div#lattes').innerHTML += program;
+
+          $('.tablesorter').tablesorter();
+        });
+      });  
+    }
+  </script>
+</body>
+</html>

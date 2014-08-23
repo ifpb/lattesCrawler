@@ -1,0 +1,544 @@
+nome lattes tipo PROGRAMA	IES	UF	NOTA(M D F)
+
+# UFBA
+http://wiki.dcc.ufba.br/PMCC/
+http://wiki.dcc.ufba.br/PMCC/CorpoDocente
+http://wiki.dcc.ufba.br/PMCC/ProfAlineAndrade
+
+http://wiki.dcc.ufba.br/PMCC/LinhasPesquisa
+
+# UECE
+http://www.uece.br/macc/
+http://www.uece.br/macc/index.php/corpo-docente
+
+http://www.uece.br/macc/index.php/linhas-de-pesquisa
+http://www.uece.br/macc/index.php/dissertacoes
+
+# IFCE
+http://ppgcc.ifce.edu.br/
+
+http://ppgcc.ifce.edu.br/?page_id=10 (Docentes)
+
+http://ppgcc.ifce.edu.br/?page_id=26 (LP)
+http://ppgcc.ifce.edu.br/?page_id=49 (disciplinas)
+
+
+# UFG
+
+http://www.inf.ufg.br/mestrado/
+
+http://www.inf.ufg.br/mestrado/docentes
+http://www.inf.ufg.br/mestrado/node/4
+
+http://www.inf.ufg.br/mestrado/linhas-pesquisa
+http://www.inf.ufg.br/mestrado/dissertacoes
+
+
+# UFMA
+
+SÃO LUÍS / MA
+
+http://www.ppgcc.ufma.br/
+http://www.ppgcc.ufma.br/index.php?option=com_content&view=article&id=2&Itemid=3 (Docentes)
+
+
+http://www.ppgcc.ufma.br/index.php?option=com_content&view=article&id=1&Itemid=2 (LP)
+
+
+
+# UFV
+VIÇOSA / MG
+
+http://www.ppgcc.ufv.br/
+
+http://www.ppgcc.ufv.br/?page_id=697 (Professores)
+
+http://www.ppgcc.ufv.br/?page_id=389 (LP)
+http://www.ppgcc.ufv.br/?page_id=66 (Dissertações)
+
+
+# UFLA
+
+http://www.prpg.ufla.br/computacao/
+
+http://www.prpg.ufla.br/computacao/corpo-docente-e-discente/docentes/
+
+http://www.prpg.ufla.br/computacao/linha-de-pesquisa/
+
+
+# UFJF
+
+http://www.ufjf.br/pgcc/
+
+http://www.ufjf.br/pgcc/curso/corpo-docente/
+
+http://www.ufjf.br/pgcc/curso/linhas-de-pesquisa/
+http://www.ufjf.br/pgcc/dissertacoes/
+
+
+# UFU
+
+http://www.facom.ufu.br/posgrad/
+
+http://www.facom.ufu.br/posgrad/ (Docentes, Dissertação, LP)
+
+
+# UFOP
+
+http://www.decom.ufop.br/pos/inicio/
+
+http://www.decom.ufop.br/pos/docentes/
+
+http://www.decom.ufop.br/pos/pesquisa/
+http://www.decom.ufop.br/pos/publicacao/dissertacoes/
+
+
+# UFMS
+
+http://www.dct.ufms.br/index.php?section=education&course=mestrado
+
+http://www.dct.ufms.br/index.php?section=item.course&course=mestrado&fatherId=0&itemId=24
+http://www.dct.ufms.br/index.php?section=teachers
+
+
+# UFPA
+http://www.ufpa.br/ppgcc/ppgcc/
+
+http://www.ufpa.br/ppgcc/ppgcc/files/File/Colegiado/lista_docentes.pdf
+
+# UFCG
+http://www.computacao.ufcg.edu.br/pos-graduacao
+
+http://www.computacao.ufcg.edu.br/pos-graduacao/professores-orientadores
+
+http://www.computacao.ufcg.edu.br/pos-graduacao/dissertacoes
+
+
+# FUFPI
+
+http://www.sigaa.ufpi.br/sigaa/public/programa/portal.jsf?lc=pt_BR&id=615
+
+http://www.sigaa.ufpi.br/sigaa/public/programa/equipe.jsf?lc=pt_BR&id=615 (Docente)
+
+http://www.sigaa.ufpi.br/sigaa/public/programa/areas.jsf?lc=pt_BR&id=615 (LP)
+http://www.sigaa.ufpi.br/sigaa/public/programa/defesas.jsf?lc=pt_BR&id=615
+
+
+# UEL
+
+http://www.uel.br/pos/redes/index.php/mcc
+
+http://www.uel.br/pos/redes/index.php/mcc/docentes
+
+http://www.uel.br/pos/redes/index.php/mcc/linhaspesquisas
+http://www.uel.br/pos/redes/index.php/mcc/defesas
+
+
+# UEM
+
+http://www.din.uem.br/pos-graduacao/mestrado-em-ciencia-da-computacao/
+
+http://www.din.uem.br/pos-graduacao/mestrado-em-ciencia-da-computacao/curso
+
+http://www.din.uem.br/pos-graduacao/mestrado-em-ciencia-da-computacao/dissertacoes-1
+
+
+# PUC/RS
+
+http://www3.pucrs.br/portal/page/portal/facinppg/ppgcc
+
+http://www3.pucrs.br/portal/page/portal/facinppg/ppgcc/ppgccEquipe#docente
+
+http://www3.pucrs.br/portal/page/portal/facinppg/ppgcc/ppgccApresentacao
+http://www3.pucrs.br/portal/page/portal/facinppg/ppgcc/teses-e-dissertassoes-2014
+http://www3.pucrs.br/portal/page/portal/facinppg/ppgcc/ppgccTesesDefendidas
+
+# FUFSE
+
+https://www.sigaa.ufs.br/sigaa/public/programa/portal.jsf?id=710
+
+https://www.sigaa.ufs.br/sigaa/public/programa/equipe.jsf?lc=pt_BR&id=710
+
+https://www.sigaa.ufs.br/sigaa/public/programa/areas.jsf?lc=pt_BR&id=710
+https://www.sigaa.ufs.br/sigaa/public/programa/defesas.jsf?lc=pt_BR&id=710
+
+
+# UFSCAR
+
+http://ppgcc.dc.ufscar.br/
+
+http://ppgcc.dc.ufscar.br/pessoas/docentes-1
+http://ppgcc.dc.ufscar.br/pessoas/docentes-1/alexandre-luis-magalhaes-levada
+
+# UFSAR
+
+http://www.ppgccs.net/?page_id=192
+
+http://www.ppgccs.net/?page_id=182
+
+
+# USP
+
+http://www.ime.usp.br/dcc/pos
+
+https://uspdigital.usp.br/janus/Orientadores?codare=45134&codcpg=45
+
+http://www.ime.usp.br/dcc/areas
+http://www.teses.usp.br/index.php?option=com_jumi&fileid=9&Itemid=159&lang=pt-br&id=45134&prog=45005&exp=0
+
+
+# UNICAMP
+http://www.ic.unicamp.br/pos
+http://www.ic.unicamp.br/node/28 (Docentes)
+
+
+http://www.ic.unicamp.br/pos/areas-de-pesquisa
+
+
+# UNESP
+
+http://www.ibilce.unesp.br/#!/pos-graduacao/programas-de-pos-graduacao/ciencia-da-computacao/
+
+http://www.ibilce.unesp.br/#!/pos-graduacao/programas-de-pos-graduacao/ciencia-da-computacao/corpo-docente/
+
+http://www.ibilce.unesp.br/#!/pos-graduacao/programas-de-pos-graduacao/ciencia-da-computacao/dissertacoes-defendidas/
+
+
+# UNIFESP
+
+http://www.sjc.unifesp.br/ppgcc/
+
+http://www.sjc.unifesp.br/ppgcc/corpodocente
+
+http://www.sjc.unifesp.br/ppgcc/linhas-de-pesquisa
+
+
+# UFABC
+
+http://poscomp.ufabc.edu.br/
+
+http://poscomp.ufabc.edu.br/?Docentes
+
+http://poscomp.ufabc.edu.br/?Linhas_de_Pesquisa
+http://poscomp.ufabc.edu.br/?Disserta%E7%F5es_Defendidas
+
+
+# FACCAMP
+
+http://www.cc.faccamp.br//
+
+http://www.cc.faccamp.br/corpodocente.php
+http://www.cc.faccamp.br/CorpoDocente/ana.php
+
+http://www.cc.faccamp.br/areasdeinteresse.php
+http://www.cc.faccamp.br/dissertacoes.php
+
+# UERN - RN - CIÊNCIA DA COMPUTAÇÃO-UERN - UFERSA
+http://www2.ufersa.edu.br/posgraduacao/mcc2/index.php?option=com_content&task=view&id=21&Itemid=24
+
+http://www2.ufersa.edu.br/posgraduacao/mcc2/index.php?option=com_content&task=view&id=4&Itemid=5
+
+http://www2.ufersa.edu.br/posgraduacao/mcc2/index.php?option=com_content&task=view&id=3&Itemid=4
+
+http://di.uern.br/
+
+
+# UFBA - BA - CIÊNCIA DA COMPUTAÇÃO-UFBA - UEFS
+http://wiki.dcc.ufba.br/MMCC
+
+http://wiki.dcc.ufba.br/MMCC/DocentesPermanentes
+
+http://wiki.dcc.ufba.br/PMCC/LinhasPesquisa
+
+
+# UFBA - BA - CIÊNCIA DA COMPUTAÇÃO-UFBA - UNIFACS - UEFS
+http://www.posgraduacao.unifacs.br/archives/1685
+
+http://wiki.dcc.ufba.br/PMCC/
+
+
+#  UFMS - MS - CIÊNCIA DA COMPUTAÇÃO - UFMS - UFG
+https://sistemas.ufms.br/sigpos/portal/cursos/view/cursoId:128
+
+https://sistemas.ufms.br/sigpos/portal/docentes/index/cursoId:128
+
+https://sistemas.ufms.br/sigpos/portal/linha_pesquisas/index/cursoId:128
+
+
+# UNIFEI - MG - CIÊNCIA E TECNOLOGIA DA COMPUTAÇÃO
+http://www.unifei.edu.br/pg/pos-graduacao-inicial?c=047&m=ME&lang=PT
+
+http://www.unifei.edu.br/pg/pos-graduacao-docentes?c=047&m=ME&p=&lang=PT
+
+http://www.unifei.edu.br/docentes?p=ramos&ret=b
+http://www.unifei.edu.br/pg/pos-graduacao-areas-concentracao?c=047&m=ME&p=&lang=PT
+http://www.unifei.edu.br/pg/pos-graduacao-monografias-dissertacoes-teses?c=047&m=ME&p=&lang=PT
+
+# UFC - CE - CIÊNCIAS DA COMPUTAÇÃO
+http://mdcc.ufc.br/
+
+http://mdcc.ufc.br/corpodocente
+http://mdcc.ufc.br/corpodocente
+
+http://mdcc.ufc.br/linhas-de-pesquisa
+http://mdcc.ufc.br/teses-e-dissertacoes
+
+
+# UFMG - MG - CIÊNCIAS DA COMPUTAÇÃO
+http://www.dcc.ufmg.br/pos/
+
+http://www.dcc.ufmg.br/pos/pessoas/professores2.php?tipo=PE
+http://www.dcc.ufmg.br/pos/pessoas/professores2.php?tipo=CO
+
+http://www.dcc.ufmg.br/pos/cursos/mestrado.php
+http://www.dcc.ufmg.br/pos/cursos/doutorado.php
+
+
+# UFPE - PE - CIÊNCIAS DA COMPUTAÇÃO
+http://www2.cin.ufpe.br/site/secao.php?s=3&c=31
+
+http://www2.cin.ufpe.br/site/listaContatos.php?s=1&c=8
+http://www2.cin.ufpe.br/site/lerContato.php?s=1&c=8&id=35
+http://www2.cin.ufpe.br/site/secao.php?s=3&c=34
+
+http://www2.cin.ufpe.br/site/secao.php?s=3&c=44
+
+# UFPE - PE - CIÊNCIAS DA COMPUTAÇÃO
+http://www2.cin.ufpe.br/site/secao.php?s=3&c=116
+
+
+
+# UFSC - SC - CIÊNCIAS DA COMPUTAÇÃO
+http://ppgcc.posgrad.ufsc.br/
+
+http://ppgcc.posgrad.ufsc.br/corpo-docente-em-construcao-2/
+http://ppgcc.posgrad.ufsc.br/linhas-de-pesquisa-2/
+
+http://ppgcc.posgrad.ufsc.br/linhas-de-pesquisa-2/
+http://ppgcc.posgrad.ufsc.br/linhas-de-pesquisa-2/
+
+
+# USP/SC - SP - CIÊNCIAS DA COMPUTAÇÃO E MATEMÁTICA COMPUTACIONAL
+http://conteudoweb.capes.gov.br/conteudoweb/ProjetoRelacaoCursosServlet?acao=pesquisarIes&codigoArea=10300007&descricaoArea=CI%CANCIAS+EXATAS+E+DA+TERRA+&descricaoAreaConhecimento=CI%CANCIA+DA+COMPUTA%C7%C3O&descricaoAreaAvaliacao=CI%CANCIA+DA+COMPUTA%C7%C3O
+
+pós graduação computação uf...
+
+
+
+# UFF - RJ - COMPUTAÇÃO
+http://www.ic.uff.br/index.php/pt/pos-graduacao
+
+http://www.ic.uff.br/index.php/pt/pos-graduacao/corpo-docente
+http://www.ic.uff.br/index.php/pt/pos-graduacao/areas-de-concentracao
+
+http://www.ic.uff.br/index.php/pt/pos-graduacao/teses-e-dissertacoes
+
+
+# UFRGS - RS - COMPUTAÇÃO
+http://ppgc.inf.ufrgs.br/
+
+http://ppgc.inf.ufrgs.br/index.php?option=com_content&view=category&layout=blog&id=34&Itemid=54
+http://ppgc.inf.ufrgs.br/index.php?option=com_content&view=category&layout=blog&id=53&Itemid=89
+
+
+# UFPEL - RS - COMPUTAÇÃO
+http://inf.ufpel.edu.br/ppgc/
+
+http://inf.ufpel.edu.br/ppgc/docentes
+
+
+
+# FURG - RS - COMPUTAÇÃO
+http://ppgcomp.c3.furg.br/index.php?Itemid=1073&option=texto&id_site_componente=1521
+
+http://ppgcomp.c3.furg.br/index.php?Itemid=1463&option=texto&id_site_componente=2145
+
+
+# UNIVALI - SC - COMPUTAÇÃO
+http://www.univali.br/ensino/pos-graduacao/mestrado/mestrado-em-computacao-aplicada/Paginas/default.aspx
+
+http://www.univali.br/ensino/pos-graduacao/mestrado/mestrado-em-computacao-aplicada/orientadores/Paginas/default.aspx
+
+
+# UECE - CE - COMPUTAÇÃO APLICADA
+http://www.uece.br/mpcomp/
+
+http://www.uece.br/mpcomp/index.php/corpo-docente
+
+
+# UNB - DF - COMPUTAÇÃO APLICADA
+http://www.cic.unb.br/index.php?option=com_content&view=frontpageplus&Itemid=6
+
+http://www.cic.unb.br/index.php?option=com_qcontacts&view=category&catid=0&Itemid=10
+
+
+# UFMS - MS - COMPUTAÇÃO APLICADA
+https://sistemas.ufms.br/sigpos/portal/cursos/view/cursoId:128
+
+https://sistemas.ufms.br/sigpos/portal/docentes/index/cursoId:128
+
+https://sistemas.ufms.br/sigpos/portal/cursos/view/cursoId:188
+https://sistemas.ufms.br/sigpos/portal/cursos/view/cursoId:29
+
+
+# UTFPR - PR - COMPUTAÇÃO APLICADA
+http://ppgca.dainf.ct.utfpr.edu.br/doku.php
+
+http://ppgca.dainf.ct.utfpr.edu.br/doku.php?id=corpo_docente
+
+
+# UNISINOS - RS - COMPUTAÇÃO APLICADA
+http://www.unisinos.br/mestrado-e-doutorado/computacao-aplicada
+
+http://www.unisinos.br/mestrado-e-doutorado/computacao-aplicada/presencial/sao-leopoldo/corpo-docente
+
+
+# FUPF - RS - COMPUTAÇÃO APLICADA
+http://www.upf.br/ppgca/index.php/institucional/sobre-o-curso
+
+http://www.upf.br/ppgca/index.php/institucional/corpo-docente
+
+
+# UDESC - SC - COMPUTAÇÃO APLICADA
+http://www.cct.udesc.br/?id=289
+
+http://www.cct.udesc.br/?id=347
+
+
+# FESP/UPE - PE - ENGENHARIA DA COMPUTAÇÃO
+http://mestrado.ecomp.poli.br/
+
+http://mestrado.ecomp.poli.br/index.php?option=com_content&task=view&id=17&Itemid=36
+
+
+# UEMA - MA - ENGENHARIA DE COMPUTAÇÃO E SISTEMAS
+http://www.mestrado.engcomp.uema.br/
+
+http://www.mestrado.engcomp.uema.br/?page_id=8
+
+
+# UFRJ - RJ - ENGENHARIA DE SISTEMAS E COMPUTAÇÃO
+http://www.cos.ufrj.br/index.php?option=com_frontpage&Itemid=1
+
+http://www.cos.ufrj.br/index.php?menu=2&option=com_content&task=view&id=25&Itemid=57
+http://www.cos.ufrj.br/index.php?option=com_content&task=view&id=28&Itemid=60
+
+
+# CESAR - PE - ENGENHARIA DE SOFTWARE
+http://www.cesar.edu.br/mpes-sobre/
+http://www.cesar.edu.br/mestrado_profissional/docentes.php
+
+
+
+# UFRN - RN - ENGENHARIA DE SOFTWARE
+http://www.imd.ufrn.br/mestradosw.php
+
+
+# UFAL - AL - INFORMÁTICA
+http://www.ufal.edu.br/unidadeacademica/ic/pos-graduacao/informatica
+
+http://www.ufal.edu.br/unidadeacademica/ic/pos-graduacao/informatica/docentes
+
+
+# UFAM - AM - INFORMÁTICA
+http://icomp.ufam.edu.br/index.php?option=com_content&view=article&id=35&Itemid=40&lang=pt-br
+
+http://icomp.ufam.edu.br/index.php?option=com_contact&view=category&id=42&Itemid=148&lang=pt-br
+
+# UNB - DF - INFORMÁTICA
+http://www.cic.unb.br/index.php?option=com_content&view=category&layout=blog&id=7&Itemid=23
+
+http://www.cic.unb.br/index.php?option=com_qcontacts&view=category&catid=0&Itemid=10
+
+
+# UFES - ES - INFORMÁTICA
+http://ppgi.inf.ufes.br/
+
+http://ppgi.inf.ufes.br/corpo-docente.php
+
+
+# PUC/MG - MG - INFORMÁTICA
+http://www.pucminas.br/pos/informatica/destaques.php
+
+http://www.pucminas.br/pos/informatica/index-link.php?arquivo=docente&pagina=4164
+
+
+# UFPB/J.P. - PB - INFORMÁTICA
+http://www.ppgi.di.ufpb.br/
+
+http://www.ppgi.di.ufpb.br/?page_id=14
+
+
+# UFPR - PR - INFORMÁTICA
+http://web.inf.ufpr.br/pos
+
+http://web.inf.ufpr.br/pos/docentes
+
+
+# PUC/PR - PR - INFORMÁTICA
+http://www.ppgia.pucpr.br/
+
+http://www.ppgia.pucpr.br/
+
+
+# UTFPR - PR - INFORMÁTICA
+http://www.utfpr.edu.br/cornelioprocopio/cursos/mestrados-doutorados/Ofertados-neste-Campus/ppgi
+
+http://www.utfpr.edu.br/cornelioprocopio/cursos/mestrados-doutorados/Ofertados-neste-Campus/ppgi/corpo-docente
+
+
+# UFRJ - RJ - INFORMÁTICA
+https://sites.google.com/a/ppgi.ufrj.br/selecao/
+
+
+# PUC-RIO - RJ - INFORMÁTICA
+http://www.inf.puc-rio.br/?page_id=313
+
+http://www.inf.puc-rio.br/?page_id=117
+http://www.inf.puc-rio.br/?page_id=257
+
+# UNIRIO - RJ - INFORMÁTICA
+http://www.unirio.br/cursos-1/pos-graduacao
+
+http://www2.uniriotec.br/ppgi
+http://www2.uniriotec.br/ppgi/informacoes-sobre-o-programa/Members
+
+
+# UFSM - RS - INFORMÁTICA
+http://w3.ufsm.br/ppgi/
+
+http://w3.ufsm.br/ppgi/?page_id=52
+
+
+# UNIFOR - CE - INFORMÁTICA APLICADA
+http://www.unifor.br/index.php?option=com_content&view=article&id=481&Itemid=879
+
+http://www.unifor.br/index.php?option=com_content&view=article&id=485&Itemid=1006
+
+
+# UFRPE - PE - INFORMÁTICA APLICADA
+--
+
+
+# USP - SP - SISTEMAS DE INFORMAÇÃO
+http://ppgsi.each.usp.br/?lang=en
+
+http://ppgsi.each.usp.br/orientador_ppgsi/?lang=en
+
+
+# UNIFACS - BA - SISTEMAS E COMPUTAÇÃO
+http://www.ppgcomp.unifacs.br/
+
+http://www.ppgcomp.unifacs.br/index.php/corpo-docente
+
+
+# IME - RJ - SISTEMAS E COMPUTAÇÃO
+http://www.comp.ime.eb.br/
+
+http://www.comp.ime.eb.br/professores.htm
+
+
+# UFRN     RN - SISTEMAS E COMPUTAÇÃO
+http://www.sigaa.ufrn.br/sigaa/public/programa/portal.jsf?id=73
+
+http://www.sigaa.ufrn.br/sigaa/public/programa/equipe.jsf?lc=pt_BR&id=73

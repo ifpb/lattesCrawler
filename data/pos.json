@@ -1,0 +1,1185 @@
+{
+  "28001010095P3":{
+    "program":"CIÊNCIA DA COMPUTAÇÃO",
+    "IES":"UFBA",
+    "UF":"BA",
+    "M":"4",
+    "D":"4",
+    "F":"-",
+    "homepage":"http://wiki.dcc.ufba.br/PGComp/",
+    "researchers":"http://wiki.dcc.ufba.br/PGComp/CorpoDocente",
+    "researchLine":"http://wiki.dcc.ufba.br/PGComp/LinhasDePesquisa",
+    "thesisDissertation":"-",
+    "course":"http://wiki.dcc.ufba.br/PGComp/Disciplinas",
+    "crawlerSchema": {
+        "names":"#main table tr td table tr th a",
+        "embedded":{
+            "image":"table td img",
+            "lattes":"div#content > ul:last-of-type > li:contains(\"cv\") > a:first-of-type"
+        }
+    }
+  },
+  "22003010018P1":{
+    "program":"CIÊNCIA DA COMPUTAÇÃO",
+    "IES":"UECE",
+    "UF":"CE",
+    "M":"3",
+    "D":"-",
+    "F":"-",
+    "homepage":"http://www.uece.br/macc/",
+    "researchers":"http://www.uece.br/macc/index.php/corpo-docente",
+    "researchLine":"http://www.uece.br/macc/index.php/linhas-de-pesquisa",
+    "thesisDissertation":"http://www.uece.br/macc/index.php/dissertacoes",
+    "course":"-",
+    "crawlerSchema":{
+        "names":"#content_sesa address strong span",
+        "lattes":"#content_sesa address a:contains(\"lattes\")"
+    }
+  },
+  "22008012004P2":{
+    "program":"CIÊNCIA DA COMPUTAÇÃO",
+    "IES":"IFCE",
+    "UF":"CE",
+    "M":"3",
+    "D":"-",
+    "F":"-",
+    "homepage":"http://ppgcc.ifce.edu.br/",
+    "researchers":"http://ppgcc.ifce.edu.br/?page_id=10",
+    "researchLine":"http://ppgcc.ifce.edu.br/?page_id=26",
+    "thesisDissertation":"-",
+    "course":"http://ppgcc.ifce.edu.br/?page_id=49",
+    "crawlerSchema":{
+        "names":"div.pf-content ul li",
+        "lattes":"div.pf-content ul li a"
+    }
+  },
+  "52001016027P2":{
+    "program":"CIÊNCIA DA COMPUTAÇÃO",
+    "IES":"UFG",
+    "UF":"GO",
+    "M":"4",
+    "D":"-",
+    "F":"-",
+    "homepage":"http://www.inf.ufg.br/mestrado/",
+    "researchers":"http://www.inf.ufg.br/mestrado/docentes",
+    "researchLine":"http://www.inf.ufg.br/mestrado/linhas-pesquisa",
+    "thesisDissertation":"http://www.inf.ufg.br/mestrado/dissertacoes",
+    "course":"-",
+    "crawlerSchema":{
+        "names":"td.views-field.views-field-title a",
+        "emails":"td.views-field.views-field-field-docente-email-value",
+        "embedded":{
+            "lattes":"div.field-item a",
+            "researchLine":"div.field-field-docente-atuacao>div>div"
+        }
+    }
+  },
+  "20001010022P0":{
+    "program":"CIÊNCIA DA COMPUTAÇÃO",
+    "IES":"UFMA",
+    "UF":"MA",
+    "M":"3",
+    "D":"-",
+    "F":"-",
+    "homepage":"http://www.ppgcc.ufma.br/",
+    "researchers":"http://www.ppgcc.ufma.br/index.php?option=com_content&view=article&id=2&Itemid=3",
+    "researchLine":"http://www.ppgcc.ufma.br/index.php?option=com_content&view=article&id=1&Itemid=2",
+    "thesisDissertation":"-",
+    "course":"-",
+    "crawlerSchema":{
+        "names":"table td span:first-of-type",
+        "lattes":"table td:last-of-type a"
+    }
+  },
+  "32002017027P2":{
+    "program":"CIÊNCIA DA COMPUTAÇÃO",
+    "IES":"UFV",
+    "UF":"MG",
+    "M":"3",
+    "D":"-",
+    "F":"-",
+    "homepage":"http://www.ppgcc.ufv.br/",
+    "researchers":"http://www.ppgcc.ufv.br/?page_id=697",
+    "researchLine":"http://www.ppgcc.ufv.br/?page_id=389",
+    "thesisDissertation":"http://www.ppgcc.ufv.br/?page_id=66",
+    "course":"-",
+    "crawlerSchema":{
+        "names":"div#post-697 p strong",
+        "lattes":"div#post-697 p a"
+    }
+  },
+  "32004010027P9":{
+    "program":"CIÊNCIA DA COMPUTAÇÃO",
+    "IES":"UFLA",
+    "UF":"MG",
+    "M":"3",
+    "D":"-",
+    "F":"-",
+    "homepage":"http://www.prpg.ufla.br/computacao/",
+    "researchers":"http://www.prpg.ufla.br/computacao/corpo-docente-e-discente/docentes/",
+    "researchLine":"http://www.prpg.ufla.br/computacao/linha-de-pesquisa/",
+    "thesisDissertation":"-",
+    "course":"-",
+    "crawlerSchema":{
+        "names":".entry-content address:has(a:has(input))",
+        "lattes":".entry-content a:has(input)"
+    }
+  },
+  "32005016034P8":{
+    "program":"CIÊNCIA DA COMPUTAÇÃO",
+    "IES":"UFJF",
+    "UF":"MG",
+    "M":"3",
+    "D":"-",
+    "F":"-",
+    "homepage":"http://www.ufjf.br/pgcc/",
+    "researchers":"http://www.ufjf.br/pgcc/curso/corpo-docente/",
+    "researchLine":"http://www.ufjf.br/pgcc/curso/linhas-de-pesquisa/",
+    "thesisDissertation":"http://www.ufjf.br/pgcc/dissertacoes/",
+    "course":"-",
+    "crawlerSchema":{
+        "names":"div#conteudo table tbody td:nth-child(1) p span:not(:has(b))",
+        "lattes":"div#conteudo table tbody td a"
+    }
+  },
+  "32006012017P2":{
+    "program":"CIÊNCIA DA COMPUTAÇÃO",
+    "IES":"UFU",
+    "UF":"MG",
+    "M":"4",
+    "D":"4",
+    "F":"-",
+    "homepage":"http://www.facom.ufu.br/posgrad/",
+    "researchers":"http://www.facom.ufu.br/posgrad/",
+    "researchLine":"http://www.facom.ufu.br/posgrad/",
+    "thesisDissertation":"http://www.facom.ufu.br/posgrad/",
+    "course":"-",
+    "crawlerSchema":{
+        "name":"#main table tr td table tr th a"
+    }
+  },
+  "32007019023P9":{
+    "program":"CIÊNCIA DA COMPUTAÇÃO",
+    "IES":"UFOP",
+    "UF":"MG",
+    "M":"4",
+    "D":"-",
+    "F":"-",
+    "homepage":"http://www.decom.ufop.br/pos/inicio/",
+    "researchers":"http://www.decom.ufop.br/pos/docentes/",
+    "researchLine":"http://www.decom.ufop.br/pos/pesquisa/",
+    "thesisDissertation":"http://www.decom.ufop.br/pos/publicacao/dissertacoes/",
+    "course":"-",
+    "crawlerSchema":{
+        "name":"#main table tr td table tr th a"
+    }
+  },
+  "51001012012P2":{
+    "program":"CIÊNCIA DA COMPUTAÇÃO",
+    "IES":"UFMS",
+    "UF":"MS",
+    "M":"4",
+    "D":"-",
+    "F":"-",
+    "homepage":"http://www.dct.ufms.br/index.php?section=education&course=mestrado",
+    "researchers":"http://www.dct.ufms.br/index.php?section=teachers",
+    "researchLine":"-",
+    "thesisDissertation":"-",
+    "course":"-",
+    "crawlerSchema":{
+        "name":"#main table tr td table tr th a"
+    }
+  },
+  "15001016047P9":{
+    "program":"CIÊNCIA DA COMPUTAÇÃO",
+    "IES":"UFPA",
+    "UF":"PA",
+    "M":"4",
+    "D":"-",
+    "F":"-",
+    "homepage":"http://www.ufpa.br/ppgcc/ppgcc/",
+    "researchers":"http://www.ufpa.br/ppgcc/ppgcc/files/File/Colegiado/lista_docentes.pdf",
+    "researchLine":"-",
+    "thesisDissertation":"-",
+    "course":"-",
+    "crawlerSchema":{
+        "name":"#main table tr td table tr th a"
+    }
+  },
+  "24009016005P0":{
+    "program":"CIÊNCIA DA COMPUTAÇÃO",
+    "IES":"UFCG",
+    "UF":"PB",
+    "M":"4",
+    "D":"4",
+    "F":"-",
+    "homepage":"http://www.computacao.ufcg.edu.br/pos-graduacao",
+    "researchers":"http://www.computacao.ufcg.edu.br/pos-graduacao/professores-orientadores",
+    "researchLine":"-",
+    "thesisDissertation":"http://www.computacao.ufcg.edu.br/pos-graduacao/dissertacoes",
+    "course":"-",
+    "crawlerSchema":{
+        "name":"#main table tr td table tr th a"
+    }
+  },
+  "21001014031P2":{
+    "program":"CIÊNCIA DA COMPUTAÇÃO",
+    "IES":"FUFPI",
+    "UF":"PI",
+    "M":"3",
+    "D":"-",
+    "F":"-",
+    "homepage":"http://www.sigaa.ufpi.br/sigaa/public/programa/portal.jsf?lc=pt_BR&id=615",
+    "researchers":"http://www.sigaa.ufpi.br/sigaa/public/programa/equipe.jsf?lc=pt_BR&id=615",
+    "researchLine":"http://www.sigaa.ufpi.br/sigaa/public/programa/areas.jsf?lc=pt_BR&id=615",
+    "thesisDissertation":"http://www.sigaa.ufpi.br/sigaa/public/programa/defesas.jsf?lc=pt_BR&id=615",
+    "course":"-",
+    "crawlerSchema":{
+        "name":"#main table tr td table tr th a"
+    }
+  },
+  "40002012033P5":{
+    "program":"CIÊNCIA DA COMPUTAÇÃO",
+    "IES":"UEL",
+    "UF":"PR",
+    "M":"3",
+    "D":"-",
+    "F":"-",
+    "homepage":"http://www.uel.br/pos/redes/index.php/mcc",
+    "researchers":"http://www.uel.br/pos/redes/index.php/mcc/docentes",
+    "researchLine":"http://www.uel.br/pos/redes/index.php/mcc/linhaspesquisas",
+    "thesisDissertation":"http://www.uel.br/pos/redes/index.php/mcc/defesas",
+    "course":"-",
+    "crawlerSchema":{
+        "name":"#main table tr td table tr th a"
+    }
+  },
+  "40004015019P5":{
+    "program":"CIÊNCIA DA COMPUTAÇÃO",
+    "IES":"UEM",
+    "UF":"PR",
+    "M":"3",
+    "D":"-",
+    "F":"-",
+    "homepage":"http://www.din.uem.br/pos-graduacao/mestrado-em-ciencia-da-computacao/",
+    "researchers":"http://www.din.uem.br/pos-graduacao/mestrado-em-ciencia-da-computacao/curso",
+    "researchLine":"-",
+    "thesisDissertation":"http://www.din.uem.br/pos-graduacao/mestrado-em-ciencia-da-computacao/dissertacoes-1",
+    "course":"-",
+    "crawlerSchema":{
+        "name":"#main table tr td table tr th a"
+    }
+  },
+  "42005019016P8":{
+    "program":"CIÊNCIA DA COMPUTAÇÃO",
+    "IES":"PUC/RS",
+    "UF":"RS",
+    "M":"5",
+    "D":"5",
+    "F":"-",
+    "homepage":"http://www3.pucrs.br/portal/page/portal/facinppg/ppgcc",
+    "researchers":"http://www3.pucrs.br/portal/page/portal/facinppg/ppgcc/ppgccEquipe#docente",
+    "researchLine":"http://www3.pucrs.br/portal/page/portal/facinppg/ppgcc/ppgccApresentacao",
+    "thesisDissertation":"http://www3.pucrs.br/portal/page/portal/facinppg/ppgcc/teses-e-dissertassoes-2014|http://www3.pucrs.br/portal/page/portal/facinppg/ppgcc/ppgccTesesDefendidas",
+    "course":"-",
+    "crawlerSchema":{
+        "name":"#main table tr td table tr th a"
+    }
+  },
+  "27001016029P4":{
+    "program":"CIÊNCIA DA COMPUTAÇÃO",
+    "IES":"FUFSE",
+    "UF":"SE",
+    "M":"3",
+    "D":"-",
+    "F":"-",
+    "homepage":"https://www.sigaa.ufs.br/sigaa/public/programa/portal.jsf?id=710",
+    "researchers":"https://www.sigaa.ufs.br/sigaa/public/programa/equipe.jsf?lc=pt_BR&id=710",
+    "researchLine":"https://www.sigaa.ufs.br/sigaa/public/programa/areas.jsf?lc=pt_BR&id=710",
+    "thesisDissertation":"https://www.sigaa.ufs.br/sigaa/public/programa/defesas.jsf?lc=pt_BR&id=710",
+    "course":"-",
+    "crawlerSchema":{
+        "name":"#main table tr td table tr th a"
+    }
+  },
+  "33001014008P4":{
+    "program":"CIÊNCIA DA COMPUTAÇÃO",
+    "IES":"UFSCAR",
+    "UF":"SP",
+    "M":"4",
+    "D":"4",
+    "F":"-",
+    "homepage":"http://ppgcc.dc.ufscar.br/",
+    "researchers":"http://ppgcc.dc.ufscar.br/pessoas/docentes-1",
+    "researchLine":"-",
+    "thesisDissertation":"-",
+    "course":"-",
+    "crawlerSchema":{
+        "name":"#main table tr td table tr th a"
+    }
+  },
+  "33001014044P0":{
+    "program":"CIÊNCIA DA COMPUTAÇÃO",
+    "IES":"UFSCAR",
+    "UF":"SP",
+    "M":"3",
+    "D":"-",
+    "F":"-",
+    "homepage":"http://www.ppgccs.net/?page_id=192",
+    "researchers":"http://www.ppgccs.net/?page_id=182",
+    "researchLine":"-",
+    "thesisDissertation":"-",
+    "course":"-",
+    "crawlerSchema":{
+        "name":"#main table tr td table tr th a"
+    }
+  },
+  "33002010176P0":{
+    "program":"CIÊNCIA DA COMPUTAÇÃO",
+    "IES":"USP",
+    "UF":"SP",
+    "M":"6",
+    "D":"6",
+    "F":"-",
+    "homepage":"http://www.ime.usp.br/dcc/pos",
+    "researchers":"https://uspdigital.usp.br/janus/Orientadores?codare=45134&codcpg=45",
+    "researchLine":"http://www.ime.usp.br/dcc/areas",
+    "thesisDissertation":"http://www.teses.usp.br/index.php?option=com_jumi&fileid=9&Itemid=159&lang=pt-br&id=45134&prog=45005&exp=0",
+    "course":"-",
+    "crawlerSchema":{
+        "name":"#main table tr td table tr th a"
+    }
+  },
+  "33003017005P8":{
+    "program":"CIÊNCIA DA COMPUTAÇÃO",
+    "IES":"UNICAMP",
+    "UF":"SP",
+    "M":"7",
+    "D":"7",
+    "F":"-",
+    "homepage":"http://www.ic.unicamp.br/pos",
+    "researchers":"http://www.ic.unicamp.br/node/28",
+    "researchLine":"http://www.ic.unicamp.br/pos/areas-de-pesquisa",
+    "thesisDissertation":"-",
+    "course":"-",
+    "crawlerSchema":{
+        "name":"#main table tr td table tr th a"
+    }
+  },
+  "33004153073P2":{
+    "program":"CIÊNCIA DA COMPUTAÇÃO",
+    "IES":"UNESP/SJRP",
+    "UF":"SP",
+    "M":"4",
+    "D":"-",
+    "F":"-",
+    "homepage":"http://www.ibilce.unesp.br/#!/pos-graduacao/programas-de-pos-graduacao/ciencia-da-computacao/",
+    "researchers":"http://www.ibilce.unesp.br/#!/pos-graduacao/programas-de-pos-graduacao/ciencia-da-computacao/corpo-docente/",
+    "researchLine":"-",
+    "thesisDissertation":"http://www.ibilce.unesp.br/#!/pos-graduacao/programas-de-pos-graduacao/ciencia-da-computacao/dissertacoes-defendidas/",
+    "course":"-",
+    "crawlerSchema":{
+        "name":"#main table tr td table tr th a"
+    }
+  },
+  "33009015079P0":{
+    "program":"CIÊNCIA DA COMPUTAÇÃO",
+    "IES":"UNIFESP",
+    "UF":"SP",
+    "M":"3",
+    "D":"-",
+    "F":"-",
+    "homepage":"http://www.sjc.unifesp.br/ppgcc/",
+    "researchers":"http://www.sjc.unifesp.br/ppgcc/corpodocente",
+    "researchLine":"http://www.sjc.unifesp.br/ppgcc/linhas-de-pesquisa",
+    "thesisDissertation":"-",
+    "course":"-",
+    "crawlerSchema":{
+        "name":"#main table tr td table tr th a"
+    }
+  },
+  "33144010008P1":{
+    "program":"CIÊNCIA DA COMPUTAÇÃO",
+    "IES":"UFABC",
+    "UF":"SP",
+    "M":"3",
+    "D":"-",
+    "F":"-",
+    "homepage":"http://poscomp.ufabc.edu.br/",
+    "researchers":"http://poscomp.ufabc.edu.br/?Docentes",
+    "researchLine":"http://poscomp.ufabc.edu.br/?Linhas_de_Pesquisa",
+    "thesisDissertation":"http://poscomp.ufabc.edu.br/?Disserta%E7%F5es_Defendidas",
+    "course":"-",
+    "crawlerSchema":{
+        "name":"#main table tr td table tr th a"
+    }
+  },
+  "33149011002P1":{
+    "program":"CIÊNCIA DA COMPUTAÇÃO",
+    "IES":"FACCAMP",
+    "UF":"SP",
+    "M":"3",
+    "D":"-",
+    "F":"-",
+    "homepage":"http://www.cc.faccamp.br//",
+    "researchers":"http://www.cc.faccamp.br/corpodocente.php",
+    "researchLine":"http://www.cc.faccamp.br/areasdeinteresse.php",
+    "thesisDissertation":"http://www.cc.faccamp.br/dissertacoes.php",
+    "course":"",
+    "crawlerSchema":{
+        "name":"#main table tr td table tr th a"
+    }
+  },
+  "23002018002P4":{
+    "program":"CIÊNCIA DA COMPUTAÇÃO - UERN - UFERSA",
+    "IES":"UERN",
+    "UF":"RN",
+    "M":"3",
+    "D":"-",
+    "F":"-",
+    "homepage":"http://www2.ufersa.edu.br/posgraduacao/mcc2/index.php?option=com_content&task=view&id=21&Itemid=24",
+    "researchers":"http://www2.ufersa.edu.br/posgraduacao/mcc2/index.php?option=com_content&task=view&id=4&Itemid=5",
+    "researchLine":"http://www2.ufersa.edu.br/posgraduacao/mcc2/index.php?option=com_content&task=view&id=3&Itemid=4",
+    "thesisDissertation":"-",
+    "course":"-",
+    "crawlerSchema":{
+        "name":"#main table tr td table tr th a"
+    }
+  },
+  "28001010090P1":{
+    "program":"CIÊNCIA DA COMPUTAÇÃO - UFBA - UEFS",
+    "IES":"UFBA",
+    "UF":"BA",
+    "M":"3",
+    "D":"-",
+    "F":"-",
+    "homepage":"http://wiki.dcc.ufba.br/MMCC",
+    "researchers":"http://wiki.dcc.ufba.br/MMCC/DocentesPermanentes|",
+    "researchLine":"http://wiki.dcc.ufba.br/PMCC/LinhasPesquisa",
+    "thesisDissertation":"-",
+    "course":"http://wiki.dcc.ufba.br/MMCC/SobreDisciplinas",
+    "crawlerSchema":{
+        "name":"#main table tr td table tr th a"
+    }
+  },
+  "28001010061P1":{
+    "program":"CIÊNCIA DA COMPUTAÇÃO - UFBA - UNIFACS - UEFS",
+    "IES":"UFBA",
+    "UF":"BA",
+    "M":"-",
+    "D":"4",
+    "F":"-",
+    "homepage":"http://wiki.dcc.ufba.br/PMCC/",
+    "researchers":"http://wiki.dcc.ufba.br/PMCC/CorpoDocente",
+    "researchLine":"http://wiki.dcc.ufba.br/PMCC/LinhasPesquisa",
+    "thesisDissertation":"http://wiki.dcc.ufba.br/PMCC/TodasNoticias",
+    "course":"http://wiki.dcc.ufba.br/PMCC/SobreDisciplinas",
+    "crawlerSchema":{
+        "name":"#main table tr td table tr th a"
+    }
+  },
+  "51001012028P6":{
+    "program":"CIÊNCIA DA COMPUTAÇÃO - UFMS - UFG",
+    "IES":"UFMS",
+    "UF":"MS",
+    "M":"-",
+    "D":"4",
+    "F":"-",
+    "homepage":"https://sistemas.ufms.br/sigpos/portal/cursos/view/cursoId:128",
+    "researchers":"https://sistemas.ufms.br/sigpos/portal/docentes/index/cursoId:128",
+    "researchLine":"https://sistemas.ufms.br/sigpos/portal/linha_pesquisas/index/cursoId:128",
+    "thesisDissertation":"-",
+    "course":"-",
+    "crawlerSchema":{
+        "name":"#main table tr td table tr th a"
+    }
+  },
+  "32003013008P4":{
+    "program":"CIÊNCIA E TECNOLOGIA DA COMPUTAÇÃO",
+    "IES":"UNIFEI",
+    "UF":"MG",
+    "M":"3",
+    "D":"-",
+    "F":"-",
+    "homepage":"http://www.unifei.edu.br/pg/pos-graduacao-inicial?c=047&m=ME&lang=PT",
+    "researchers":"http://www.unifei.edu.br/pg/pos-graduacao-docentes?c=047&m=ME&p=&lang=PT",
+    "researchLine":"http://www.unifei.edu.br/pg/pos-graduacao-areas-concentracao?c=047&m=ME&p=&lang=PT",
+    "thesisDissertation":"http://www.unifei.edu.br/pg/pos-graduacao-monografias-dissertacoes-teses?c=047&m=ME&p=&lang=PT",
+    "course":"-",
+    "crawlerSchema":{
+        "name":"#main table tr td table tr th a"
+    }
+  },
+  "22001018031P5":{
+    "program":"CIÊNCIAS DA COMPUTAÇÃO",
+    "IES":"UFC",
+    "UF":"CE",
+    "M":"5",
+    "D":"5",
+    "F":"-",
+    "homepage":"http://mdcc.ufc.br/",
+    "researchers":"http://mdcc.ufc.br/corpodocente",
+    "researchLine":"http://mdcc.ufc.br/corpodocente",
+    "thesisDissertation":"http://mdcc.ufc.br/linhas-de-pesquisa",
+    "course":"http://mdcc.ufc.br/teses-e-dissertacoes",
+    "crawlerSchema":{
+        "name":"#main table tr td table tr th a"
+    }
+  },
+  "32001010004P6":{
+    "program":"CIÊNCIAS DA COMPUTAÇÃO",
+    "IES":"UFMG",
+    "UF":"MG",
+    "M":"7",
+    "D":"7",
+    "F":"-",
+    "homepage":"http://www.dcc.ufmg.br/pos/",
+    "researchers":"http://www.dcc.ufmg.br/pos/pessoas/professores2.php?tipo=PE|http://www.dcc.ufmg.br/pos/pessoas/professores2.php?tipo=CO",
+    "researchLine":"http://www.dcc.ufmg.br/pos/cursos/mestrado.php|http://www.dcc.ufmg.br/pos/cursos/doutorado.php",
+    "thesisDissertation":"",
+    "course":"",
+    "crawlerSchema":{
+        "name":"#main table tr td table tr th a"
+    }
+  },
+  "25001019004P6":{
+    "program":"CIÊNCIAS DA COMPUTAÇÃO",
+    "IES":"UFPE",
+    "UF":"PE",
+    "M":"6",
+    "D":"6",
+    "F":"-",
+    "homepage":"http://www2.cin.ufpe.br/site/secao.php?s=3&c=31",
+    "researchers":"http://www2.cin.ufpe.br/site/listaContatos.php?s=1&c=8|http://www2.cin.ufpe.br/site/secao.php?s=3&c=34",
+    "researchLine":"http://www2.cin.ufpe.br/site/secao.php?s=3&c=44",
+    "thesisDissertation":"-",
+    "course":"-",
+    "crawlerSchema":{
+        "name":"#main table tr td table tr th a"
+    }
+  },
+  "25001019062P6":{
+    "program":"CIÊNCIAS DA COMPUTAÇÃO",
+    "IES":"UFPE",
+    "UF":"PE",
+    "M":"-",
+    "D":"-",
+    "F":"3",
+    "homepage":"http://www2.cin.ufpe.br/site/secao.php?s=3&c=116",
+    "researchers":"-",
+    "researchLine":"-",
+    "thesisDissertation":"-",
+    "course":"-",
+    "crawlerSchema":{
+        "name":"#main table tr td table tr th a"
+    }
+  },
+  "41001010025P2":{
+    "program":"CIÊNCIAS DA COMPUTAÇÃO",
+    "IES":"UFSC",
+    "UF":"SC",
+    "M":"4",
+    "D":"4",
+    "F":"-",
+    "homepage":"http://ppgcc.posgrad.ufsc.br/",
+    "researchers":"http://ppgcc.posgrad.ufsc.br/corpo-docente-em-construcao-2/",
+    "researchLine":"http://ppgcc.posgrad.ufsc.br/linhas-de-pesquisa-2/",
+    "thesisDissertation":"-",
+    "course":"-",
+    "crawlerSchema":{
+        "name":"#main table tr td table tr th a"
+    }
+  },
+  "33002045004P1":{
+    "program":"CIÊNCIAS DA COMPUTAÇÃO E MATEMÁTICA COMPUTACIONAL",
+    "IES":"USP/SC",
+    "UF":"SP",
+    "M":"6",
+    "D":"6",
+    "F":"-",
+    "homepage":"http://conteudoweb.capes.gov.br/conteudoweb/ProjetoRelacaoCursosServlet?acao=pesquisarIes&codigoArea=10300007&descricaoArea=CI%CANCIAS+EXATAS+E+DA+TERRA+&descricaoAreaConhecimento=CI%CANCIA+DA+COMPUTA%C7%C3O&descricaoAreaAvaliacao=CI%CANCIA+DA+COMPUTA%C7%C3O",
+    "researchers":"-",
+    "researchLine":"-",
+    "thesisDissertation":"-",
+    "course":"-",
+    "crawlerSchema":{
+        "name":"#main table tr td table tr th a"
+    }
+  },
+  "31003010046P4":{
+    "program":"COMPUTAÇÃO",
+    "IES":"UFF",
+    "UF":"RJ",
+    "M":"5",
+    "D":"5",
+    "F":"-",
+    "homepage":"http://www.ic.uff.br/index.php/pt/pos-graduacao",
+    "researchers":"http://www.ic.uff.br/index.php/pt/pos-graduacao/corpo-docente",
+    "researchLine":"http://www.ic.uff.br/index.php/pt/pos-graduacao/areas-de-concentracao",
+    "thesisDissertation":"http://www.ic.uff.br/index.php/pt/pos-graduacao/teses-e-dissertacoes",
+    "course":"-",
+    "crawlerSchema":{
+        "name":"#main table tr td table tr th a"
+    }
+  },
+  "42001013004P4":{
+    "program":"COMPUTAÇÃO",
+    "IES":"UFRGS",
+    "UF":"RS",
+    "M":"7",
+    "D":"7",
+    "F":"-",
+    "homepage":"http://ppgc.inf.ufrgs.br/",
+    "researchers":"http://ppgc.inf.ufrgs.br/index.php?option=com_content&view=category&layout=blog&id=34&Itemid=54",
+    "researchLine":"http://ppgc.inf.ufrgs.br/index.php?option=com_content&view=category&layout=blog&id=53&Itemid=89",
+    "thesisDissertation":"-",
+    "course":"-",
+    "crawlerSchema":{
+        "name":"#main table tr td table tr th a"
+    }
+  },
+  "42003016038P9":{
+    "program":"COMPUTAÇÃO",
+    "IES":"UFPEL",
+    "UF":"RS",
+    "M":"3",
+    "D":"-",
+    "F":"-",
+    "homepage":"http://inf.ufpel.edu.br/ppgc/",
+    "researchers":"http://inf.ufpel.edu.br/ppgc/docentes",
+    "researchLine":"-",
+    "thesisDissertation":"-",
+    "course":"-",
+    "crawlerSchema":{
+        "name":"#main table tr td table tr th a"
+    }
+  },
+  "42004012022P1":{
+    "program":"COMPUTAÇÃO",
+    "IES":"FURG",
+    "UF":"RS",
+    "M":"3",
+    "D":"-",
+    "F":"-",
+    "homepage":"http://ppgcomp.c3.furg.br/index.php?Itemid=1073&option=texto&id_site_componente=1521",
+    "researchers":"http://ppgcomp.c3.furg.br/index.php?Itemid=1463&option=texto&id_site_componente=2145",
+    "researchLine":"-",
+    "thesisDissertation":"-",
+    "course":"-",
+    "crawlerSchema":{
+        "name":"#main table tr td table tr th a"
+    }
+  },
+  "41005015010P7":{
+    "program":"COMPUTAÇÃO",
+    "IES":"UNIVALI",
+    "UF":"SC",
+    "M":"4",
+    "D":"-",
+    "F":"-",
+    "homepage":"http://www.univali.br/ensino/pos-graduacao/mestrado/mestrado-em-computacao-aplicada/Paginas/default.aspx",
+    "researchers":"http://www.univali.br/ensino/pos-graduacao/mestrado/mestrado-em-computacao-aplicada/orientadores/Paginas/default.aspx",
+    "researchLine":"-",
+    "thesisDissertation":"-",
+    "course":"-",
+    "crawlerSchema":{
+        "name":"#main table tr td table tr th a"
+    }
+  },
+  "22003010016P9":{
+    "program":"COMPUTAÇÃO APLICADA",
+    "IES":"UECE",
+    "UF":"CE",
+    "M":"-",
+    "D":"-",
+    "F":"3",
+    "homepage":"http://www.uece.br/mpcomp/",
+    "researchers":"http://www.uece.br/mpcomp/index.php/corpo-docente",
+    "researchLine":"-",
+    "thesisDissertation":"-",
+    "course":"-",
+    "crawlerSchema":{
+        "name":"#main table tr td table tr th a"
+    }
+  },
+  "53001010098P3":{
+    "program":"COMPUTAÇÃO APLICADA",
+    "IES":"UNB",
+    "UF":"DF",
+    "M":"-",
+    "D":"-",
+    "F":"3",
+    "homepage":"http://www.cic.unb.br/index.php?option=com_content&view=frontpageplus&Itemid=6",
+    "researchers":"http://www.cic.unb.br/index.php?option=com_qcontacts&view=category&catid=0&Itemid=10",
+    "researchLine":"-",
+    "thesisDissertation":"-",
+    "course":"-",
+    "crawlerSchema":{
+        "name":"#main table tr td table tr th a"
+    }
+  },
+  "51001012038P1":{
+    "program":"COMPUTAÇÃO APLICADA",
+    "IES":"UFMS",
+    "UF":"MS",
+    "M":"-",
+    "D":"-",
+    "F":"3",
+    "homepage":"https://sistemas.ufms.br/sigpos/portal/cursos/view/cursoId:128",
+    "researchers":"https://sistemas.ufms.br/sigpos/portal/docentes/index/cursoId:128",
+    "researchLine":"https://sistemas.ufms.br/sigpos/portal/cursos/view/cursoId:188",
+    "thesisDissertation":"https://sistemas.ufms.br/sigpos/portal/cursos/view/cursoId:29",
+    "course":"-",
+    "crawlerSchema":{
+        "name":"#main table tr td table tr th a"
+    }
+  },
+  "40006018011P7":{
+    "program":"COMPUTAÇÃO APLICADA",
+    "IES":"UTFPR",
+    "UF":"PR",
+    "M":"-",
+    "D":"-",
+    "F":"3",
+    "homepage":"http://ppgca.dainf.ct.utfpr.edu.br/doku.php",
+    "researchers":"http://ppgca.dainf.ct.utfpr.edu.br/doku.php?id=corpo_docente",
+    "researchLine":"-",
+    "thesisDissertation":"-",
+    "course":"-",
+    "crawlerSchema":{
+        "name":"#main table tr td table tr th a"
+    }
+  },
+  "42007011006P5":{
+    "program":"COMPUTAÇÃO APLICADA",
+    "IES":"UNISINOS",
+    "UF":"RS",
+    "M":"4",
+    "D":"-",
+    "F":"-",
+    "homepage":"http://www.unisinos.br/mestrado-e-doutorado/computacao-aplicada",
+    "researchers":"http://www.unisinos.br/mestrado-e-doutorado/computacao-aplicada/presencial/sao-leopoldo/corpo-docente",
+    "researchLine":"-",
+    "thesisDissertation":"-",
+    "course":"-",
+    "crawlerSchema":{
+        "name":"#main table tr td table tr th a"
+    }
+  },
+  "42009014011P1":{
+     "program":"COMPUTAÇÃO APLICADA",
+    "IES":"FUPF",
+    "UF":"RS",
+    "M":"-",
+    "D":"-",
+    "F":"3",
+    "homepage":"http://www.upf.br/ppgca/index.php/institucional/sobre-o-curso",
+    "researchers":"http://www.upf.br/ppgca/index.php/institucional/corpo-docente",
+    "researchLine":"-",
+    "thesisDissertation":"-",
+    "course":"-",
+    "crawlerSchema":{
+        "name":"#main table tr td table tr th a"
+    }
+  },
+  "41002016023P2":{
+    "program":"COMPUTAÇÃO APLICADA",
+    "IES":"UDESC",
+    "UF":"SC",
+    "M":"3",
+    "D":"-",
+    "F":"-",
+    "homepage":"http://www.cct.udesc.br/?id=289",
+    "researchers":"http://www.cct.udesc.br/?id=347",
+    "researchLine":"-",
+    "thesisDissertation":"-",
+    "course":"-",
+    "crawlerSchema":{
+        "name":"#main table tr td table tr th a"
+    }
+  },
+  "25004018011P1":{
+    "program":"ENGENHARIA DA COMPUTAÇÃO",
+    "IES":"FESP/UPE",
+    "UF":"PE",
+    "M":"3",
+    "D":"-",
+    "F":"-",
+    "homepage":"http://mestrado.ecomp.poli.br/",
+    "researchers":"http://mestrado.ecomp.poli.br/index.php?option=com_content&task=view&id=17&Itemid=36",
+    "researchLine":"-",
+    "thesisDissertation":"-",
+    "course":"-",
+    "crawlerSchema":{
+        "name":"#main table tr td table tr th a"
+    }
+  },
+  "20002017004P9":{
+    "program":"ENGENHARIA DE COMPUTAÇÃO E SISTEMAS",
+    "IES":"UEMA",
+    "UF":"MA",
+    "M":"-",
+    "D":"-",
+    "F":"3",
+    "homepage":"http://www.mestrado.engcomp.uema.br/",
+    "researchers":"http://www.mestrado.engcomp.uema.br/?page_id=8",
+    "researchLine":"-",
+    "thesisDissertation":"-",
+    "course":"-",
+    "crawlerSchema":{
+        "name":"#main table tr td table tr th a"
+    }
+  },
+  "31001017004P3":{
+    "program":"ENGENHARIA DE SISTEMAS E COMPUTAÇÃO",
+    "IES":"UFRJ",
+    "UF":"RJ",
+    "M":"7",
+    "D":"7",
+    "F":"-",
+    "homepage":"http://www.cos.ufrj.br/index.php?option=com_frontpage&Itemid=1",
+    "researchers":"http://www.cos.ufrj.br/index.php?menu=2&option=com_content&task=view&id=25&Itemid=57",
+    "researchLine":"http://www.cos.ufrj.br/index.php?option=com_content&task=view&id=28&Itemid=60",
+    "thesisDissertation":"-",
+    "course":"-",
+    "crawlerSchema":{
+        "name":"#main table tr td table tr th a"
+    }
+  },
+  "25019015001P0":{
+    "program":"ENGENHARIA DE SOFTWARE",
+    "IES":"CESAR",
+    "UF":"PE",
+    "M":"-",
+    "D":"-",
+    "F":"3",
+    "homepage":"http://www.cesar.edu.br/mpes-sobre/",
+    "researchers":"http://www.cesar.edu.br/mestrado_profissional/docentes.php",
+    "researchLine":"-",
+    "thesisDissertation":"-",
+    "course":"-",
+    "crawlerSchema":{
+        "name":"#main table tr td table tr th a"
+    }
+  },
+  "23001011071P0":{
+    "program":"ENGENHARIA DE SOFTWARE",
+    "IES":"UFRN",
+    "UF":"RN",
+    "M":"-",
+    "D":"-",
+    "F":"3",
+    "homepage":"http://www.imd.ufrn.br/mestradosw.php",
+    "researchers":"-",
+    "researchLine":"-",
+    "thesisDissertation":"-",
+    "course":"-",
+    "crawlerSchema":{
+        "name":"#main table tr td table tr th a"
+    }
+  },
+  "26001012035P1":{
+    "program":"INFORMÁTICA",
+    "IES":"UFAL",
+    "UF":"AL",
+    "M":"3",
+    "D":"-",
+    "F":"-",
+    "homepage":"http://www.ufal.edu.br/unidadeacademica/ic/pos-graduacao/informatica",
+    "researchers":"http://www.ufal.edu.br/unidadeacademica/ic/pos-graduacao/informatica/docentes",
+    "researchLine":"-",
+    "thesisDissertation":"-",
+    "course":"-",
+    "crawlerSchema":{
+        "name":"#main table tr td table tr th a"
+    }
+  },
+  "12001015012P2":{
+    "program":"INFORMÁTICA",
+    "IES":"UFAM",
+    "UF":"AM",
+    "M":"5",
+    "D":"5",
+    "F":"-",
+    "homepage":"http://icomp.ufam.edu.br/index.php?option=com_content&view=article&id=35&Itemid=40&lang=pt-br",
+    "researchers":"http://icomp.ufam.edu.br/index.php?option=com_contact&view=category&id=42&Itemid=148&lang=pt-br",
+    "researchLine":"-",
+    "thesisDissertation":"-",
+    "course":"-",
+    "crawlerSchema":{
+        "name":"#main table tr td table tr th a"
+    }
+  },
+  "53001010054P6":{
+    "program":"INFORMÁTICA",
+    "IES":"UNB",
+    "UF":"DF",
+    "M":"4",
+    "D":"4",
+    "F":"-",
+    "homepage":"http://www.cic.unb.br/index.php?option=com_content&view=category&layout=blog&id=7&Itemid=23",
+    "researchers":"http://www.cic.unb.br/index.php?option=com_qcontacts&view=category&catid=0&Itemid=10",
+    "researchLine":"-",
+    "thesisDissertation":"-",
+    "course":"-",
+    "crawlerSchema":{
+        "name":"#main table tr td table tr th a"
+    }
+  },
+  "30001013007P0":{
+    "program":"INFORMÁTICA",
+    "IES":"UFES",
+    "UF":"ES",
+    "M":"4",
+    "D":"4",
+    "F":"-",
+    "homepage":"http://ppgi.inf.ufes.br/",
+    "researchers":"http://ppgi.inf.ufes.br/corpo-docente.php",
+    "researchLine":"-",
+    "thesisDissertation":"-",
+    "course":"-",
+    "crawlerSchema":{
+        "name":"#main table tr td table tr th a"
+    }
+  },
+  "32008015011P7":{
+    "program":"INFORMÁTICA",
+    "IES":"PUC/MG",
+    "UF":"MG",
+    "M":"4",
+    "D":"-",
+    "F":"-",
+    "homepage":"http://www.pucminas.br/pos/informatica/destaques.php",
+    "researchers":"http://www.pucminas.br/pos/informatica/index-link.php?arquivo=docente&pagina=4164",
+    "researchLine":"-",
+    "thesisDissertation":"-",
+    "course":"-",
+    "crawlerSchema":{
+        "name":"#main table tr td table tr th a"
+    }
+  },
+  "24001015047P4":{
+    "program":"INFORMÁTICA",
+    "IES":"UFPB/J.P.",
+    "UF":"PB",
+    "M":"3",
+    "D":"-",
+    "F":"-",
+    "homepage":"http://www.ppgi.di.ufpb.br/",
+    "researchers":"http://www.ppgi.di.ufpb.br/?page_id=14",
+    "researchLine":"-",
+    "thesisDissertation":"-",
+    "course":"-",
+    "crawlerSchema":{
+        "name":"#main table tr td table tr th a"
+    }
+  },
+  "40001016034P5":{
+    "program":"INFORMÁTICA",
+    "IES":"UFPR",
+    "UF":"PR",
+    "M":"4",
+    "D":"4",
+    "F":"-",
+    "homepage":"http://web.inf.ufpr.br/pos",
+    "researchers":"http://web.inf.ufpr.br/pos/docentes",
+    "researchLine":"-",
+    "thesisDissertation":"-",
+    "course":"-",
+    "crawlerSchema":{
+        "name":"#main table tr td table tr th a"
+    }
+  },
+  "40003019004P1":{
+    "program":"INFORMÁTICA",
+    "IES":"PUC/PR",
+    "UF":"PR",
+    "M":"4",
+    "D":"4",
+    "F":"-",
+    "homepage":"http://www.ppgia.pucpr.br/",
+    "researchers":"http://www.ppgia.pucpr.br/",
+    "researchLine":"-",
+    "thesisDissertation":"-",
+    "course":"-",
+    "crawlerSchema":{
+        "name":"#main table tr td table tr th a"
+    }
+  },
+  "40006018025P8":{
+    "program":"INFORMÁTICA",
+    "IES":"UTFPR",
+    "UF":"PR",
+    "M":"-",
+    "D":"-",
+    "F":"3",
+    "homepage":"http://www.utfpr.edu.br/cornelioprocopio/cursos/mestrados-doutorados/Ofertados-neste-Campus/ppgi",
+    "researchers":"http://www.utfpr.edu.br/cornelioprocopio/cursos/mestrados-doutorados/Ofertados-neste-Campus/ppgi/corpo-docente",
+    "researchLine":"-",
+    "thesisDissertation":"-",
+    "course":"-",
+    "crawlerSchema":{
+        "name":"#main table tr td table tr th a"
+    }
+  },
+  "31001017110P8":{
+    "program":"INFORMÁTICA",
+    "IES":"UFRJ",
+    "UF":"RJ",
+    "M":"4",
+    "D":"4",
+    "F":"-",
+    "homepage":"https://sites.google.com/a/ppgi.ufrj.br/selecao/",
+    "researchers":"-",
+    "researchLine":"-",
+    "thesisDissertation":"-",
+    "course":"-",
+    "crawlerSchema":{
+        "name":"#main table tr td table tr th a"
+    }
+  },
+  "31005012004P9":{
+    "program":"INFORMÁTICA",
+    "IES":"PUC-RIO",
+    "UF":"RJ",
+    "M":"7",
+    "D":"7",
+    "F":"-",
+    "homepage":"http://www.inf.puc-rio.br/?page_id=313",
+    "researchers":"http://www.inf.puc-rio.br/?page_id=117|http://www.inf.puc-rio.br/?page_id=257",
+    "researchLine":"-",
+    "thesisDissertation":"-",
+    "course":"-",
+    "crawlerSchema":{
+        "name":"#main table tr td table tr th a"
+    }
+  },
+  "31021018009P9":{
+    "program":"INFORMÁTICA",
+    "IES":"UNIRIO",
+    "UF":"RJ",
+    "M":"4",
+    "D":"4",
+    "F":"-",
+    "homepage":"http://www.unirio.br/cursos-1/pos-graduacao|http://www2.uniriotec.br/ppgi",
+    "researchers":"http://www2.uniriotec.br/ppgi/informacoes-sobre-o-programa/Members",
+    "researchLine":"-",
+    "thesisDissertation":"-",
+    "course":"-",
+    "crawlerSchema":{
+        "name":"#main table tr td table tr th a"
+    }
+  },
+  "42002010036P3":{
+    "program":"INFORMÁTICA",
+    "IES":"UFSM",
+    "UF":"RS",
+    "M":"3",
+    "D":"-",
+    "F":"-",
+    "homepage":"http://w3.ufsm.br/ppgi/",
+    "researchers":"http://w3.ufsm.br/ppgi/?page_id=52",
+    "researchLine":"-",
+    "thesisDissertation":"-",
+    "course":"-",
+    "crawlerSchema":{
+        "name":"#main table tr td table tr th a"
+    }
+  },
+  "22002014002P1":{
+    "program":"INFORMÁTICA APLICADA",
+    "IES":"UNIFOR",
+    "UF":"CE",
+    "M":"4",
+    "D":"4",
+    "F":"-",
+    "homepage":"http://www.unifor.br/index.php?option=com_content&view=article&id=481&Itemid=879",
+    "researchers":"http://www.unifor.br/index.php?option=com_content&view=article&id=485&Itemid=1006",
+    "researchLine":"-",
+    "thesisDissertation":"-",
+    "course":"-",
+    "crawlerSchema":{
+        "name":"#main table tr td table tr th a"
+    }
+  },
+  "25003011032P2":{
+    "program":"INFORMÁTICA APLICADA",
+    "IES":"UFRPE",
+    "UF":"PE",
+    "M":"3",
+    "D":"-",
+    "F":"-",
+    "homepage":"-",
+    "researchers":"-",
+    "researchLine":"-",
+    "thesisDissertation":"-",
+    "course":"-",
+    "crawlerSchema":{
+        "name":"#main table tr td table tr th a"
+    }
+  },
+  "33002010214P0":{
+    "program":"SISTEMAS DE INFORMAÇÃO",
+    "IES":"USP",
+    "UF":"SP",
+    "M":"3",
+    "D":"-",
+    "F":"-",
+    "homepage":"http://ppgsi.each.usp.br/?lang=en",
+    "researchers":"http://ppgsi.each.usp.br/orientador_ppgsi/?lang=en",
+    "researchLine":"-",
+    "thesisDissertation":"-",
+    "course":"-",
+    "crawlerSchema":{
+        "name":"#main table tr td table tr th a"
+    }
+  },
+  "28013018005P5":{
+    "program":"SISTEMAS E COMPUTAÇÃO",
+    "IES":"UNIFACS",
+    "UF":"BA",
+    "M":"3",
+    "D":"-",
+    "F":"-",
+    "homepage":"http://www.ppgcomp.unifacs.br/",
+    "researchers":"http://www.ppgcomp.unifacs.br/index.php/corpo-docente",
+    "researchLine":"-",
+    "thesisDissertation":"-",
+    "course":"-",
+    "crawlerSchema":{
+        "name":"#main table tr td table tr th a"
+    }
+  },
+  "31007015009P3":{
+    "program":"SISTEMAS E COMPUTAÇÃO",
+    "IES":"IME",
+    "UF":"RJ",
+    "M":"3",
+    "D":"-",
+    "F":"-",
+    "homepage":"http://www.comp.ime.eb.br/",
+    "researchers":"http://www.comp.ime.eb.br/professores.htm",
+    "researchLine":"-",
+    "thesisDissertation":"-",
+    "course":"-",
+    "crawlerSchema":{
+        "name":"#main table tr td table tr th a"
+    }
+  },
+  "23001011022P9":{
+    "program":"SISTEMAS E COMPUTAÇÃO",
+    "IES":"UFRN",
+    "UF":"RN",
+    "M":"5",
+    "D":"5",
+    "F":"-",
+    "homepage":"http://www.sigaa.ufrn.br/sigaa/public/programa/portal.jsf?id=73",
+    "researchers":"http://www.sigaa.ufrn.br/sigaa/public/programa/equipe.jsf?lc=pt_BR&id=73",
+    "researchLine":"-",
+    "thesisDissertation":"-",
+    "course":"-",
+    "crawlerSchema":{
+        "name":"#main table tr td table tr th a"
+    }
+  }
+}
