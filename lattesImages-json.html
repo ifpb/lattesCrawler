@@ -33,6 +33,17 @@
     tr:hover td {
       background-color: #eee !important; 
     }
+    img {
+      border: 1px solid #A0BAD5;
+      border-radius: 8px;
+      width: 95px;
+      height: 120px;
+    }
+    div.research {
+      display: inline-block;
+      width: 250px;
+      text-align: center;
+    }
   </style>
 </head>
 <body>
@@ -54,34 +65,23 @@
               '<a href="'+pos[idPos]['researchers']+'" target="_blank" class="pure-button pure-button-primary">'+
                 pos[idPos]['program']+' - '+pos[idPos]['IES']+
               '</a> \
-            </header> \
-            <table class="tablesorter pure-table pure-table-bordered"> \
-              <thead> \
-                <tr> \
-                  <th></th> \
-                  <th>Nome</th> \
-                  <th>Lattes</th> \
-                </tr> \
-              </thead> \
-              <tbody>';
-          var flag = 0;
+            </header><section>';
           for(var idResearch in researchs){
             // TODO destacar com uma class estilizada o PQ
-            flag++;
             var research = researchs[idResearch];
             program +=
-              '<tr id="'+idResearch+'">'+
-                '<td>'+flag+'</td>'+
-                '<td>'+research['names']+'</td>'+
-                '<td><a href="'+research['id16Lattes']+'" target="_blank">'+research['id16Lattes']+'</a></td>'+
-              '</tr>';
+              '<div id="'+idResearch+'" class="research">'+
+                '<a href="'+research['id16Lattes']+'" target="_blank">'+
+                  '<img src="'+research['lattesImage']+'">'+
+                '</a>'+
+                '<div>'+research['lattesName']+'</div>'+
+              '</div>';
           };
           
-          program += '</tbody></table></div>';
+          program += '</section></div>';
 
           document.querySelector('div#lattes').innerHTML += program;
 
-          $('.tablesorter').tablesorter();
         });
       });  
     }

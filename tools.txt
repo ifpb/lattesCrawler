@@ -60,12 +60,19 @@ http://joequery.github.io/Stupid-Table-Plugin/
 http://tympanus.net/codrops/2009/10/03/33-javascript-solutions-for-sorting-tables/	
 
 #web crawler/scrapy tool
+http://ruby.bastardsbook.com/chapters/web-crawling/ (ÓTIMO)
 https://www.npmjs.org/package/crawler
 https://github.com/sylvinus/node-crawler
 
 https://code.google.com/p/crawler4j/
 
 http://scrapy.org/
+
+http://stackoverflow.com/questions/4981379/what-are-some-good-ruby-based-web-crawlers
+https://www.ruby-toolbox.com/search?utf8=%E2%9C%93&q=crawler
+https://www.ruby-toolbox.com/categories/http_clients
+
+http://stackoverflow.com/questions/2861/options-for-html-scraping
 
 THREADING
 http://jondot.github.io/sneakers/
@@ -79,6 +86,8 @@ Anemone multithreading??
 
 https://www.ruby-toolbox.com/categories/Web_Content_Scrapers
 http://nokogiri.org/
+	https://github.com/sparklemotion/nokogiri/wiki/Cheat-sheet
+	http://nokogiri.org/tutorials/modifying_an_html_xml_document.html
 	https://blog.engineyard.com/2010/getting-started-with-nokogiri/
 	http://ruby.bastardsbook.com/chapters/web-crawling/
 	http://chauhansudhir.blogspot.com.br/2011/01/ruby-nokogiri-example-with-css-selector.html
@@ -89,10 +98,20 @@ https://github.com/chriskite/anemone
 	http://snippets.aktagon.com/snippets/566-how-to-crawl-and-scrape-a-site-with-ruby-and-anemone
 https://github.com/taganaka/polipus
 	http://www.slideshare.net/francescolaurita/roll-your-own-web-crawler-rubyday
+https://github.com/sparklemotion/mechanize
+	http://docs.seattlerb.org/mechanize/
+	http://ruby.bastardsbook.com/chapters/mechanize/
+https://github.com/rest-client/rest-client
+	RestClient.post "URL",
+                    "myfile" => File.new("/path/to/file"),
+                    "Cookie" => "Name=michal",
+                    "X-SESSION-ID" => "dsafasdfadsfadsfasfdadf",
+                    "User-Agent" => "UNknow",
+                    "connection" => "Keep-Alive"
+https://github.com/lostisland/faraday
 https://github.com/stewartmckee/cobweb
 https://github.com/felipecsl/wombat
 https://github.com/postmodern/spidr
-http://stackoverflow.com/questions/4981379/what-are-some-good-ruby-based-web-crawlers
 
 https://www.kimonolabs.com/
 https://scraperwiki.com/

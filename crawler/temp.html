@@ -1,0 +1,299 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html>
+<head>
+	<title>Busca Textual - Currículo Lattes</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>	
+	<link rel="Shortcut Icon" href="images/v2/fav_ico_lattes.ico"/>
+	
+	<link rel="stylesheet" href="css/tooltip.css" />
+	
+    <script src="js/util.js" language="Javascript" ></script>
+    <script src="js/tooltip.js" language="Javascript" ></script>
+    <script src="js/resultados.js" language="Javascript" ></script>  
+    <script src="js/busca_textual.js" language="Javascript" ></script>
+    <script src="js/comum.js" language="Javascript" ></script>
+
+	<!-- Imports Novos -->
+	<link rel="stylesheet" href="css/import.css" />
+	<script src="js/jquery.min.js" ></script>
+	<script src="js/tooltip-position.js"></script>
+	<script src="js/jquery.tipsy.js"></script>
+	<script src="js/actions-jquery.js"></script>
+	<script src="js/font-size.js"></script>
+	<script src="js/jquery.cookie.js"></script>
+ 	<script src="js/acessibilidade.js" language="Javascript" ></script>
+
+	
+	  
+    <!--[if IE]>
+		<style>
+			.holder ul input[type="checkbox"] {margin:-2px 5px}
+		</style>
+    <![endif]-->
+    
+    <script language="javaScript" type="text/javascript">
+    	setContexto('/buscatextual'+'/');
+    </script>
+    
+    <script>
+
+	    function chamarFuncaoAbreCV(){
+	    	window.frames["frameModalPreview"].abreCV();
+	    }
+	    
+    </script>
+<!-- Analytics - Inicio -->
+
+		<script type="text/javascript">
+		
+		  var _gaq = _gaq || [];
+		  _gaq.push(['_setAccount', 'UA-35652740-1']);
+		  _gaq.push(['_trackPageview']);
+		
+		  (function() {
+		    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		  })();
+		
+		</script>
+		
+<!-- Analytics - Fim -->
+</head>
+<body>
+
+	<form name="buscaForm" method="POST" action="/buscatextual/busca.do;jsessionid=188E82FD921208DF5EBC398740527360.jb_buscacv_219-1">
+		<input type="hidden" name="metodo" value="buscar" id="metodo">
+		<input type="hidden" name="acao" value="" id="acao">      
+		<!-- valores da consulta anterior -->
+		<input type="hidden" name="filtros.paisAtividade" value="0">
+		<input type="hidden" name="filtros.regiaoAtividade" value="0">
+		<input type="hidden" name="filtros.ufAtividade" value="0">
+		<input type="hidden" name="filtros.siglaInstAtividade" value="">
+		<input type="hidden" name="filtros.nomeInstAtividade" value="">
+		<input type="hidden" name="filtros.naturezaAtividade" value="0">
+		<input type="hidden" name="filtros.atividadeAtual" value="false"> 
+		<input type="hidden" name="filtros.paisFormacao" value="0">
+		<input type="hidden" name="filtros.regiaoFormacao" value="0">
+		<input type="hidden" name="filtros.ufFormacao" value="0">      
+		<input type="hidden" name="filtros.siglaInstFormacao" value="">
+		<input type="hidden" name="filtros.nomeInstFormacao" value="">      
+		<input type="hidden" name="filtros.nivelFormacao" value="0">
+		<input type="hidden" name="filtros.grdAreaFormacao" value="0">      
+		<input type="hidden" name="filtros.areaFormacao" value="0">
+		<input type="hidden" name="filtros.idioma" value="0">      
+		<input type="hidden" name="filtros.proeficienciaLeitura" value="">
+		<input type="hidden" name="filtros.proeficienciaEscrita" value="">      
+		<input type="hidden" name="filtros.proeficienciaFala" value="">
+		<input type="hidden" name="filtros.proeficienciaCompreensao" value="">      
+		<input type="hidden" name="filtros.grandeAreaAtuacao" value="0">
+		<input type="hidden" name="filtros.areaAtuacao" value="0">      
+		<input type="hidden" name="filtros.subareaAtuacao" value="0">
+		<input type="hidden" name="filtros.especialidadeAtuacao" value="0">      
+		<input type="hidden" name="filtros.codigoGrandeAreaAtuacao" value="0">
+		<input type="hidden" name="filtros.codigoAreaAtuacao" value="0">      
+		<input type="hidden" name="filtros.codigoSubareaAtuacao" value="0">
+		<input type="hidden" name="filtros.codigoEspecialidadeAtuacao" value="0">      
+		<input type="hidden" name="filtros.grandeAreaProducao" value="0">
+		<input type="hidden" name="filtros.areaProducao" value="0">      
+		<input type="hidden" name="filtros.setorProducao" value="0">
+		<input type="hidden" name="filtros.subSetorProducao" value="0">      
+		<input type="hidden" name="filtros.tipoRelacao" value="AND">
+		<input type="hidden" name="filtros.categoriaNivelBolsa" value="">      
+		<input type="hidden" name="filtros.orientadorCNPq" value="">
+		<input type="hidden" name="filtros.conceitoCurso" value="">      
+		<input type="hidden" name="filtros.participaDGP" value="false">
+		<input type="hidden" name="filtros.modalidadeBolsa" value="0" id="modalidadeBolsa">     
+		<input type="hidden" name="filtros.buscaNome" value="true" id="buscaNome">
+		<input type="hidden" name="filtros.buscaAssunto" value="false" id="buscaAssunto">      
+		<input type="hidden" name="filtros.buscaCPF" value="false" id="buscaCPF">
+		<input type="hidden" name="filtros.buscaAtuacao" value="false">      
+		<input type="hidden" name="filtros.tipoOrdenacao" value="SCR">
+		<input type="hidden" name="filtros.atualizacaoCurriculo" value="48">     
+		<input type="hidden" name="filtros.quantidadeRegistros" value="25">
+		<input type="hidden" name="filtros.registroInicial" value="1">     
+		<input type="hidden" name="filtros.registroFinal" value="25">
+		<input type="hidden" name="textoBuscaTodas" value="">
+		<input type="hidden" name="textoBuscaFrase" value="">
+		<input type="hidden" name="textoBuscaQualquer" value="">
+		<input type="hidden" name="textoBuscaNenhuma" value="">
+		<input type="hidden" name="textoExpressao" value="">
+		<input type="hidden" name="particaoProcura" value="">
+		<input type="hidden" name="buscarDoutores" value="false">
+		<input type="hidden" name="buscarDemais" value="false">
+		<input type="hidden" name="buscarDoutoresAvancada" value="false">
+		<input type="hidden" name="buscarDemaisAvancada" value="false">
+		<input type="hidden" name="textoBuscaAssunto" value="">
+		<input type="hidden" name="tipoConector" value="AND">
+		<input type="hidden" name="resumoFormacao" value="">
+		<input type="hidden" name="resumoAtividade" value="">
+		<input type="hidden" name="resumoAtuacao" value="">
+		<input type="hidden" name="resumoProducao" value="">
+		<input type="hidden" name="resumoPesquisador" value="">
+		<input type="hidden" name="resumoIdioma" value="">
+		<input type="hidden" name="resumoPresencaDGP" value="">
+		<input type="hidden" name="resumoModalidade" value="Bolsas de PQ de categorias0">
+		<input type="hidden" name="intCPaginaAtual" value="1">
+		<input type="hidden" name="parametrosBusca" value=" &#39;Steffen Lewitzka&#39;">
+		<input type="hidden" name="strCNavegador" value="">
+		<input type="hidden" name="strCSistemaOperacional" value="">
+		<input type="hidden" name="strCIP" value="">
+		<input type="hidden" name="buscaAvancada" value="0">
+		<input type="hidden" name="moduloIndicacaoAdhoc" value="false">
+		<input type="hidden" name="query" value="+idx_nme_pessoa:(steffen) +idx_nme_pessoa:(lewitzka) ">
+		<input type="hidden" name="modoIndAdhoc" value="">      
+		<input type="hidden" name="buscarBrasileirosAvancada" value="false">
+		<input type="hidden" name="buscarEstrangeirosAvancada" value="false">
+		<input type="hidden" name="buscarBrasileiros" value="false">
+		<input type="hidden" name="buscarEstrangeiros" value="false">
+		
+		<div class="page min-width" >
+			<div class="header">
+			   <div class="header-content max-width">
+			       <div class="identity center">
+			       
+				        
+
+	<div class="combo">
+	   <a target="_blank" title="Currículo Lattes" href="http://lattes.cnpq.br/"><img src="/buscatextual/images/titulo-sistema.png" alt="Currículo Lattes" title="Currículo Lattes" /> </a>
+	</div>
+	<div class="logo">
+		<a href="http://www.cnpq.br" target="_blank" title="CNPq - Conselho Nacional de Desenvolvimento Científico e Tecnológico"> </a>
+	</div>
+	<div class="menu-header">
+	  
+		<a title="Aumentar a fonte"  href="javascript:void(0)" class="bt-menu-header titBottom fontMais icons-top icons-top-fontMais"> </a>
+		<a title="Fonte padrão" href="javascript:void(0)" class="bt-menu-header titBottom fontMenos icons-top icons-top-fontMenos "> </a>
+		
+		
+			
+			
+				<a title="Alto contraste" href="javascript:void(0)" class="bt-menu-header titBottom contraste icons-top icons-top-contraste" ></a>
+				<a href="javascript:void(0)" id="idBandeira" onclick="mudarIdioma()" class="bt-menu-header titBottom icons-top icons-top-enUK" title="Click here to change the language to english"> </a>
+			
+		
+		<a title="Ajuda"  href="http://ajuda.cnpq.br/index.php/Página_principal" target="_blank" class="bt-menu-header titBottom  icons-top icons-top-help"> </a> 
+	</div>
+	
+				         
+				 	</div>
+				 </div>
+			  </div>
+					
+			  <div class="navigation-wrapper">
+			    <div class="max-width center navigation-wrapper-line"> 
+			      <!--Local para o menu--> 
+			    </div>
+			  </div>
+				
+			  <div class="content-wrapper">
+			    <div class="main-content max-width  min-width center"> 
+			      <div class="layout-cell layout-cell-12">
+			        <div class="layout-cell-pad-main">
+			          <div class="layout-cell layout-cell-6" >
+			            <div class="layout-cell-pad">
+			              <div class="title-wrapper" id="busca2_simples">
+							 <h1>Buscar Currículo Lattes (Busca Simples)</h1>
+						  </div>
+	           			  <div class="title-wrapper" id="busca2_avancada" style="display:none">
+							 <h1>Busca Avançada (por Assunto)</h1>
+						  </div>
+	           			</div>
+	          		 </div>
+	          		 <div class="layout-cell layout-cell-6">
+	          			 <div class="layout-cell-pad">
+              				<div class="control-bar-top" id="tit2_simples">
+				          	  <a class="button" href="javascript:void(0)" onclick="javascript:novaBusca()">
+				             	<span class="mini-ico mini-ico-lupa"></span>Busca Simples
+				              </a>
+				            </div>
+				            <div class="control-bar-top" id="tit2_avancada" style="display:none">
+				          	  <a class="button" href="javascript:void(0)" onclick="javascript:novaBusca()">
+				             	<span class="mini-ico mini-ico-lupa"></span>Busca Avançada
+				              </a>
+				            </div>
+				         </div>
+				      </div>      
+					  <div class="layout-cell layout-cell-12">
+				          <div class="layout-cell-pad">
+				              <div class="tit_form">
+									
+										Resultado de 
+										1 - 1
+										de
+										<b>1</b>
+										encontrado para: 
+										<b> &#039;Steffen Lewitzka&#039; </b>
+									
+									
+								</div>
+								<div class="paginacao">
+									
+									
+								</div>
+								<div class="resultado">
+									<ol type='1' start="1" >
+										<li><B><a href="javascript:abreDetalhe('K4703501J2','Steffen_Lewitzka',220835)">Steffen Lewitzka</a></B>&nbsp;<BR/>Doutorado em Ciências da Computação pela Universidade Federal de Pernambuco, Brasil(2003)<BR/>Professor Adjunto da Universidade Federal da Bahia , Brasil<BR/><BR/></li>
+
+									</ol>
+								</div>
+								
+								<div class="paginacao">
+									
+												
+									
+								</div>
+	            				<div class="control-bar-wrapper">
+	            					<a class="button" id="botaoBuscaFiltros" href="javascript:void(0)" onclick="javascript:novaBusca()" >
+										<span class="mini-ico mini-ico-lupa"></span>Nova consulta
+									</a>
+	            				</div>
+	            				<br class="clear"/>
+							</div>
+					 	</div>
+					 </div>
+				  </div>
+			   </div>
+			</div>	
+		</div>
+	</form>
+</body>
+</html>
+<script language="javaScript" type="text/javascript" >
+	cvsSemPermissao = ['0'
+	
+	];
+</script>
+

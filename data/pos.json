@@ -14,8 +14,10 @@
     "crawlerSchema": {
         "names":"#main table tr td table tr th a",
         "embedded":{
+            "name":"h2",
             "image":"table td img",
-            "lattes":"div#content > ul:last-of-type > li:contains(\"cv\") > a:first-of-type"
+            "lattes":"div#content > ul:last-of-type > li:contains(\"cv\") > a:first-of-type",
+            "lattes2":"div#content > ul:last-of-type > li:contains(\"CV\") > a:first-of-type"
         }
     }
   },
@@ -32,7 +34,7 @@
     "thesisDissertation":"http://www.uece.br/macc/index.php/dissertacoes",
     "course":"-",
     "crawlerSchema":{
-        "names":"#content_sesa address strong span",
+        "names":"#content_sesa address>strong",
         "lattes":"#content_sesa address a:contains(\"lattes\")"
     }
   },
@@ -150,12 +152,13 @@
     "D":"4",
     "F":"-",
     "homepage":"http://www.facom.ufu.br/posgrad/",
-    "researchers":"http://www.facom.ufu.br/posgrad/",
-    "researchLine":"http://www.facom.ufu.br/posgrad/",
-    "thesisDissertation":"http://www.facom.ufu.br/posgrad/",
+    "researchers":"http://www.facom.ufu.br/posgrad/docentes.html",
+    "researchLine":"-",
+    "thesisDissertation":"-",
     "course":"-",
     "crawlerSchema":{
-        "name":"#main table tr td table tr th a"
+        "names":"td[colspan]:not(:has(span span))>span.texto_ocre",
+        "lattes":"a:contains(\"Veja\")"
     }
   },
   "32007019023P9":{
@@ -171,7 +174,8 @@
     "thesisDissertation":"http://www.decom.ufop.br/pos/publicacao/dissertacoes/",
     "course":"-",
     "crawlerSchema":{
-        "name":"#main table tr td table tr th a"
+        "names":"div.chamada h1 a:nth-child(2)",
+        "lattes":"div.links a:contains(\"lattes\")"
     }
   },
   "51001012012P2":{
@@ -187,7 +191,10 @@
     "thesisDissertation":"-",
     "course":"-",
     "crawlerSchema":{
-        "name":"#main table tr td table tr th a"
+        "names":"div#conteudo-texto h2 a",
+        "embedded":{
+            "lattes": "a:contains(\"Clique aqui\")"
+        }
     }
   },
   "15001016047P9":{
@@ -203,7 +210,6 @@
     "thesisDissertation":"-",
     "course":"-",
     "crawlerSchema":{
-        "name":"#main table tr td table tr th a"
     }
   },
   "24009016005P0":{
@@ -219,7 +225,8 @@
     "thesisDissertation":"http://www.computacao.ufcg.edu.br/pos-graduacao/dissertacoes",
     "course":"-",
     "crawlerSchema":{
-        "name":"#main table tr td table tr th a"
+        "names":"td.goog-ws-list-url a",
+        "lattes":"td.goog-ws-list-url a"
     }
   },
   "21001014031P2":{
@@ -235,7 +242,8 @@
     "thesisDissertation":"http://www.sigaa.ufpi.br/sigaa/public/programa/defesas.jsf?lc=pt_BR&id=615",
     "course":"-",
     "crawlerSchema":{
-        "name":"#main table tr td table tr th a"
+        "names":"a.cor",
+        "lattes":"td:nth-child(5) a:has(img)"
     }
   },
   "40002012033P5":{
@@ -251,7 +259,8 @@
     "thesisDissertation":"http://www.uel.br/pos/redes/index.php/mcc/defesas",
     "course":"-",
     "crawlerSchema":{
-        "name":"#main table tr td table tr th a"
+        "names":"table.tabela-docentes td:nth-child(1)",
+        "lattes":"table.tabela-docentes td:nth-child(4) a:last-child"
     }
   },
   "40004015019P5":{
@@ -267,7 +276,8 @@
     "thesisDissertation":"http://www.din.uem.br/pos-graduacao/mestrado-em-ciencia-da-computacao/dissertacoes-1",
     "course":"-",
     "crawlerSchema":{
-        "name":"#main table tr td table tr th a"
+        "names":"li a.external-link",
+        "lattes":""
     }
   },
   "42005019016P8":{
@@ -283,7 +293,8 @@
     "thesisDissertation":"http://www3.pucrs.br/portal/page/portal/facinppg/ppgcc/teses-e-dissertassoes-2014|http://www3.pucrs.br/portal/page/portal/facinppg/ppgcc/ppgccTesesDefendidas",
     "course":"-",
     "crawlerSchema":{
-        "name":"#main table tr td table tr th a"
+        "names":"td.nome",
+        "lattes":"td.docente:nth-child(2) a"
     }
   },
   "27001016029P4":{
@@ -299,7 +310,8 @@
     "thesisDissertation":"https://www.sigaa.ufs.br/sigaa/public/programa/defesas.jsf?lc=pt_BR&id=710",
     "course":"-",
     "crawlerSchema":{
-        "name":"#main table tr td table tr th a"
+        "names":"table#table_lt tr td a",
+        "lattes":"table#table_lt tr td:nth-child(5) a"
     }
   },
   "33001014008P4":{
@@ -315,7 +327,10 @@
     "thesisDissertation":"-",
     "course":"-",
     "crawlerSchema":{
-        "name":"#main table tr td table tr th a"
+        "names":"td:first-child a.internal-link",
+        "embedded":{
+            "lattes":"a:contains(\"Lattes\")"
+        }
     }
   },
   "33001014044P0":{
@@ -331,7 +346,8 @@
     "thesisDissertation":"-",
     "course":"-",
     "crawlerSchema":{
-        "name":"#main table tr td table tr th a"
+        "names":"div.entry-content table h3",
+        "lattes":"div.entry-content a:contains(\"Lattes\")"
     }
   },
   "33002010176P0":{
@@ -347,7 +363,7 @@
     "thesisDissertation":"http://www.teses.usp.br/index.php?option=com_jumi&fileid=9&Itemid=159&lang=pt-br&id=45134&prog=45005&exp=0",
     "course":"-",
     "crawlerSchema":{
-        "name":"#main table tr td table tr th a"
+        "names":"table.dataTable td:first-child"
     }
   },
   "33003017005P8":{
@@ -363,7 +379,10 @@
     "thesisDissertation":"-",
     "course":"-",
     "crawlerSchema":{
-        "name":"#main table tr td table tr th a"
+        "name":"div.content>div>ul>li>a",
+        "embedded":{
+            "lattes":"a:contains(\"cnpq.br\")"
+        }
     }
   },
   "33004153073P2":{
@@ -379,7 +398,8 @@
     "thesisDissertation":"http://www.ibilce.unesp.br/#!/pos-graduacao/programas-de-pos-graduacao/ciencia-da-computacao/dissertacoes-defendidas/",
     "course":"-",
     "crawlerSchema":{
-        "name":"#main table tr td table tr th a"
+        "names":"#idCorpo td.tabela-linha:first-child",
+        "lattes":"td:last-child.tabela-linha a"
     }
   },
   "33009015079P0":{
@@ -395,7 +415,8 @@
     "thesisDissertation":"-",
     "course":"-",
     "crawlerSchema":{
-        "name":"#main table tr td table tr th a"
+        "names":"td>*:first-of-type",
+        "lattes":"a:contains(\"Lattes\")"
     }
   },
   "33144010008P1":{
@@ -411,7 +432,8 @@
     "thesisDissertation":"http://poscomp.ufabc.edu.br/?Disserta%E7%F5es_Defendidas",
     "course":"-",
     "crawlerSchema":{
-        "name":"#main table tr td table tr th a"
+        "names":"li h4",
+        "lattes":"a:contains(\"Lattes\")"
     }
   },
   "33149011002P1":{
@@ -427,7 +449,10 @@
     "thesisDissertation":"http://www.cc.faccamp.br/dissertacoes.php",
     "course":"",
     "crawlerSchema":{
-        "name":"#main table tr td table tr th a"
+        "names":"span.links-conteudo a",
+        "embedded":{
+            "lattes":"a:contains(\"cnpq.br\")"
+        }
     }
   },
   "23002018002P4":{
@@ -437,13 +462,14 @@
     "M":"3",
     "D":"-",
     "F":"-",
-    "homepage":"http://www2.ufersa.edu.br/posgraduacao/mcc2/index.php?option=com_content&task=view&id=21&Itemid=24",
-    "researchers":"http://www2.ufersa.edu.br/posgraduacao/mcc2/index.php?option=com_content&task=view&id=4&Itemid=5",
-    "researchLine":"http://www2.ufersa.edu.br/posgraduacao/mcc2/index.php?option=com_content&task=view&id=3&Itemid=4",
+    "homepage":"http://ppgcc.uern.br/",
+    "researchers":"http://ppgcc.uern.br/site.php?s=2&c=6",
+    "researchLine":"-",
     "thesisDissertation":"-",
     "course":"-",
     "crawlerSchema":{
-        "name":"#main table tr td table tr th a"
+        "names":"li.lista a:first-child",
+        "lattes":"li.lista a:first-child"
     }
   },
   "28001010090P1":{
@@ -459,7 +485,8 @@
     "thesisDissertation":"-",
     "course":"http://wiki.dcc.ufba.br/MMCC/SobreDisciplinas",
     "crawlerSchema":{
-        "name":"#main table tr td table tr th a"
+        "names":"",
+        "lattes":""
     }
   },
   "28001010061P1":{
@@ -475,7 +502,8 @@
     "thesisDissertation":"http://wiki.dcc.ufba.br/PMCC/TodasNoticias",
     "course":"http://wiki.dcc.ufba.br/PMCC/SobreDisciplinas",
     "crawlerSchema":{
-        "name":"#main table tr td table tr th a"
+        "names":"",
+        "lattes":""
     }
   },
   "51001012028P6":{
@@ -491,7 +519,8 @@
     "thesisDissertation":"-",
     "course":"-",
     "crawlerSchema":{
-        "name":"#main table tr td table tr th a"
+        "names":"",
+        "lattes":""
     }
   },
   "32003013008P4":{
@@ -507,7 +536,8 @@
     "thesisDissertation":"http://www.unifei.edu.br/pg/pos-graduacao-monografias-dissertacoes-teses?c=047&m=ME&p=&lang=PT",
     "course":"-",
     "crawlerSchema":{
-        "name":"#main table tr td table tr th a"
+        "names":"",
+        "lattes":""
     }
   },
   "22001018031P5":{
@@ -523,7 +553,8 @@
     "thesisDissertation":"http://mdcc.ufc.br/linhas-de-pesquisa",
     "course":"http://mdcc.ufc.br/teses-e-dissertacoes",
     "crawlerSchema":{
-        "name":"#main table tr td table tr th a"
+        "names":"",
+        "lattes":""
     }
   },
   "32001010004P6":{
@@ -539,7 +570,8 @@
     "thesisDissertation":"",
     "course":"",
     "crawlerSchema":{
-        "name":"#main table tr td table tr th a"
+        "names":"",
+        "lattes":""
     }
   },
   "25001019004P6":{
@@ -555,7 +587,8 @@
     "thesisDissertation":"-",
     "course":"-",
     "crawlerSchema":{
-        "name":"#main table tr td table tr th a"
+        "names":"",
+        "lattes":""
     }
   },
   "25001019062P6":{
@@ -571,7 +604,8 @@
     "thesisDissertation":"-",
     "course":"-",
     "crawlerSchema":{
-        "name":"#main table tr td table tr th a"
+        "names":"",
+        "lattes":""
     }
   },
   "41001010025P2":{
@@ -587,7 +621,8 @@
     "thesisDissertation":"-",
     "course":"-",
     "crawlerSchema":{
-        "name":"#main table tr td table tr th a"
+        "names":"",
+        "lattes":""
     }
   },
   "33002045004P1":{
@@ -603,7 +638,8 @@
     "thesisDissertation":"-",
     "course":"-",
     "crawlerSchema":{
-        "name":"#main table tr td table tr th a"
+        "names":"",
+        "lattes":""
     }
   },
   "31003010046P4":{
@@ -619,7 +655,8 @@
     "thesisDissertation":"http://www.ic.uff.br/index.php/pt/pos-graduacao/teses-e-dissertacoes",
     "course":"-",
     "crawlerSchema":{
-        "name":"#main table tr td table tr th a"
+        "names":"",
+        "lattes":""
     }
   },
   "42001013004P4":{
@@ -635,7 +672,8 @@
     "thesisDissertation":"-",
     "course":"-",
     "crawlerSchema":{
-        "name":"#main table tr td table tr th a"
+        "names":"",
+        "lattes":""
     }
   },
   "42003016038P9":{
@@ -651,7 +689,8 @@
     "thesisDissertation":"-",
     "course":"-",
     "crawlerSchema":{
-        "name":"#main table tr td table tr th a"
+        "names":"",
+        "lattes":""
     }
   },
   "42004012022P1":{
@@ -667,7 +706,8 @@
     "thesisDissertation":"-",
     "course":"-",
     "crawlerSchema":{
-        "name":"#main table tr td table tr th a"
+        "names":"",
+        "lattes":""
     }
   },
   "41005015010P7":{
@@ -683,7 +723,8 @@
     "thesisDissertation":"-",
     "course":"-",
     "crawlerSchema":{
-        "name":"#main table tr td table tr th a"
+        "names":"",
+        "lattes":""
     }
   },
   "22003010016P9":{
@@ -699,7 +740,8 @@
     "thesisDissertation":"-",
     "course":"-",
     "crawlerSchema":{
-        "name":"#main table tr td table tr th a"
+        "names":"",
+        "lattes":""
     }
   },
   "53001010098P3":{
@@ -715,7 +757,8 @@
     "thesisDissertation":"-",
     "course":"-",
     "crawlerSchema":{
-        "name":"#main table tr td table tr th a"
+        "names":"",
+        "lattes":""
     }
   },
   "51001012038P1":{
@@ -731,7 +774,8 @@
     "thesisDissertation":"https://sistemas.ufms.br/sigpos/portal/cursos/view/cursoId:29",
     "course":"-",
     "crawlerSchema":{
-        "name":"#main table tr td table tr th a"
+        "names":"",
+        "lattes":""
     }
   },
   "40006018011P7":{
@@ -747,7 +791,8 @@
     "thesisDissertation":"-",
     "course":"-",
     "crawlerSchema":{
-        "name":"#main table tr td table tr th a"
+        "names":"",
+        "lattes":""
     }
   },
   "42007011006P5":{
@@ -763,7 +808,8 @@
     "thesisDissertation":"-",
     "course":"-",
     "crawlerSchema":{
-        "name":"#main table tr td table tr th a"
+        "names":"",
+        "lattes":""
     }
   },
   "42009014011P1":{
@@ -779,7 +825,8 @@
     "thesisDissertation":"-",
     "course":"-",
     "crawlerSchema":{
-        "name":"#main table tr td table tr th a"
+        "names":"",
+        "lattes":""
     }
   },
   "41002016023P2":{
@@ -795,7 +842,8 @@
     "thesisDissertation":"-",
     "course":"-",
     "crawlerSchema":{
-        "name":"#main table tr td table tr th a"
+        "names":"",
+        "lattes":""
     }
   },
   "25004018011P1":{
@@ -811,7 +859,8 @@
     "thesisDissertation":"-",
     "course":"-",
     "crawlerSchema":{
-        "name":"#main table tr td table tr th a"
+        "names":"",
+        "lattes":""
     }
   },
   "20002017004P9":{
@@ -827,7 +876,8 @@
     "thesisDissertation":"-",
     "course":"-",
     "crawlerSchema":{
-        "name":"#main table tr td table tr th a"
+        "names":"",
+        "lattes":""
     }
   },
   "31001017004P3":{
@@ -843,7 +893,8 @@
     "thesisDissertation":"-",
     "course":"-",
     "crawlerSchema":{
-        "name":"#main table tr td table tr th a"
+        "names":"",
+        "lattes":""
     }
   },
   "25019015001P0":{
@@ -859,7 +910,8 @@
     "thesisDissertation":"-",
     "course":"-",
     "crawlerSchema":{
-        "name":"#main table tr td table tr th a"
+        "names":"",
+        "lattes":""
     }
   },
   "23001011071P0":{
@@ -875,7 +927,8 @@
     "thesisDissertation":"-",
     "course":"-",
     "crawlerSchema":{
-        "name":"#main table tr td table tr th a"
+        "names":"",
+        "lattes":""
     }
   },
   "26001012035P1":{
@@ -891,7 +944,8 @@
     "thesisDissertation":"-",
     "course":"-",
     "crawlerSchema":{
-        "name":"#main table tr td table tr th a"
+        "names":"div#parent-fieldname-text-629ee184-68d6-4260-b20e-74ab9fd8869b ul li a",
+        "lattes":"div#parent-fieldname-text-629ee184-68d6-4260-b20e-74ab9fd8869b ul li a"
     }
   },
   "12001015012P2":{
@@ -907,7 +961,8 @@
     "thesisDissertation":"-",
     "course":"-",
     "crawlerSchema":{
-        "name":"#main table tr td table tr th a"
+        "names":"",
+        "lattes":""
     }
   },
   "53001010054P6":{
@@ -923,7 +978,8 @@
     "thesisDissertation":"-",
     "course":"-",
     "crawlerSchema":{
-        "name":"#main table tr td table tr th a"
+        "names":"",
+        "lattes":""
     }
   },
   "30001013007P0":{
@@ -939,7 +995,8 @@
     "thesisDissertation":"-",
     "course":"-",
     "crawlerSchema":{
-        "name":"#main table tr td table tr th a"
+        "names":"div#content li",
+        "lattes":"div#content li a:first-of-type"
     }
   },
   "32008015011P7":{
@@ -955,7 +1012,8 @@
     "thesisDissertation":"-",
     "course":"-",
     "crawlerSchema":{
-        "name":"#main table tr td table tr th a"
+        "names":"",
+        "lattes":""
     }
   },
   "24001015047P4":{
@@ -971,7 +1029,8 @@
     "thesisDissertation":"-",
     "course":"-",
     "crawlerSchema":{
-        "name":"#main table tr td table tr th a"
+        "names":"div#postTabs_0_14 li",
+        "lattes":"div#postTabs_0_14 li a:last-child"
     }
   },
   "40001016034P5":{
@@ -987,7 +1046,8 @@
     "thesisDissertation":"-",
     "course":"-",
     "crawlerSchema":{
-        "name":"#main table tr td table tr th a"
+        "names":"table.vertical.listing td:first-child strong:first-child",
+        "lattes":"table.vertical.listing td:last-child a"
     }
   },
   "40003019004P1":{
@@ -998,12 +1058,13 @@
     "D":"4",
     "F":"-",
     "homepage":"http://www.ppgia.pucpr.br/",
-    "researchers":"http://www.ppgia.pucpr.br/",
+    "researchers":"http://www.ppgia.pucpr.br/doku.php?id=docentes",
     "researchLine":"-",
     "thesisDissertation":"-",
     "course":"-",
     "crawlerSchema":{
-        "name":"#main table tr td table tr th a"
+        "names":"div.page div.level5 p strong:not(:contains(\"Coordenador\"))",
+        "lattes":"div.page a:nth-child(3):has(img)"
     }
   },
   "40006018025P8":{
@@ -1019,7 +1080,8 @@
     "thesisDissertation":"-",
     "course":"-",
     "crawlerSchema":{
-        "name":"#main table tr td table tr th a"
+        "names":"div#parent-fieldname-text-adcc0ea295d5759c53da6dff5305708b strong",
+        "lattes":"div#parent-fieldname-text-adcc0ea295d5759c53da6dff5305708b a"
     }
   },
   "31001017110P8":{
@@ -1029,13 +1091,14 @@
     "M":"4",
     "D":"4",
     "F":"-",
-    "homepage":"https://sites.google.com/a/ppgi.ufrj.br/selecao/",
-    "researchers":"-",
+    "homepage":"http://portal.nce.ufrj.br/ | https://sites.google.com/a/ppgi.ufrj.br/selecao/",
+    "researchers":"http://portal.nce.ufrj.br/index.php?option=com_content&view=article&id=81&Itemid=53",
     "researchLine":"-",
     "thesisDissertation":"-",
     "course":"-",
     "crawlerSchema":{
-        "name":"#main table tr td table tr th a"
+        "names":"a:contains(\"Ph.D.\")",
+        "lattes":""
     }
   },
   "31005012004P9":{
@@ -1046,12 +1109,15 @@
     "D":"7",
     "F":"-",
     "homepage":"http://www.inf.puc-rio.br/?page_id=313",
-    "researchers":"http://www.inf.puc-rio.br/?page_id=117|http://www.inf.puc-rio.br/?page_id=257",
+    "researchers":"http://www.inf.puc-rio.br/?page_id=2245 | http://www.inf.puc-rio.br/?page_id=117|http://www.inf.puc-rio.br/?page_id=257",
     "researchLine":"-",
     "thesisDissertation":"-",
     "course":"-",
     "crawlerSchema":{
-        "name":"#main table tr td table tr th a"
+        "names":"",
+        "embedded":{
+            "lattes":""
+        }
     }
   },
   "31021018009P9":{
@@ -1067,7 +1133,7 @@
     "thesisDissertation":"-",
     "course":"-",
     "crawlerSchema":{
-        "name":"#main table tr td table tr th a"
+        "names":"ul.navTreeLevel2 li a span"
     }
   },
   "42002010036P3":{
@@ -1083,7 +1149,10 @@
     "thesisDissertation":"-",
     "course":"-",
     "crawlerSchema":{
-        "name":"#main table tr td table tr th a"
+        "names":".entry-text li a",
+        "embedded": {
+            "lattes":"a:contains(\"cnpq\")"
+        }
     }
   },
   "22002014002P1":{
@@ -1099,7 +1168,8 @@
     "thesisDissertation":"-",
     "course":"-",
     "crawlerSchema":{
-        "name":"#main table tr td table tr th a"
+        "names":"div.conteudo_limpo strong",
+        "lattes":"a:contains(\"lattes\")"
     }
   },
   "25003011032P2":{
@@ -1115,7 +1185,8 @@
     "thesisDissertation":"-",
     "course":"-",
     "crawlerSchema":{
-        "name":"#main table tr td table tr th a"
+        "names":"",
+        "lattes":""
     }
   },
   "33002010214P0":{
@@ -1131,7 +1202,8 @@
     "thesisDissertation":"-",
     "course":"-",
     "crawlerSchema":{
-        "name":"#main table tr td table tr th a"
+        "names":".orientador_ppgsi div.nome_orientador",
+        "lattes":".orientador_ppgsi a:contains(\"Lattes\")"
     }
   },
   "28013018005P5":{
@@ -1147,7 +1219,8 @@
     "thesisDissertation":"-",
     "course":"-",
     "crawlerSchema":{
-        "name":"#main table tr td table tr th a"
+        "names":"td strong:first-child",
+        "lattes":"td:last-child a:has(img)"
     }
   },
   "31007015009P3":{
@@ -1163,7 +1236,8 @@
     "thesisDissertation":"-",
     "course":"-",
     "crawlerSchema":{
-        "name":"#main table tr td table tr th a"
+        "names":"ul li a:contains(\"@\")",
+        "lattes":"ul li a:contains(\"@\")"
     }
   },
   "23001011022P9":{
@@ -1179,7 +1253,10 @@
     "thesisDissertation":"-",
     "course":"-",
     "crawlerSchema":{
-        "name":"#main table tr td table tr th a"
+        "names":"tr td a",
+        "embedded":{
+            "lattes":"tr td:nth-last-child(2) a"
+        }
     }
   }
 }
