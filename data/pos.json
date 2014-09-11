@@ -277,7 +277,9 @@
     "course":"-",
     "crawlerSchema":{
         "names":"li a.external-link",
-        "lattes":""
+        "embedded":{
+            "lattes":"a:contains(\"cnpq\")"
+        }
     }
   },
   "42005019016P8":{
@@ -379,7 +381,7 @@
     "thesisDissertation":"-",
     "course":"-",
     "crawlerSchema":{
-        "name":"div.content>div>ul>li>a",
+        "names":"div.content>div>ul>li>a",
         "embedded":{
             "lattes":"a:contains(\"cnpq.br\")"
         }
@@ -393,12 +395,13 @@
     "D":"-",
     "F":"-",
     "homepage":"http://www.ibilce.unesp.br/#!/pos-graduacao/programas-de-pos-graduacao/ciencia-da-computacao/",
-    "researchers":"http://www.ibilce.unesp.br/#!/pos-graduacao/programas-de-pos-graduacao/ciencia-da-computacao/corpo-docente/",
+    "researchers":"http://www.ibilce.unesp.br/?xajax=exibeCorpo&xajaxr=1410450693490&xajaxargs[]=2188&xajaxargs[]=&xajaxargs[]=",
+    "researchersHtml":"http://www.ibilce.unesp.br/#!/pos-graduacao/programas-de-pos-graduacao/ciencia-da-computacao/corpo-docente/",
     "researchLine":"-",
     "thesisDissertation":"http://www.ibilce.unesp.br/#!/pos-graduacao/programas-de-pos-graduacao/ciencia-da-computacao/dissertacoes-defendidas/",
     "course":"-",
     "crawlerSchema":{
-        "names":"#idCorpo td.tabela-linha:first-child",
+        "names":"td:first-child",
         "lattes":"td:last-child.tabela-linha a"
     }
   },
@@ -480,13 +483,15 @@
     "D":"-",
     "F":"-",
     "homepage":"http://wiki.dcc.ufba.br/MMCC",
-    "researchers":"http://wiki.dcc.ufba.br/MMCC/DocentesPermanentes|",
+    "researchers":"http://wiki.dcc.ufba.br/MMCC/DocentesPermanentes",
     "researchLine":"http://wiki.dcc.ufba.br/PMCC/LinhasPesquisa",
     "thesisDissertation":"-",
     "course":"http://wiki.dcc.ufba.br/MMCC/SobreDisciplinas",
     "crawlerSchema":{
-        "names":"",
-        "lattes":""
+        "names":".foswikiTableCol1 a",
+        "embedded":{
+            "lattes":"a:contains(\"attes\")"
+        }
     }
   },
   "28001010061P1":{
@@ -502,8 +507,10 @@
     "thesisDissertation":"http://wiki.dcc.ufba.br/PMCC/TodasNoticias",
     "course":"http://wiki.dcc.ufba.br/PMCC/SobreDisciplinas",
     "crawlerSchema":{
-        "names":"",
-        "lattes":""
+        "names":".foswikiTableCol1 a:first-child",
+        "embedded":{
+            "lattes":"a:contains(\"attes\")"
+        }
     }
   },
   "51001012028P6":{
@@ -519,8 +526,8 @@
     "thesisDissertation":"-",
     "course":"-",
     "crawlerSchema":{
-        "names":"",
-        "lattes":""
+        "names":"div.docentes th",
+        "lattes":"div.docentes a:has(img)"
     }
   },
   "32003013008P4":{
@@ -536,8 +543,10 @@
     "thesisDissertation":"http://www.unifei.edu.br/pg/pos-graduacao-monografias-dissertacoes-teses?c=047&m=ME&p=&lang=PT",
     "course":"-",
     "crawlerSchema":{
-        "names":"",
-        "lattes":""
+        "names":"div.content table a:not(:has(img))",
+        "embedded":{
+            "lattes":"a:contains(\"lattes\")"
+        }
     }
   },
   "22001018031P5":{
@@ -548,13 +557,15 @@
     "D":"5",
     "F":"-",
     "homepage":"http://mdcc.ufc.br/",
-    "researchers":"http://mdcc.ufc.br/corpodocente",
+    "researchers":"http://mdcc.ufc.br/static/prof.php",
     "researchLine":"http://mdcc.ufc.br/corpodocente",
     "thesisDissertation":"http://mdcc.ufc.br/linhas-de-pesquisa",
     "course":"http://mdcc.ufc.br/teses-e-dissertacoes",
     "crawlerSchema":{
-        "names":"",
-        "lattes":""
+        "names":"a",
+        "embedded":{
+            "lattes":"a:has(img)"
+        }
     }
   },
   "32001010004P6":{
@@ -582,12 +593,13 @@
     "D":"6",
     "F":"-",
     "homepage":"http://www2.cin.ufpe.br/site/secao.php?s=3&c=31",
-    "researchers":"http://www2.cin.ufpe.br/site/listaContatos.php?s=1&c=8|http://www2.cin.ufpe.br/site/secao.php?s=3&c=34",
+    "researchers":"http://www2.cin.ufpe.br/site/secao.php?s=3&c=44",
+    "researchersHtml":"http://www2.cin.ufpe.br/site/listaContatos.php?s=3&c=8|http://www2.cin.ufpe.br/site/secao.php?s=3&c=44|http://www2.cin.ufpe.br/site/secao.php?s=3&c=34",
     "researchLine":"http://www2.cin.ufpe.br/site/secao.php?s=3&c=44",
     "thesisDissertation":"-",
     "course":"-",
     "crawlerSchema":{
-        "names":"",
+        "names":".conteudo div div",
         "lattes":""
     }
   },
@@ -599,12 +611,12 @@
     "D":"-",
     "F":"3",
     "homepage":"http://www2.cin.ufpe.br/site/secao.php?s=3&c=116",
-    "researchers":"-",
+    "researchers":"http://www2.cin.ufpe.br/site/secao.php?s=3&c=39",
     "researchLine":"-",
     "thesisDissertation":"-",
     "course":"-",
     "crawlerSchema":{
-        "names":"",
+        "names":".conteudo div div",
         "lattes":""
     }
   },
@@ -621,8 +633,8 @@
     "thesisDissertation":"-",
     "course":"-",
     "crawlerSchema":{
-        "names":"",
-        "lattes":""
+        "names":"div.post-9502 div.entry p span strong",
+        "lattes":"a:contains(\"Currículo Lattes\")"
     }
   },
   "33002045004P1":{
@@ -632,9 +644,9 @@
     "M":"6",
     "D":"6",
     "F":"-",
-    "homepage":"http://conteudoweb.capes.gov.br/conteudoweb/ProjetoRelacaoCursosServlet?acao=pesquisarIes&codigoArea=10300007&descricaoArea=CI%CANCIAS+EXATAS+E+DA+TERRA+&descricaoAreaConhecimento=CI%CANCIA+DA+COMPUTA%C7%C3O&descricaoAreaAvaliacao=CI%CANCIA+DA+COMPUTA%C7%C3O",
-    "researchers":"-",
-    "researchLine":"-",
+    "homepage":"http://www.icmc.usp.br/Portal/conteudo/243/13/ciencias-de-computacao-e-matematica-computacional",
+    "researchers":"http://www.icmc.usp.br/Portal/conteudo/480/243/orientadores",
+    "researchLine":"http://www.icmc.usp.br/Portal/conteudo/949/243/linhas-de-pesquisa",
     "thesisDissertation":"-",
     "course":"-",
     "crawlerSchema":{
@@ -655,8 +667,8 @@
     "thesisDissertation":"http://www.ic.uff.br/index.php/pt/pos-graduacao/teses-e-dissertacoes",
     "course":"-",
     "crawlerSchema":{
-        "names":"",
-        "lattes":""
+        "names":"#middle-column td:nth-child(2)",
+        "lattes":"#middle-column td:nth-child(5) a"
     }
   },
   "42001013004P4":{
@@ -672,8 +684,10 @@
     "thesisDissertation":"-",
     "course":"-",
     "crawlerSchema":{
-        "names":"",
-        "lattes":""
+        "names":"td>ul a",
+        "embedded":{
+            "lattes":"a:contains(\"cnpq\")"
+        }
     }
   },
   "42003016038P9":{
@@ -706,8 +720,8 @@
     "thesisDissertation":"-",
     "course":"-",
     "crawlerSchema":{
-        "names":"",
-        "lattes":""
+        "names":"#conteudo_noticias a:not(:contains(\"emai\"))",
+        "lattes":"#conteudo_noticias a:not(:contains(\"emai\"))"
     }
   },
   "41005015010P7":{
@@ -723,8 +737,8 @@
     "thesisDissertation":"-",
     "course":"-",
     "crawlerSchema":{
-        "names":"",
-        "lattes":""
+        "names":".docentes td:nth-child(2) a",
+        "lattes":".docentes td:nth-child(2) a"
     }
   },
   "22003010016P9":{
@@ -757,8 +771,11 @@
     "thesisDissertation":"-",
     "course":"-",
     "crawlerSchema":{
-        "names":"",
+        "names":"div.contentpane td:nth-child(1):not(:contains(\"Nome\")) a",
         "lattes":""
+        // "embedded": {
+        //     "lattes":"a:contains(\"lattes\")"
+        // }
     }
   },
   "51001012038P1":{
@@ -768,14 +785,14 @@
     "M":"-",
     "D":"-",
     "F":"3",
-    "homepage":"https://sistemas.ufms.br/sigpos/portal/cursos/view/cursoId:128",
-    "researchers":"https://sistemas.ufms.br/sigpos/portal/docentes/index/cursoId:128",
+    "homepage":"https://sistemas.ufms.br/sigpos/portal/cursos/view/cursoId:188",
+    "researchers":"https://sistemas.ufms.br/sigpos/portal/docentes/index/cursoId:188",
     "researchLine":"https://sistemas.ufms.br/sigpos/portal/cursos/view/cursoId:188",
-    "thesisDissertation":"https://sistemas.ufms.br/sigpos/portal/cursos/view/cursoId:29",
+    "thesisDissertation":"-",
     "course":"-",
     "crawlerSchema":{
-        "names":"",
-        "lattes":""
+        "names":"div.docentes th",
+        "lattes":"div.docentes a:has(img)"
     }
   },
   "40006018011P7":{
@@ -791,8 +808,8 @@
     "thesisDissertation":"-",
     "course":"-",
     "crawlerSchema":{
-        "names":"",
-        "lattes":""
+        "names":"h4",
+        "lattes":"a:contains(\"Currículo Lattes\")"
     }
   },
   "42007011006P5":{
@@ -808,8 +825,8 @@
     "thesisDissertation":"-",
     "course":"-",
     "crawlerSchema":{
-        "names":"",
-        "lattes":""
+        "names":".bloco>ul>li>div>strong",
+        "lattes":".bloco a:contains(\"Lattes\")"
     }
   },
   "42009014011P1":{
@@ -825,8 +842,8 @@
     "thesisDissertation":"-",
     "course":"-",
     "crawlerSchema":{
-        "names":"",
-        "lattes":""
+        "names":"a:contains(\"Prof\")",
+        "lattes":"a:contains(\"Prof\")"
     }
   },
   "41002016023P2":{
@@ -842,8 +859,8 @@
     "thesisDissertation":"-",
     "course":"-",
     "crawlerSchema":{
-        "names":"",
-        "lattes":""
+        "names":"div#textoCorpo2 p strong",
+        "lattes":"a:contains(\"Currículo Lattes\")"
     }
   },
   "25004018011P1":{
@@ -910,8 +927,8 @@
     "thesisDissertation":"-",
     "course":"-",
     "crawlerSchema":{
-        "names":"",
-        "lattes":""
+        "names":"#p_texto p  a",
+        "lattes":"#p_texto p  a"
     }
   },
   "23001011071P0":{
@@ -921,14 +938,16 @@
     "M":"-",
     "D":"-",
     "F":"3",
-    "homepage":"http://www.imd.ufrn.br/mestradosw.php",
-    "researchers":"-",
+    "homepage":"http://www.sigaa.ufrn.br/sigaa/public/programa/apresentacao.jsf?lc=pt_BR&id=7872",
+    "researchers":"http://www.sigaa.ufrn.br/sigaa/public/programa/equipe.jsf?lc=pt_BR&id=7872",
     "researchLine":"-",
     "thesisDissertation":"-",
     "course":"-",
     "crawlerSchema":{
-        "names":"",
-        "lattes":""
+        "names":"td:first-child a",
+        "embedded":{
+            "lattes":"dd a:contains(\"cnpq\")"
+        }
     }
   },
   "26001012035P1":{
@@ -961,8 +980,10 @@
     "thesisDissertation":"-",
     "course":"-",
     "crawlerSchema":{
-        "names":"",
-        "lattes":""
+        "names":"table.category td:first-child a",
+        "embedded":{
+            "lattes":".content a:contains(\"cnpq\")"
+        }
     }
   },
   "53001010054P6":{
@@ -978,8 +999,10 @@
     "thesisDissertation":"-",
     "course":"-",
     "crawlerSchema":{
-        "names":"",
-        "lattes":""
+        "names":"div.contentpane td:nth-child(1):not(:contains(\"Nome\")) a",
+        "embedded": {
+            "lattes":"a:contains(\"lattes\")"
+        }
     }
   },
   "30001013007P0":{
@@ -1012,8 +1035,10 @@
     "thesisDissertation":"-",
     "course":"-",
     "crawlerSchema":{
-        "names":"",
-        "lattes":""
+        "names":"ul.destaque a",
+        "embedded":{
+            "lattes":"a:contains(\"Lattes\")"
+        }
     }
   },
   "24001015047P4":{
@@ -1046,8 +1071,8 @@
     "thesisDissertation":"-",
     "course":"-",
     "crawlerSchema":{
-        "names":"table.vertical.listing td:first-child strong:first-child",
-        "lattes":"table.vertical.listing td:last-child a"
+        "names":"table.vertical.listing:first-of-type td:first-child strong:first-child",
+        "lattes":"table.vertical.listing:first-of-type td:last-child a"
     }
   },
   "40003019004P1":{
@@ -1109,15 +1134,14 @@
     "D":"7",
     "F":"-",
     "homepage":"http://www.inf.puc-rio.br/?page_id=313",
-    "researchers":"http://www.inf.puc-rio.br/?page_id=2245 | http://www.inf.puc-rio.br/?page_id=117|http://www.inf.puc-rio.br/?page_id=257",
+    "researchers":"http://www.inf.puc-rio.br/?page_id=117",
+    "researchersOld":"http://www.inf.puc-rio.br/?page_id=2245 | http://www.inf.puc-rio.br/?page_id=117|http://www.inf.puc-rio.br/?page_id=257",
     "researchLine":"-",
     "thesisDissertation":"-",
     "course":"-",
     "crawlerSchema":{
-        "names":"",
-        "embedded":{
-            "lattes":""
-        }
+        "names":"div.prof_nome:not(:contains(\"Professor Assistente\"))",
+        "lattes":"a:contains(\"cnpq\")"
     }
   },
   "31021018009P9":{
@@ -1151,7 +1175,7 @@
     "crawlerSchema":{
         "names":".entry-text li a",
         "embedded": {
-            "lattes":"a:contains(\"cnpq\")"
+            "lattes":".entry-text a:contains(\"cnpq\")"
         }
     }
   },
@@ -1179,14 +1203,14 @@
     "M":"3",
     "D":"-",
     "F":"-",
-    "homepage":"-",
-    "researchers":"-",
+    "homepage":"http://www.ppgia.ufrpe.br/",
+    "researchers":"http://www.ppgia.ufrpe.br/index.php?option=com_content&view=category&id=2&Itemid=7",
     "researchLine":"-",
     "thesisDissertation":"-",
     "course":"-",
     "crawlerSchema":{
-        "names":"",
-        "lattes":""
+        "names":"td.contentdescription a",
+        "lattes":"td.contentdescription a"
     }
   },
   "33002010214P0":{
