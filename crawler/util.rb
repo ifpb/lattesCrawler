@@ -72,7 +72,14 @@ def drop_empty_names(values)
 			"www.engenhariadevendas.com.br",
 			"http://aisapereira.blogspot.com",
 			" O mestrado profissional é formado por:",
-		].include? get_name(element)  #UECE
+			"Vice Coordenadora - MPCOMP",#UECE
+			"Coordenador Geral MPCOMP",
+			"  -Coordenador de Área - REDES",
+			"PROFESSORES COLABORADORESÂ ",
+			"Nome",
+			"Permanentes (Aprovados pela CAPES)", #UEMA
+			"Colaboradores",
+		].include? get_name(element)  
 	end
 end
 
@@ -88,24 +95,54 @@ def extract_id_lattes(url)
 end
 
 def get_info_from_lattes_page(name)
+	
+	name.sub! " -Â ", "" #unifacs
+	name.sub! "Â ", ""
+	name.sub! "Ã©", "e"
+	name.sub! "Ã¡", "a"
+	name.sub! "Ã­", "i"
+	name.sub! "Ã¨", "e"
+
 	name = name.tr(
 		"ÀÁÂÃÄÅàáâãäåĀāĂăĄąÇçĆćĈĉĊċČčÐðĎďĐđÈÉÊËèéêëĒēĔĕĖėĘęĚěĜĝĞğĠġĢģĤĥĦħÌÍÎÏìíîïĨĩĪīĬĭĮįİıĴĵĶķĸĹĺĻļĽľĿŀŁłÑñŃńŅņŇňŉŊŋÒÓÔÕÖØòóôõöøŌōŎŏŐőŔŕŖŗŘřŚśŜŝŞşŠšſŢţŤťŦŧÙÚÛÜùúûüŨũŪūŬŭŮůŰűŲųŴŵÝýÿŶŷŸŹźŻżŽž",
 		"AAAAAAaaaaaaAaAaAaCcCcCcCcCcDdDdDdEEEEeeeeEeEeEeEeEeGgGgGgGgHhHhIIIIiiiiIiIiIiIiIiJjKkkLlLlLlLlLlNnNnNnNnnNnOOOOOOooooooOoOoOoRrRrRrSsSsSsSssTtTtTtUUUUuuuuUuUuUuUuUuUuWwYyyYyYZzZzZz"
 	)
-	name.sub! " de", ""
-	name.sub! " da", ""
-	name.sub! " M.", ""
-	name.sub! " B.", ""
-	name.sub! "d´", "d'"
+	name.sub! "   ", ""
+	name.sub! "   ", " "
 	name.sub! "  ", " "
+	name.gsub! /\n.*/, ""
+	name.sub! /Doutor.*/, ""
+	name.sub! /Drª /, ""
+	name.sub! /Dr./, ""
+	name.sub! /Dra\. /, ""
+	name.sub! /dr\. /, ""
+	name.sub! /Profª /, ""
+	name.sub! /.*Prof(a)?\. /, ""
+	name.sub! "• ", ""
+	name.sub! /:.*/, ""
+	name.gsub!(/ d[ao]s/, "")
+	name.gsub!(/ d[eao]/, "")
+	name.gsub!(/ [A-W]\./, "")
+	name.sub! "d´", "d'"
+	name.sub!(/ -.*/, "")
+	name.sub!(/,.*/, "")
+	name.sub!(/ \(.*\)/, "")
+	name.sub! /colaborador0\d/, ""
+	name.sub! "Durante os 3 anos seu PhD", ""
+	name.sub! "Professor Departamento Ciencia Computacao Universidade Brasilia", ""
+	name.sub! "Ronaldo Farias Ramos", "Ronaldo Fernandes Ramos" #uece
+	name.sub! "Maria Giovanise Oliveira Pontes", "Maria Gilvanise Oliveira Pontes" #uece
+	name.sub! "Givandenys Leite Sales", "Gilvandenys Leite Sales" #uece
+	name.sub! "Antonio Wendel Oliveira Rodrigues", "Antonio Wendell Oliveira Rodrigues" #uece
+	name.sub! "Joao Porto Albuquerque Pereira", "Joao Porto Albuquerque" #usp
+	name.sub! "Marcio Costa Perreira Brandao", "Marcio Costa Pereira Brandao" #unb
+	name.sub! "Ricardo Pezzoul Jacobi", "Ricardo Pezzuol Jacobi"#unb
+	name.sub! "Dr. Joao Mello Silva", "Joao Mello Silva"#unb
+	name.sub! "Jussara Marques Almeida Goncalves", "Jussara Marques Almeida"
 	name.sub! "Roberto Souto Maior de Barros Filho", "Roberto Souto Maior de Barros" #ufpe
-	name.sub! " (Titular)",""
-	name.sub! "colaborador01 - ", ""
-	name.sub! "colaborador02 - ", ""
-	name.sub! "colaborador03 - ", ""
-	name.sub! "colaborador04 - ", ""
-	name.sub! "colaborador07 - ", ""
-	name.sub! " - Ph.D. (VTT, Finlandia, 1982)atividades no PPGI", ""
+	puts
+	puts name
+	puts
 	info = {}
 	t = Thread.new do
 		page = RestClient.post(
@@ -123,7 +160,13 @@ def get_info_from_lattes_page(name)
 				# puts r.css('b a')[0].content.strip
 				# puts r.css('b a')[0]['href']
 				# puts r.content.strip
-				if ['Computação', 'Doutorado em Medicina (Clínica Médica) - Ribeirão Preto'].any? { |word| r.content.strip.include?(word) } 
+				if [
+						'Computação', 
+						'Engenharia', 
+						'Doutorado em Medicina (Clínica Médica) - Ribeirão Preto',
+						'Doutorado em Matemática pelo Technische Universität Berlin, Alemanha(1994)', #http://buscatextual.cnpq.br/buscatextual/visualizacv.do?metodo=apresentar&id=K4787082A4
+						'Doutorado em Administração pela Universidade Federal do Rio de Janeiro' #http://buscatextual.cnpq.br/buscatextual/visualizacv.do?id=K4796353Z8
+						].any? { |word| r.content.strip.include?(word) } 
 					link = r.css('b a')[0]
 					info[:name] = link.content.strip 
 					info[:id10] = link['href'].split('\'')[1]

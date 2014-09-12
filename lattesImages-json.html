@@ -53,11 +53,13 @@
   <script src="js/jquery-1.11.1.min.js"></script>
   <script src="js/jquery.tablesorter.min.js"></script>
   <script>
-    $.getJSON("data/pos.json", function(pos){
-      createRow(pos);
+    $(function(){
+      $.getJSON("data/pos.json", function(pos){
+        createResearches(pos);
+      });
     });
 
-    function createRow(pos){
+    function createResearches(pos){
       $.getJSON("crawler/lattes.json", function(lattes){
         $.each(lattes, function(idPos,researchs){
           var program = '<div id="id'+idPos+'" class="program">'+
