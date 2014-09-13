@@ -1,3 +1,38 @@
+"Bolsista de Pós-doutorado Sênior do CNPq",
+"Bolsista de Pós-doutorado no Exterior do CNPq",em Pesquisa do CNPq - Nível 2"].uniq
+"Bolsista de Produtividade em Pesquisa do CNPq - Nível 1A",
+"Bolsista de Produtividade em Pesquisa do CNPq - Nível 1B",
+"Bolsista de Produtividade em Pesquisa do CNPq - Nível 1C",
+"Bolsista de Produtividade em Pesquisa do CNPq - Nível 1D",
+"Bolsista de Produtividade em Pesquisa do CNPq - Nível 2",
+"Bolsista de Produtividade Desen. Tec. e Extensão Inovadora do CNPq - Nível 2",
+"Bolsista de Produtividade Desen. Tec. e Extensão Inovadora do CNPq - Nível 1C"
+"Bolsista de Produtividade Desen. Tec. e Extensão Inovadora do CNPq - Nível 1D",
+"Bolsista de Desenvolvimento Tecnológico Industrial do CNPq - Nível A",
+"Bolsista de Desenvolvimento Tecnológico Industrial do CNPq - Nível B",
+"Bolsista de Desenvolvimento Tecnológico e Inovação Ext Junior do CNPq",
+"Bolsista de Fixação de Recursos Humanos do CNPq - Nível C",
+"Bolsista de Fixação de Recursos Humanos do CNPq - Nível B",
+"Bolsista de Fixação de Recursos Humanos do CNPq - Nível F",
+"Bolsista de Fixação de Recursos Humanos do CNPq - Nível A",
+"Bolsista de Extensão no País do CNPq - Nível A",
+"Bolsista de Atração de Jovens Talentos do CNPq",
+"Bolsista de Atração de Jovens Talentos do CNPq - Nível B",
+"Bolsista de Desenvolvimento Cientifico Regional do CNPq - Nível A",
+
+
+$('section div div:contains("Bolsista de Produtividade em Pesquisa do CNPq")').length
+$('section div div:contains("Bolsista de Produtividade Desen. Tec. e Extensão Inovadora do CNPq")').length
+$('section div div:contains("Bolsista de Fixação de Recursos Humanos do CNPq")').length
+$('section div div:contains("CNPq")').length
+$('img').length
+
+P1 - 1580 +100PQ
+P2 - 1301 +100PQ
+P3 - 1649 439PQ 68BP 552CNPq 5 20
+1627
+1786
+
 ===TODO
 crawler infor pos e professores
 checar links
@@ -37,6 +72,16 @@ http://www.convertcsv.com/csv-to-html.htm
 http://www.convertcsv.com/csv-to-json.htm
 
 http://papaparse.com/demo.html
+
+#Pool Threads
+Custom
+https://blog.engineyard.com/2014/ruby-thread-pool
+http://burgestrand.se/code/ruby-thread-pool/
+
+https://www.ruby-toolbox.com/projects/threadpool
+https://github.com/meh/ruby-thread
+https://github.com/meh/ruby-threadpool
+https://github.com/ruby-concurrency/concurrent-ruby
 
 #JSON
 http://jsonformatter.curiousconcept.com/

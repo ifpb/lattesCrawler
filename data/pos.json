@@ -453,7 +453,7 @@
     "researchers":"http://www.cc.faccamp.br/corpodocente.php",
     "researchLine":"http://www.cc.faccamp.br/areasdeinteresse.php",
     "thesisDissertation":"http://www.cc.faccamp.br/dissertacoes.php",
-    "course":"",
+    "course":"-",
     "crawlerSchema":{
         "names":"span.links-conteudo a",
         "embedded":{
@@ -582,8 +582,8 @@
     "researchers":"http://www.dcc.ufmg.br/pos/pessoas/professores2.php?tipo=PE",
     "researchersHTML":"http://www.dcc.ufmg.br/pos/pessoas/professores2.php?tipo=PE|http://www.dcc.ufmg.br/pos/pessoas/professores2.php?tipo=CO",
     "researchLine":"http://www.dcc.ufmg.br/pos/cursos/mestrado.php|http://www.dcc.ufmg.br/pos/cursos/doutorado.php",
-    "thesisDissertation":"",
-    "course":"",
+    "thesisDissertation":"-",
+    "course":"-",
     "crawlerSchema":{
         "names":"td.td_sub_conteudo strong",
         "lattes":""
@@ -908,7 +908,17 @@
     "D":"7",
     "F":"-",
     "homepage":"http://www.cos.ufrj.br/index.php?option=com_frontpage&Itemid=1",
-    "researchers":"http://www.cos.ufrj.br/index.php?option=com_content&task=view&id=28&Itemid=60 | http://www.cos.ufrj.br/index.php?option=com_content&task=view&id=29&Itemid=62 | http://www.cos.ufrj.br/index.php?option=com_content&task=view&id=30&Itemid=63 | http://www.cos.ufrj.br/index.php?option=com_content&task=view&id=31&Itemid=64 | http://www.cos.ufrj.br/index.php?option=com_content&task=view&id=32&Itemid=65 | http://www.cos.ufrj.br/index.php?option=com_content&task=view&id=34&Itemid=66 | http://www.cos.ufrj.br/index.php?option=com_content&task=view&id=33&Itemid=67 | http://www.cos.ufrj.br/index.php?option=com_content&task=view&id=35&Itemid=68 | http://www.cos.ufrj.br/index.php?option=com_content&task=view&id=36&Itemid=69",
+    "researchers":[
+        "http://www.cos.ufrj.br/index.php?option=com_content&task=view&id=28&Itemid=60",
+        "http://www.cos.ufrj.br/index.php?option=com_content&task=view&id=29&Itemid=62",
+        "http://www.cos.ufrj.br/index.php?option=com_content&task=view&id=30&Itemid=63",
+        "http://www.cos.ufrj.br/index.php?option=com_content&task=view&id=31&Itemid=64",
+        "http://www.cos.ufrj.br/index.php?option=com_content&task=view&id=32&Itemid=65",
+        "http://www.cos.ufrj.br/index.php?option=com_content&task=view&id=34&Itemid=66",
+        "http://www.cos.ufrj.br/index.php?option=com_content&task=view&id=33&Itemid=67",
+        "http://www.cos.ufrj.br/index.php?option=com_content&task=view&id=35&Itemid=68",
+        "http://www.cos.ufrj.br/index.php?option=com_content&task=view&id=36&Itemid=69"
+    ],
     "researchersHtml":"http://www.cos.ufrj.br/index.php?menu=2&option=com_content&task=view&id=25&Itemid=57",
     "researchLine":"http://www.cos.ufrj.br/index.php?option=com_content&task=view&id=28&Itemid=60",
     "thesisDissertation":"-",
