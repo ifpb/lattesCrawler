@@ -32,6 +32,7 @@ P2 - 1301 +100PQ
 P3 - 1649 439PQ 68BP 552CNPq 5 20
 1627
 1786
+1785
 
 ===TODO
 crawler infor pos e professores

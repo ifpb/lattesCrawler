@@ -60,7 +60,7 @@
     });
 
     function createResearches(pos){
-      $.getJSON("crawler/lattes.json", function(lattes){
+      $.getJSON("data/lattes.json", function(lattes){
         $.each(lattes, function(idPos,researchs){
           var program = '<div id="id'+idPos+'" class="program">'+
             '<header>'+

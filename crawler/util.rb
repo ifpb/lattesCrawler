@@ -53,6 +53,69 @@ def get_url(url)
 	uri.scheme+'://'+uri.host
 end
 
+# def generate_stat()
+	# file = File.read('../data/pos.json').sub('var pos = ', '')
+	# programsInfo = JSON.parse(file)
+
+	# file = File.read('../data/lattes.json')
+	# lattes = JSON.parse(file)
+def generate_stat(programsInfo, lattes)
+	researchers = []
+
+	lattes.each{|key, program|
+		puts programsInfo[key].values[0..2].join(' '), program.length
+		program.each{|key, research|
+			researchers << key
+		}
+	}
+
+	puts "\nTotal de pesquisadores #{researchers.length} #{researchers.uniq.length}"
+
+end
+
+def open_page(page, kind)
+	(0..10).each{|i|
+		begin
+			if (1..9).to_a.include? i
+				sleep i*2
+			end
+			return Nokogiri::HTML(open(page.strip))
+		rescue
+			if i == 10
+				print " ##{i}#{kind} " 
+				puts "\n"+page.inspect # unless page[0..100].include? "\r\n\r\n\r\n\r"
+				return nil
+			else
+				print " *#{i}#{kind} "
+				# puts "\n#{page}" if ["_", "!"].include? kind
+			end
+		end
+	}
+end
+
+def open_page_rest(name)
+	(0..10).each{|i|
+		begin
+			if (1..9).to_a.include? i
+				sleep i*2
+			end
+			page = RestClient.post(
+				'http://buscatextual.cnpq.br/buscatextual/busca.do', 
+				'metodo=buscar&filtros.buscaNome=true&buscarDoutores=true&textoBusca='+name,
+				:verify_ssl => false
+			)
+			return page
+		rescue
+			if i == 10
+				print "##{i}R" 
+				return nil
+			else
+				print "*#{i}R" 
+			end
+		end
+	}
+end
+
 def extract_researchers_info(idProgram, doc, programInfo)
 
 	programResearchersInfo = []
@@ -60,6 +123,7 @@ def extract_researchers_info(idProgram, doc, programInfo)
 	unless idProgram == "15001016047P9" # UFPA PDF
 		fields = {}
 
+		# extract infos form crawlerSchema
 		programInfo['crawlerSchema'].each { |field|
 			next if field[0] == 'embedded'
 			
@@ -70,12 +134,13 @@ def extract_researchers_info(idProgram, doc, programInfo)
 			end
 			
 			fields[field[0]] = doc.css(field[1])
-			
+
 			if field[0] == 'names'
 				fields['names'] = drop_empty_names(fields['names'])
 			end
 		}	
 
+		# infos form crawlerSchema and extract embedded
 		threadsField = []
 		fields['names'].each_with_index do |name, index|
 			researcher = {}
@@ -86,9 +151,8 @@ def extract_researchers_info(idProgram, doc, programInfo)
 					researcher[field] = get_field(field, fields[field][index])
 					# puts researcher[field]
 				else
-					# Open researcher homepage
+					# Open researcher homepage embedded
 					threadsField << Thread.new do
-						print '?'
 						if name[:href] == "http://rocha.ucpel.tche.br/" #UFRGS
 							name[:href] = "/https://www.google.com/" # não tem lattes
 						end
@@ -105,7 +169,16 @@ def extract_researchers_info(idProgram, doc, programInfo)
 						# puts url
 						
 						begin
-							homepage = Nokogiri::HTML(open(url))
+							if [
+								"http://www.cos.ufrj.br/http://orion.lcg.ufrj.br/roma",
+								"http://www.cos.ufrj.br/http://www.lcg.ufrj.br/Members/esperanc",
+								"http://www.cos.ufrj.br/http://www.lcg.ufrj.br/Members/ricardo",
+								"http://ppgcc.dc.ufscar.br/pessoas/docentes-1/joao-paulo-papa"
+							].include? url
+								raise "Invalid URL" #TODO
+							end
+							# open(url)
+							homepage = open_page(url, '!')
 							programInfo['crawlerSchema']['embedded'].each do |field|
 								if(homepage.css(field[1]).size != 0)
 									value = get_field(field[0], homepage.css(field[1])[0])
@@ -125,7 +198,10 @@ def extract_researchers_info(idProgram, doc, programInfo)
 								end
 								# puts researcher[field[0]]
 							end	
-						rescue
+						rescue #OpenURI::HTTPError
+							print '?'
+							# puts $!, $@
+							# puts url.title
 							researcher['lattes'] = 'undefined'
 						end
 					end
@@ -139,7 +215,7 @@ def extract_researchers_info(idProgram, doc, programInfo)
 			print '!'
 		end
 	else # UFPA PDF
-		programResearchersInfo = JSON.parse(File.read("lattes-ufpa.json"))
+		programResearchersInfo = JSON.parse(File.read("../data/lattes-ufpa.json"))
 	end
 
 	programResearchersInfo
@@ -240,12 +316,11 @@ def get_info_from_lattes_page(name)
 	# puts
 	info = {}
 	# t = Thread.new do
-		page = RestClient.post(
-			'http://buscatextual.cnpq.br/buscatextual/busca.do', 
-			'metodo=buscar&filtros.buscaNome=true&buscarDoutores=true&textoBusca='+name,
-			:verify_ssl => false
-		)
-		page = Nokogiri::HTML(page)
+
+		page = Nokogiri(open_page_rest(name))
+
+		return nil if page == nil
+
 		result = page.css('div.resultado li:has(b a)')
 		if result.length == 1
 			link = page.css('div.resultado li b a')[0]
@@ -269,7 +344,7 @@ def get_info_from_lattes_page(name)
 				end
 			}
 		end
-		print '.'
+		print '+'
 	# end
 	# t.join
 	info
@@ -278,9 +353,10 @@ end
 def extract_info_from_field_lattes(url, name)
 	if(url == 'undefined' || !url.include?("cnpq.br") || (url.include?("buscatextual") && !url.include?("id")))
 		info = get_info_from_lattes_page(name)
-		if info == {}
+		if info == {} || info == nil
 			# puts "Não foi encotrado na base de Doutores do Lattes"
 			print "x"
+			# print "x#{name}"
 			return nil 
 		end
 		url = 'http://buscatextual.cnpq.br/buscatextual/visualizacv.do?id='+info[:id10]
@@ -292,7 +368,7 @@ def extract_info_from_field_lattes(url, name)
 	end
 	# TODO corrigir thread
 	# t = Thread.new do
-		lattes = Nokogiri::HTML(open(url.strip))
+		lattes = open_page(url, '.')
 
 		content = lattes.css('li:has(span.icone-informacao-autor.img_link)')[0].content.strip
 		infos[:id16] = content.split('http://lattes.cnpq.br/')[1]
