@@ -1,0 +1,975 @@
+{
+  "7280159257989330": {
+    "lattesId16": "7280159257989330",
+    "lattesId10": "K4783948Z6",
+    "lattesName": "Paulo Roberto Oliveira",
+    "scholarship": "Bolsista de Produtividade em Pesquisa do CNPq - Nível 1D",
+    "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4783948Z6"
+  },
+  "9300734296482577": {
+    "lattesId16": "9300734296482577",
+    "lattesId10": "K4732844H5",
+    "lattesName": "Paulo Costa Carvalho",
+    "scholarship": "Bolsista de Produtividade em Pesquisa do CNPq - Nível 2",
+    "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4732844H5"
+  },
+  "1879817973802031": {
+    "lattesId16": "1879817973802031",
+    "lattesId10": "K4783454A8",
+    "lattesName": "Jacob Scharcanski",
+    "scholarship": "Bolsista de Produtividade em Pesquisa do CNPq - Nível 1C",
+    "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4783454A8"
+  },
+  "4031565135568125": {
+    "lattesId16": "4031565135568125",
+    "lattesId10": "K4787919A3",
+    "lattesName": "Clarisse Sieckenius de Souza",
+    "scholarship": "Bolsista de Produtividade em Pesquisa do CNPq - Nível 1B",
+    "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4787919A3"
+  },
+  "5144730275745518": {
+    "lattesId16": "5144730275745518",
+    "lattesId10": "K4787838E6",
+    "lattesName": "Fátima Nelsizeuma Sombra de Medeiros",
+    "scholarship": "Bolsista de Produtividade em Pesquisa do CNPq - Nível 2",
+    "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4787838E6"
+  },
+  "6075905438020841": {
+    "lattesId16": "6075905438020841",
+    "lattesId10": "K4787029E5",
+    "lattesName": "Edward Hermann Haeusler",
+    "scholarship": "Bolsista de Produtividade em Pesquisa do CNPq - Nível 2",
+    "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4787029E5"
+  },
+  "5118629875846648": {
+    "lattesId16": "5118629875846648",
+    "lattesId10": "K4787196U3",
+    "lattesName": "Caetano Traina Junior",
+    "scholarship": "Bolsista de Produtividade em Pesquisa do CNPq - Nível 1B",
+    "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4787196U3"
+  },
+  "1870389730408675": {
+    "lattesId16": "1870389730408675",
+    "lattesId10": "K4787142J2",
+    "lattesName": "Edmundo Roberto Mauro Madeira",
+    "scholarship": "Bolsista de Produtividade em Pesquisa do CNPq - Nível 1D",
+    "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4787142J2"
+  },
+  "3614256141054800": {
+    "lattesId16": "3614256141054800",
+    "lattesId10": "K4787835T7",
+    "lattesName": "Jose Neuman de Souza",
+    "scholarship": "Bolsista de Produtividade em Pesquisa do CNPq - Nível 1D",
+    "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4787835T7"
+  },
+  "9089204821424223": {
+    "lattesId16": "9089204821424223",
+    "lattesId10": "K4787819A0",
+    "lattesName": "Alberto Henrique Frade Laender",
+    "scholarship": "Bolsista de Produtividade em Pesquisa do CNPq - Nível 1A",
+    "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4787819A0"
+  },
+  "8130520066599912": {
+    "lattesId16": "8130520066599912",
+    "lattesId10": "K4787831J9",
+    "lattesName": "Jano Moreira de Souza",
+    "scholarship": "Bolsista de Produtividade em Pesquisa do CNPq - Nível 1D",
+    "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4787831J9"
+  },
+  "9171815778534257": {
+    "lattesId16": "9171815778534257",
+    "lattesId10": "K4787740E9",
+    "lattesName": "Luiz Satoru Ochi",
+    "scholarship": "Bolsista de Produtividade em Pesquisa do CNPq - Nível 1C",
+    "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4787740E9"
+  },
+  "7583826391876379": {
+    "lattesId16": "7583826391876379",
+    "lattesId10": "K4787701J4",
+    "lattesName": "Edson Norberto Cáceres",
+    "scholarship": "Bolsista de Produtividade em Pesquisa do CNPq - Nível 2",
+    "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4787701J4"
+  },
+  "3059520185406581": {
+    "lattesId16": "3059520185406581",
+    "lattesId10": "K4787435D3",
+    "lattesName": "Arnaldo de Albuquerque Araújo",
+    "scholarship": "Bolsista de Produtividade em Pesquisa do CNPq - Nível 1D",
+    "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4787435D3"
+  },
+  "0907883161698484": {
+    "lattesId16": "0907883161698484",
+    "lattesId10": "K4781560E7",
+    "lattesName": "Abilio Pereira de Lucena Filho",
+    "scholarship": "Bolsista de Produtividade em Pesquisa do CNPq - Nível 1C",
+    "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4781560E7"
+  },
+  "0400232298849115": {
+    "lattesId16": "0400232298849115",
+    "lattesId10": "K4787633A9",
+    "lattesName": "Marco Antonio Casanova",
+    "scholarship": "Bolsista de Produtividade em Pesquisa do CNPq - Nível 1B",
+    "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4787633A9"
+  },
+  "4234623363518888": {
+    "lattesId16": "4234623363518888",
+    "lattesId10": "K4781908P2",
+    "lattesName": "Jose Ricardo de Almeida Torreao",
+    "scholarship": "Bolsista de Produtividade em Pesquisa do CNPq - Nível 2",
+    "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4781908P2"
+  },
+  "5792248901353552": {
+    "lattesId16": "5792248901353552",
+    "lattesId10": "K4781383E9",
+    "lattesName": "Mário Fernando Montenegro Campos",
+    "scholarship": "Bolsista de Produtividade em Pesquisa do CNPq - Nível 1B",
+    "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4781383E9"
+  },
+  "6499108085922209": {
+    "lattesId16": "6499108085922209",
+    "lattesId10": "K4781063Y6",
+    "lattesName": "Jacques Wainer",
+    "scholarship": "Bolsista de Produtividade em Pesquisa do CNPq - Nível 1D",
+    "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4781063Y6"
+  },
+  "5117568495536090": {
+    "lattesId16": "5117568495536090",
+    "lattesId10": "K4781230Z6",
+    "lattesName": "Gerson Zaverucha",
+    "scholarship": "Bolsista de Produtividade em Pesquisa do CNPq - Nível 1D",
+    "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4781230Z6"
+  },
+  "1278004515460973": {
+    "lattesId16": "1278004515460973",
+    "lattesId10": "K4781110P4",
+    "lattesName": "Maria Cristina Ferreira de Oliveira",
+    "scholarship": "Bolsista de Produtividade em Pesquisa do CNPq - Nível 1C",
+    "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4781110P4"
+  },
+  "0698164500481055": {
+    "lattesId16": "0698164500481055",
+    "lattesId10": "K4781151U0",
+    "lattesName": "Jaelson Freire Brelaz de Castro",
+    "scholarship": "Bolsista de Produtividade em Pesquisa do CNPq - Nível 2",
+    "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4781151U0"
+  },
+  "4627360041573918": {
+    "lattesId16": "4627360041573918",
+    "lattesId10": "K4781152J4",
+    "lattesName": "Yoshiharu Kohayakawa",
+    "scholarship": "Bolsista de Produtividade em Pesquisa do CNPq - Nível 1A",
+    "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4781152J4"
+  },
+  "5948590274082247": {
+    "lattesId16": "5948590274082247",
+    "lattesId10": "K4781867H8",
+    "lattesName": "Olga Regina Pereira Bellon",
+    "scholarship": "Bolsista de Produtividade em Pesquisa do CNPq - Nível 1D",
+    "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4781867H8"
+  },
+  "5337976093923686": {
+    "lattesId16": "5337976093923686",
+    "lattesId10": "K4781867Y4",
+    "lattesName": "Luciano da Fontoura Costa",
+    "scholarship": "Bolsista de Produtividade em Pesquisa do CNPq - Nível 1A",
+    "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4781867Y4"
+  },
+  "7279612728721005": {
+    "lattesId16": "7279612728721005",
+    "lattesId10": "K4781813H6",
+    "lattesName": "Mario Roberto Folhadela Benevides",
+    "scholarship": "Bolsista de Produtividade em Pesquisa do CNPq - Nível 2",
+    "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4781813H6"
+  },
+  "1006840153853655": {
+    "lattesId16": "1006840153853655",
+    "lattesId10": "K4781822J3",
+    "lattesName": "Paulo Henrique Lemelle Fernandes",
+    "scholarship": "Bolsista de Produtividade em Pesquisa do CNPq - Nível 2",
+    "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4781822J3"
+  },
+  "0833253899619895": {
+    "lattesId16": "0833253899619895",
+    "lattesId10": "K4781441E6",
+    "lattesName": "Marcus Vinicius Soledade Poggi de Aragao",
+    "scholarship": "Bolsista de Produtividade em Pesquisa do CNPq - Nível 1C",
+    "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4781441E6"
+  },
+  "1396497553199632": {
+    "lattesId16": "1396497553199632",
+    "lattesId10": "K4781615E9",
+    "lattesName": "Cecília Mary Fischer Rubira",
+    "scholarship": "Bolsista de Produtividade em Pesquisa do CNPq - Nível 1D",
+    "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4781615E9"
+  },
+  "8897396624107855": {
+    "lattesId16": "8897396624107855",
+    "lattesId10": "K4788548A6",
+    "lattesName": "Celia Picinin de Mello",
+    "scholarship": "Bolsista de Produtividade em Pesquisa do CNPq - Nível 1C",
+    "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4788548A6"
+  },
+  "7573837292080522": {
+    "lattesId16": "7573837292080522",
+    "lattesId10": "K4780398J6",
+    "lattesName": "Alberto Ferreira De Souza",
+    "scholarship": "Bolsista de Produtividade em Pesquisa do CNPq - Nível 2",
+    "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4780398J6"
+  },
+  "5258150848273682": {
+    "lattesId16": "5258150848273682",
+    "lattesId10": "K4786599Y6",
+    "lattesName": "Roseli Suzi Wedemann",
+    "scholarship": "Bolsista de Produtividade em Pesquisa do CNPq - Nível 2",
+    "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4786599Y6"
+  },
+  "2126584242026703": {
+    "lattesId16": "2126584242026703",
+    "lattesId10": "K4788109P3",
+    "lattesName": "Luiz Fernando Gomes Soares",
+    "scholarship": "Bolsista de Produtividade em Pesquisa do CNPq - Nível 1A",
+    "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4788109P3"
+  },
+  "0211300683784278": {
+    "lattesId16": "0211300683784278",
+    "lattesId10": "K4782198H5",
+    "lattesName": "Márcia Rosana Cerioli",
+    "scholarship": "Bolsista de Produtividade em Pesquisa do CNPq - Nível 2",
+    "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4782198H5"
+  },
+  "5898801580033554": {
+    "lattesId16": "5898801580033554",
+    "lattesId10": "K4782188T4",
+    "lattesName": "Fábio Protti",
+    "scholarship": "Bolsista de Produtividade em Pesquisa do CNPq - Nível 1B",
+    "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4782188T4"
+  },
+  "2436767709775022": {
+    "lattesId16": "2436767709775022",
+    "lattesId10": "K4786977Z9",
+    "lattesName": "Mauro Antonio Rincon",
+    "scholarship": "Bolsista de Produtividade em Pesquisa do CNPq - Nível 2",
+    "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4786977Z9"
+  },
+  "9314029648579658": {
+    "lattesId16": "9314029648579658",
+    "lattesId10": "K4784164D6",
+    "lattesName": "Lúcia Maria de Assumpção Drummond",
+    "scholarship": "Bolsista de Produtividade em Pesquisa do CNPq - Nível 1D",
+    "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4784164D6"
+  },
+  "9395715443254344": {
+    "lattesId16": "9395715443254344",
+    "lattesId10": "K4782988A6",
+    "lattesName": "Paulo Henrique Monteiro Borba",
+    "scholarship": "Bolsista de Produtividade em Pesquisa do CNPq - Nível 1D",
+    "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4782988A6"
+  },
+  "8544491643812450": {
+    "lattesId16": "8544491643812450",
+    "lattesId10": "K4785731J7",
+    "lattesName": "Luigi Carro",
+    "scholarship": "Bolsista de Produtividade em Pesquisa do CNPq - Nível 1B",
+    "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4785731J7"
+  },
+  "9063837162469343": {
+    "lattesId16": "9063837162469343",
+    "lattesId10": "K4784192T6",
+    "lattesName": "Ricardo Farias",
+    "scholarship": "Bolsista de Produtividade em Pesquisa do CNPq - Nível 2",
+    "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4784192T6"
+  },
+  "6935433850568144": {
+    "lattesId16": "6935433850568144",
+    "lattesId10": "K4780812Z3",
+    "lattesName": "Alejandro César Frery Orgambide",
+    "scholarship": "Bolsista de Produtividade em Pesquisa do CNPq - Nível 1B",
+    "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4780812Z3"
+  },
+  "4386203755404108": {
+    "lattesId16": "4386203755404108",
+    "lattesId10": "K4789840A6",
+    "lattesName": "Carlos Becker Westphall",
+    "scholarship": "Bolsista de Produtividade em Pesquisa do CNPq - Nível 1C",
+    "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4789840A6"
+  },
+  "8588117212005149": {
+    "lattesId16": "8588117212005149",
+    "lattesId10": "K4785678P8",
+    "lattesName": "José Ferreira de Rezende",
+    "scholarship": "Bolsista de Produtividade em Pesquisa do CNPq - Nível 1D",
+    "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4785678P8"
+  },
+  "4512658167877638": {
+    "lattesId16": "4512658167877638",
+    "lattesId10": "K4785998A3",
+    "lattesName": "Marcelo Henriques de Carvalho",
+    "scholarship": "Bolsista de Produtividade em Pesquisa do CNPq - Nível 1D",
+    "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4785998A3"
+  },
+  "3181695167717042": {
+    "lattesId16": "3181695167717042",
+    "lattesId10": "K4785954A6",
+    "lattesName": "Nalvo Franco de Almeida Junior",
+    "scholarship": "Bolsista de Produtividade em Pesquisa do CNPq - Nível 2",
+    "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4785954A6"
+  },
+  "9950879952262717": {
+    "lattesId16": "9950879952262717",
+    "lattesId10": "K4727553E2",
+    "lattesName": "Gilson Antonio Giraldi",
+    "scholarship": "Bolsista de Produtividade em Pesquisa do CNPq - Nível 2",
+    "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4727553E2"
+  },
+  "2342739419247924": {
+    "lattesId16": "2342739419247924",
+    "lattesId10": "K4798026U1",
+    "lattesName": "Fabio Kon",
+    "scholarship": "Bolsista de Produtividade em Pesquisa do CNPq - Nível 1D",
+    "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4798026U1"
+  },
+  "7012140809519038": {
+    "lattesId16": "7012140809519038",
+    "lattesId10": "K4788124J3",
+    "lattesName": "Maurício Ferreira Magalhães",
+    "scholarship": "Bolsista de Produtividade em Pesquisa do CNPq - Nível 2",
+    "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4788124J3"
+  },
+  "1647118503085126": {
+    "lattesId16": "1647118503085126",
+    "lattesId10": "K4790316P6",
+    "lattesName": "Roberto Hirata Junior",
+    "scholarship": "Bolsista de Produtividade em Pesquisa do CNPq - Nível 2",
+    "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4790316P6"
+  },
+  "4933168987096762": {
+    "lattesId16": "4933168987096762",
+    "lattesId10": "K4798940P4",
+    "lattesName": "Eduardo Camponogara",
+    "scholarship": "Bolsista de Produtividade em Pesquisa do CNPq - Nível 1D",
+    "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4798940P4"
+  },
+  "8683914780987242": {
+    "lattesId16": "8683914780987242",
+    "lattesId10": "K4781740U9",
+    "lattesName": "Guido Costa Souza de Araújo",
+    "scholarship": "Bolsista de Produtividade em Pesquisa do CNPq - Nível 1B",
+    "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4781740U9"
+  },
+  "8807333466702951": {
+    "lattesId16": "8807333466702951",
+    "lattesId10": "K4788864A1",
+    "lattesName": "Jose Carlos Maldonado",
+    "scholarship": "Bolsista de Produtividade em Pesquisa do CNPq - Nível 1A",
+    "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4788864A1"
+  },
+  "5142426481528206": {
+    "lattesId16": "5142426481528206",
+    "lattesId10": "K4790004T8",
+    "lattesName": "Haroldo Fraga de Campos Velho",
+    "scholarship": "Bolsista de Produtividade em Pesquisa do CNPq - Nível 2",
+    "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4790004T8"
+  },
+  "3059640410928425": {
+    "lattesId16": "3059640410928425",
+    "lattesId10": "K4790272A9",
+    "lattesName": "Luciano Paschoal Gaspary",
+    "scholarship": "Bolsista de Produtividade em Pesquisa do CNPq - Nível 2",
+    "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4790272A9"
+  },
+  "2288623413125339": {
+    "lattesId16": "2288623413125339",
+    "lattesId10": "K4791545U6",
+    "lattesName": "Sandra Aparecida de Amo",
+    "scholarship": "Bolsista de Produtividade em Pesquisa do CNPq - Nível 2",
+    "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4791545U6"
+  },
+  "3575273076267374": {
+    "lattesId16": "3575273076267374",
+    "lattesId10": "K4791970Z1",
+    "lattesName": "Siome Klein Goldenstein",
+    "scholarship": "Bolsista de Produtividade em Pesquisa do CNPq - Nível 1D",
+    "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4791970Z1"
+  },
+  "6115379961132154": {
+    "lattesId16": "6115379961132154",
+    "lattesId10": "K4791337U9",
+    "lattesName": "Claudia Linhares Sales",
+    "scholarship": "Bolsista de Produtividade em Pesquisa do CNPq - Nível 1D",
+    "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4791337U9"
+  },
+  "0866205347972203": {
+    "lattesId16": "0866205347972203",
+    "lattesId10": "K4791582T3",
+    "lattesName": "Joaquim Bento Cavalcante Neto",
+    "scholarship": "Bolsista de Produtividade em Pesquisa do CNPq - Nível 2",
+    "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4791582T3"
+  },
+  "3521622923263530": {
+    "lattesId16": "3521622923263530",
+    "lattesId10": "K4790291T4",
+    "lattesName": "Gustavo Enrique de Almeida Prado Alves Batista",
+    "scholarship": "Bolsista de Produtividade em Pesquisa do CNPq - Nível 2",
+    "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4790291T4"
+  },
+  "5068302552861597": {
+    "lattesId16": "5068302552861597",
+    "lattesId10": "K4791930J4",
+    "lattesName": "Fernanda Araujo Baião Amorim",
+    "scholarship": "Bolsista de Produtividade em Pesquisa do CNPq - Nível 2",
+    "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4791930J4"
+  },
+  "6039007393332552": {
+    "lattesId16": "6039007393332552",
+    "lattesId10": "K4791540P4",
+    "lattesName": "Eduardo Sany Laber",
+    "scholarship": "Bolsista de Produtividade em Pesquisa do CNPq - Nível 1C",
+    "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4791540P4"
+  },
+  "0691832345393815": {
+    "lattesId16": "0691832345393815",
+    "lattesId10": "K4798525J4",
+    "lattesName": "Alessandro Lameiras Koerich",
+    "scholarship": "Bolsista de Produtividade em Pesquisa do CNPq - Nível 2",
+    "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4798525J4"
+  },
+  "8249534204731109": {
+    "lattesId16": "8249534204731109",
+    "lattesId10": "K4787855A1",
+    "lattesName": "Bruno Feijo",
+    "scholarship": "Bolsista de Produtividade em Pesquisa do CNPq - Nível 1C",
+    "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4787855A1"
+  },
+  "5358851504202129": {
+    "lattesId16": "5358851504202129",
+    "lattesId10": "K4792657J9",
+    "lattesName": "Paulo Sérgio Sausen",
+    "scholarship": "Bolsista de Produtividade em Pesquisa do CNPq - Nível 2",
+    "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4792657J9"
+  },
+  "7119433066704111": {
+    "lattesId16": "7119433066704111",
+    "lattesId10": "K4784553Y0",
+    "lattesName": "Gina Maira Barbosa de Oliveira",
+    "scholarship": "Bolsista de Produtividade em Pesquisa do CNPq - Nível 2 (***)",
+    "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4784553Y0"
+  },
+  "5521922960404236": {
+    "lattesId16": "5521922960404236",
+    "lattesId10": "K4784543T8",
+    "lattesName": "Thais Vasconcelos Batista",
+    "scholarship": "-",
+    "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4784543T8"
+  },
+  "2332327416299928": {
+    "lattesId16": "2332327416299928",
+    "lattesId10": "K4784001T3",
+    "lattesName": "Jorge Petrúcio Viana",
+    "scholarship": "Bolsista de Produtividade em Pesquisa do CNPq - Nível 2",
+    "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4784001T3"
+  },
+  "6895494761695834": {
+    "lattesId16": "6895494761695834",
+    "lattesId10": "K4721634T6",
+    "lattesName": "Emerson Luiz do Monte Carmelo",
+    "scholarship": "Bolsista de Produtividade em Pesquisa do CNPq - Nível 2",
+    "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4721634T6"
+  },
+  "0557976975338451": {
+    "lattesId16": "0557976975338451",
+    "lattesId10": "K4727103Y0",
+    "lattesName": "Nelson Delfino d'Ávila Mascarenhas",
+    "scholarship": "Bolsista de Produtividade em Pesquisa do CNPq - Nível 1B",
+    "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4727103Y0"
+  },
+  "6456667887502521": {
+    "lattesId16": "6456667887502521",
+    "lattesId10": "K4763771U0",
+    "lattesName": "Sergio Castelo Branco Soares",
+    "scholarship": "Bolsista de Produtividade em Pesquisa do CNPq - Nível 2",
+    "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4763771U0"
+  },
+  "8777859677671430": {
+    "lattesId16": "8777859677671430",
+    "lattesId10": "K4763711Y0",
+    "lattesName": "Eduardo Raul Hruschka",
+    "scholarship": "Bolsista de Produtividade em Pesquisa do CNPq - Nível 1D (***)",
+    "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4763711Y0"
+  },
+  "2854771102810220": {
+    "lattesId16": "2854771102810220",
+    "lattesId10": "K4763655A4",
+    "lattesName": "Rudinei Goularte",
+    "scholarship": "Bolsista de Produtividade em Pesquisa do CNPq - Nível 2",
+    "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4763655A4"
+  },
+  "3446817929796674": {
+    "lattesId16": "3446817929796674",
+    "lattesId10": "K4784654E4",
+    "lattesName": "Renato Antonio Celso Ferreira",
+    "scholarship": "Bolsista de Produtividade em Pesquisa do CNPq - Nível 1D",
+    "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4784654E4"
+  },
+  "0841425239502177": {
+    "lattesId16": "0841425239502177",
+    "lattesId10": "K4768301P3",
+    "lattesName": "Mitre Costa Dourado",
+    "scholarship": "Bolsista de Pós-doutorado no Exterior do CNPq",
+    "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4768301P3"
+  },
+  "3551809247862378": {
+    "lattesId16": "3551809247862378",
+    "lattesId10": "K4723308P2",
+    "lattesName": "Dorgival Olavo Guedes Neto",
+    "scholarship": "Bolsista de Produtividade em Pesquisa do CNPq - Nível 2",
+    "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4723308P2"
+  },
+  "3879944876244096": {
+    "lattesId16": "3879944876244096",
+    "lattesId10": "K4768887T5",
+    "lattesName": "Christiane Anneliese Gresse von Wangenheim",
+    "scholarship": "Bolsista de Produtividade em Pesquisa do CNPq - Nível 2",
+    "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4768887T5"
+  },
+  "8501956419094089": {
+    "lattesId16": "8501956419094089",
+    "lattesId10": "K4790674H0",
+    "lattesName": "Lisandro Zambenedetti Granville",
+    "scholarship": "Bolsista de Produtividade em Pesquisa do CNPq - Nível 1D",
+    "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4790674H0"
+  },
+  "9414212573217453": {
+    "lattesId16": "9414212573217453",
+    "lattesId10": "K4796586U1",
+    "lattesName": "Graçaliz Pereira Dimuro",
+    "scholarship": "Bolsista de Produtividade em Pesquisa do CNPq - Nível 2",
+    "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4796586U1"
+  },
+  "8626964624628522": {
+    "lattesId16": "8626964624628522",
+    "lattesId10": "K4760963Y2",
+    "lattesName": "Fátima de Lourdes dos Santos Nunes Marques",
+    "scholarship": "Bolsista de Produtividade em Pesquisa do CNPq - Nível 2",
+    "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4760963Y2"
+  },
+  "0978837964647017": {
+    "lattesId16": "0978837964647017",
+    "lattesId10": "K4723207J7",
+    "lattesName": "Ana Lucia Cetertich Bazzan",
+    "scholarship": "Bolsista de Produtividade em Pesquisa do CNPq - Nível 1C",
+    "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4723207J7"
+  },
+  "4193860852876287": {
+    "lattesId16": "4193860852876287",
+    "lattesId10": "K4791408J1",
+    "lattesName": "Luis Henrique Maciel Kosmalski Costa",
+    "scholarship": "Bolsista de Produtividade em Pesquisa do CNPq - Nível 1D",
+    "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4791408J1"
+  },
+  "0378897709136226": {
+    "lattesId16": "0378897709136226",
+    "lattesId10": "K4768944Y6",
+    "lattesName": "Carina Friedrich Dorneles",
+    "scholarship": "Bolsista de Produtividade em Pesquisa do CNPq - Nível 2",
+    "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4768944Y6"
+  },
+  "9283304583756076": {
+    "lattesId16": "9283304583756076",
+    "lattesId10": "K4723135Z6",
+    "lattesName": "Ronaldo Fumio Hashimoto",
+    "scholarship": "Bolsista de Produtividade em Pesquisa do CNPq - Nível 2",
+    "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4723135Z6"
+  },
+  "3620084512865554": {
+    "lattesId16": "3620084512865554",
+    "lattesId10": "K4703393P7",
+    "lattesName": "Ronaldo Moreira Salles",
+    "scholarship": "Bolsista de Produtividade em Pesquisa do CNPq - Nível 2",
+    "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4703393P7"
+  },
+  "5539725123736590": {
+    "lattesId16": "5539725123736590",
+    "lattesId10": "K4793972E6",
+    "lattesName": "Jaime Simão Sichman",
+    "scholarship": "Bolsista de Produtividade em Pesquisa do CNPq - Nível 2 (***)",
+    "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4793972E6"
+  },
+  "5297074319265251": {
+    "lattesId16": "5297074319265251",
+    "lattesId10": "K4760812D7",
+    "lattesName": "Karin Koogan Breitman",
+    "scholarship": "Bolsista de Produtividade em Pesquisa do CNPq - Nível 2",
+    "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4760812D7"
+  },
+  "2118391660819227": {
+    "lattesId16": "2118391660819227",
+    "lattesId10": "K4796140U9",
+    "lattesName": "Alfredo Goldman vel Lejbman",
+    "scholarship": "Bolsista de Produtividade em Pesquisa do CNPq - Nível 2",
+    "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4796140U9"
+  },
+  "9314744999783676": {
+    "lattesId16": "9314744999783676",
+    "lattesId10": "K4764324E5",
+    "lattesName": "Horacio Antonio Braga Fernandes de Oliveira",
+    "scholarship": "Bolsista de Produtividade em Pesquisa do CNPq - Nível 2",
+    "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4764324E5"
+  },
+  "6609568015287399": {
+    "lattesId16": "6609568015287399",
+    "lattesId10": "K4706268Z2",
+    "lattesName": "Ricardo Alexandre Reinaldo de Moraes",
+    "scholarship": "Bolsista de Produtividade em Pesquisa do CNPq - Nível 2",
+    "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4706268Z2"
+  },
+  "3754241050455395": {
+    "lattesId16": "3754241050455395",
+    "lattesId10": "K4798764E6",
+    "lattesName": "Carlos Henrique Costa Ribeiro",
+    "scholarship": "Bolsista de Produtividade em Pesquisa do CNPq - Nível 2",
+    "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4798764E6"
+  },
+  "9274817658247444": {
+    "lattesId16": "9274817658247444",
+    "lattesId10": "K4702114J7",
+    "lattesName": "Afonso Paiva Neto",
+    "scholarship": "Bolsista de Produtividade em Pesquisa do CNPq - Nível 2",
+    "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4702114J7"
+  },
+  "3298246411086415": {
+    "lattesId16": "3298246411086415",
+    "lattesId10": "K4784683J6",
+    "lattesName": "Elaine Gouvêa Pimentel",
+    "scholarship": "Bolsista de Produtividade em Pesquisa do CNPq - Nível 2",
+    "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4784683J6"
+  },
+  "2734447981764714": {
+    "lattesId16": "2734447981764714",
+    "lattesId10": "K4721460A8",
+    "lattesName": "Célia Aparecida Zorzo Barcelos",
+    "scholarship": "Bolsista de Produtividade em Pesquisa do CNPq - Nível 1D",
+    "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4721460A8"
+  },
+  "8548608291351316": {
+    "lattesId16": "8548608291351316",
+    "lattesId10": "K4795401A3",
+    "lattesName": "Renata Wassermann",
+    "scholarship": "Bolsista de Produtividade em Pesquisa do CNPq - Nível 2",
+    "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4795401A3"
+  },
+  "3864440795364252": {
+    "lattesId16": "3864440795364252",
+    "lattesId10": "K4728099T3",
+    "lattesName": "Simone Dantas de Souza",
+    "scholarship": "Bolsista de Produtividade em Pesquisa do CNPq - Nível 1D",
+    "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4728099T3"
+  },
+  "7207626266770213": {
+    "lattesId16": "7207626266770213",
+    "lattesId10": "K4728178U7",
+    "lattesName": "Manoel Bezerra Campêlo Neto",
+    "scholarship": "Bolsista de Produtividade em Pesquisa do CNPq - Nível 2",
+    "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4728178U7"
+  },
+  "5842794652841557": {
+    "lattesId16": "5842794652841557",
+    "lattesId10": "K4787027P5",
+    "lattesName": "Daniel Schwabe",
+    "scholarship": "Bolsista de Produtividade em Pesquisa do CNPq - Nível 1C",
+    "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4787027P5"
+  },
+  "4448540530244733": {
+    "lattesId16": "4448540530244733",
+    "lattesId10": "K4799759J7",
+    "lattesName": "Bruno Richard Schulze",
+    "scholarship": "Bolsista de Produtividade em Pesquisa do CNPq - Nível 1D",
+    "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4799759J7"
+  },
+  "4093722871814514": {
+    "lattesId16": "4093722871814514",
+    "lattesId10": "K4781864U1",
+    "lattesName": "Marcelo Walter",
+    "scholarship": "Bolsista de Produtividade em Pesquisa do CNPq - Nível 2",
+    "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4781864U1"
+  },
+  "4189604454431782": {
+    "lattesId16": "4189604454431782",
+    "lattesId10": "K4780762Y2",
+    "lattesName": "Luiza de Macedo Mourelle",
+    "scholarship": "Bolsista de Produtividade em Pesquisa do CNPq - Nível 1D",
+    "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4780762Y2"
+  },
+  "8173372566989305": {
+    "lattesId16": "8173372566989305",
+    "lattesId10": "K4785321U3",
+    "lattesName": "Ana Teresa de Castro Martins",
+    "scholarship": "Bolsista de Produtividade em Pesquisa do CNPq - Nível 2",
+    "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4785321U3"
+  },
+  "4045818083957064": {
+    "lattesId16": "4045818083957064",
+    "lattesId10": "K4769618E6",
+    "lattesName": "Heitor Silvério Lopes",
+    "scholarship": "Bolsista de Produtividade em Pesquisa do CNPq - Nível 2 (***)",
+    "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4769618E6"
+  },
+  "3794241680729178": {
+    "lattesId16": "3794241680729178",
+    "lattesId10": "K4765237Z5",
+    "lattesName": "Luis Gustavo Nonato",
+    "scholarship": "Bolsista de Produtividade em Pesquisa do CNPq - Nível 1C",
+    "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4765237Z5"
+  },
+  "8598484164048317": {
+    "lattesId16": "8598484164048317",
+    "lattesId10": "K4797333Z7",
+    "lattesName": "Stênio Flávio de Lacerda Fernandes",
+    "scholarship": "Bolsista de Produtividade em Pesquisa do CNPq - Nível 2",
+    "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4797333Z7"
+  },
+  "7957606883987162": {
+    "lattesId16": "7957606883987162",
+    "lattesId10": "K4762898Y9",
+    "lattesName": "Andre Luiz Lins de Aquino",
+    "scholarship": "Bolsista de Produtividade em Pesquisa do CNPq - Nível 2",
+    "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4762898Y9"
+  },
+  "8337454058604654": {
+    "lattesId16": "8337454058604654",
+    "lattesId10": "K4707987E5",
+    "lattesName": "Luciana Salete Buriol",
+    "scholarship": "Bolsista de Produtividade em Pesquisa do CNPq - Nível 2",
+    "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4707987E5"
+  },
+  "5973550650941724": {
+    "lattesId16": "5973550650941724",
+    "lattesId10": "K4701128E9",
+    "lattesName": "Felipe Rech Meneguzzi",
+    "scholarship": "Bolsista de Produtividade em Pesquisa do CNPq - Nível 2",
+    "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4701128E9"
+  },
+  "2931270888717344": {
+    "lattesId16": "2931270888717344",
+    "lattesId10": "K4762550P8",
+    "lattesName": "Rohit Gheyi",
+    "scholarship": "Bolsista de Produtividade em Pesquisa do CNPq - Nível 2",
+    "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4762550P8"
+  },
+  "0704592200063682": {
+    "lattesId16": "0704592200063682",
+    "lattesId10": "K4773105T7",
+    "lattesName": "William Robson Schwartz",
+    "scholarship": "Bolsista de Produtividade em Pesquisa do CNPq - Nível 2",
+    "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4773105T7"
+  },
+  "5784860269030800": {
+    "lattesId16": "5784860269030800",
+    "lattesId10": "K4762660E4",
+    "lattesName": "Antonio Augusto de Aragao Rocha",
+    "scholarship": "Bolsista de Produtividade em Pesquisa do CNPq - Nível 2",
+    "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4762660E4"
+  },
+  "5417946704251656": {
+    "lattesId16": "5417946704251656",
+    "lattesId10": "K4701432U6",
+    "lattesName": "Nadia Nedjah",
+    "scholarship": "Bolsista de Produtividade em Pesquisa do CNPq - Nível 1D",
+    "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4701432U6"
+  },
+  "0060120644445370": {
+    "lattesId16": "0060120644445370",
+    "lattesId10": "K4792990Y4",
+    "lattesName": "Vanessa Braganholo Murta",
+    "scholarship": "Bolsista de Produtividade em Pesquisa do CNPq - Nível 2",
+    "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4792990Y4"
+  },
+  "2097340857065853": {
+    "lattesId16": "2097340857065853",
+    "lattesId10": "K4792901E6",
+    "lattesName": "Estevam Rafael Hruschka Júnior",
+    "scholarship": "Bolsista de Produtividade em Pesquisa do CNPq - Nível 2",
+    "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4792901E6"
+  },
+  "9763065820419680": {
+    "lattesId16": "9763065820419680",
+    "lattesId10": "K4764475H9",
+    "lattesName": "Marcos Augusto Menezes Vieira",
+    "scholarship": "Bolsista de Produtividade em Pesquisa do CNPq - Nível 2",
+    "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4764475H9"
+  },
+  "8538761803577291": {
+    "lattesId16": "8538761803577291",
+    "lattesId10": "K4700644Z0",
+    "lattesName": "Eduardo Santana de Almeida",
+    "scholarship": "Bolsista de Produtividade em Pesquisa do CNPq - Nível 2",
+    "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4700644Z0"
+  },
+  "0247990329725342": {
+    "lattesId16": "0247990329725342",
+    "lattesId10": "K4771440E2",
+    "lattesName": "André Fujita",
+    "scholarship": "Bolsista de Produtividade em Pesquisa do CNPq - Nível 2",
+    "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4771440E2"
+  },
+  "5936682335701497": {
+    "lattesId16": "5936682335701497",
+    "lattesId10": "K4778547U7",
+    "lattesName": "Gisele Lobo Pappa",
+    "scholarship": "Bolsista de Produtividade em Pesquisa do CNPq - Nível 2",
+    "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4778547U7"
+  },
+  "5727472788265998": {
+    "lattesId16": "5727472788265998",
+    "lattesId10": "K4778368A9",
+    "lattesName": "Franklin de Lima Marquezino",
+    "scholarship": "Bolsista de Produtividade em Pesquisa do CNPq - Nível 2",
+    "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4778368A9"
+  },
+  "4922142296922435": {
+    "lattesId16": "4922142296922435",
+    "lattesId10": "K4771830Y2",
+    "lattesName": "Márcio Porto Basgalupp",
+    "scholarship": "Bolsista de Produtividade em Pesquisa do CNPq - Nível 2",
+    "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4771830Y2"
+  },
+  "2132614695901416": {
+    "lattesId16": "2132614695901416",
+    "lattesId10": "K4705419J7",
+    "lattesName": "Ana Shirley Ferreira da Silva",
+    "scholarship": "Bolsista de Produtividade em Pesquisa do CNPq - Nível 2",
+    "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4705419J7"
+  },
+  "1689147340536405": {
+    "lattesId16": "1689147340536405",
+    "lattesId10": "K4770696E1",
+    "lattesName": "Luciano Antonio Digiampietri",
+    "scholarship": "Bolsista de Produtividade em Pesquisa do CNPq - Nível 2",
+    "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4770696E1"
+  },
+  "6852348890045723": {
+    "lattesId16": "6852348890045723",
+    "lattesId10": "K4770434Y0",
+    "lattesName": "Sebastián Alberto Urrutia",
+    "scholarship": "Bolsista de Produtividade em Pesquisa do CNPq - Nível 2",
+    "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4770434Y0"
+  },
+  "6848996939728495": {
+    "lattesId16": "6848996939728495",
+    "lattesId10": "K4709016Z2",
+    "lattesName": "Eros Comunello",
+    "scholarship": "Bolsista de Produtividade em Pesquisa do CNPq - Nível 2",
+    "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4709016Z2"
+  },
+  "5279288859073700": {
+    "lattesId16": "5279288859073700",
+    "lattesId10": "K4238186H9",
+    "lattesName": "Lau Cheuk Lung",
+    "scholarship": "Bolsista de Produtividade em Pesquisa do CNPq - Nível 2",
+    "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4238186H9"
+  },
+  "1028151705135221": {
+    "lattesId16": "1028151705135221",
+    "lattesId10": "K4739941D4",
+    "lattesName": "Eduardo Coelho Cerqueira",
+    "scholarship": "Bolsista de Produtividade em Pesquisa do CNPq - Nível 2",
+    "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4739941D4"
+  },
+  "6874544707185541": {
+    "lattesId16": "6874544707185541",
+    "lattesId10": "K4239686U3",
+    "lattesName": "Marcos Antonio Simplicio Junior",
+    "scholarship": "Bolsista de Produtividade em Pesquisa do CNPq - Nível 2",
+    "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4239686U3"
+  },
+  "8577312109146354": {
+    "lattesId16": "8577312109146354",
+    "lattesId10": "K4794695E9",
+    "lattesName": "George Darmiton da Cunha Cavalcanti",
+    "scholarship": "Bolsista de Produtividade em Pesquisa do CNPq - Nível 2",
+    "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4794695E9"
+  },
+  "6918010504362643": {
+    "lattesId16": "6918010504362643",
+    "lattesId10": "K4793220Y6",
+    "lattesName": "Ruy Luiz Milidiu",
+    "scholarship": "Bolsista de Produtividade em Pesquisa do CNPq - Nível 2",
+    "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4793220Y6"
+  },
+  "3909162572623711": {
+    "lattesId16": "3909162572623711",
+    "lattesId10": "K4781742E9",
+    "lattesName": "Francisco de Assis Tenorio de Carvalho",
+    "scholarship": "Bolsista de Produtividade em Pesquisa do CNPq - Nível 1B",
+    "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4781742E9"
+  },
+  "8265116967095452": {
+    "lattesId16": "8265116967095452",
+    "lattesId10": "K4781818T3",
+    "lattesName": "Marley Maria Bernardes Rebuzzi Vellasco",
+    "scholarship": "Bolsista de Produtividade em Pesquisa do CNPq - Nível 1C",
+    "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4781818T3"
+  },
+  "6871006250321522": {
+    "lattesId16": "6871006250321522",
+    "lattesId10": "K4787917U0",
+    "lattesName": "Julio Cesar Sampaio do Prado Leite",
+    "scholarship": "Bolsista de Produtividade em Pesquisa do CNPq - Nível 1C",
+    "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4787917U0"
+  },
+  "2549014594120288": {
+    "lattesId16": "2549014594120288",
+    "lattesId10": "K4781844H6",
+    "lattesName": "Corina da Costa Freitas",
+    "scholarship": "Bolsista de Produtividade em Pesquisa do CNPq - Nível 1C",
+    "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4781844H6"
+  },
+  "1097952760431187": {
+    "lattesId16": "1097952760431187",
+    "lattesId10": "K4783170D6",
+    "lattesName": "Felipe Maia Galvão França",
+    "scholarship": "Bolsista de Produtividade em Pesquisa do CNPq - Nível 2",
+    "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4783170D6"
+  },
+  "3283691152621834": {
+    "lattesId16": "3283691152621834",
+    "lattesId10": "K4707007E2",
+    "lattesName": "Renata Hax Sander Reiser",
+    "scholarship": "Bolsista de Produtividade em Pesquisa do CNPq - Nível 2",
+    "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4707007E2"
+  },
+  "4641684220602580": {
+    "lattesId16": "4641684220602580",
+    "lattesId10": "K4723564E6",
+    "lattesName": "Célio Vinicius Neves de Albuquerque",
+    "scholarship": "Bolsista de Produtividade em Pesquisa do CNPq - Nível 1D",
+    "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4723564E6"
+  },
+  "5136155977351408": {
+    "lattesId16": "5136155977351408",
+    "lattesId10": "K4797818Z6",
+    "lattesName": "Agma Juci Machado Traina",
+    "scholarship": "Bolsista de Produtividade em Pesquisa do CNPq - Nível 1B",
+    "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4797818Z6"
+  },
+  "8466420403941522": {
+    "lattesId16": "8466420403941522",
+    "lattesId10": "K4799743E5",
+    "lattesName": "Mauricio Ayala Rincon",
+    "scholarship": "Bolsista de Produtividade em Pesquisa do CNPq - Nível 1D",
+    "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4799743E5"
+  },
+  "3720386139686468": {
+    "lattesId16": "3720386139686468",
+    "lattesId10": "K4762300P1",
+    "lattesName": "João Paulo Gois",
+    "scholarship": "Bolsista de Produtividade em Pesquisa do CNPq - Nível 2",
+    "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4762300P1"
+  },
+  "6320646681995247": {
+    "lattesId16": "6320646681995247",
+    "lattesId10": "K4701899D4",
+    "lattesName": "Haroldo Gambini Santos",
+    "scholarship": "Bolsista de Produtividade em Pesquisa do CNPq - Nível 2",
+    "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4701899D4"
+  }
+}

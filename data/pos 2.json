@@ -17,7 +17,8 @@
         "embedded":{
             "name":"h2",
             "image":"table td img",
-            "lattes":"div#content>ul>li:contains(\"cv\")>a, div#content>ul>li:contains(\"CV\")>a"
+            "lattes":"div#content > ul:last-of-type > li:contains(\"cv\") > a:first-of-type",
+            "lattes2":"div#content > ul:last-of-type > li:contains(\"CV\") > a:first-of-type"
         }
     }
   },
@@ -34,7 +35,7 @@
     "thesisDissertation":"http://www.uece.br/macc/index.php/dissertacoes",
     "course":"-",
     "crawlerSchema":{
-        "names":"#content_sesa td address address span+strong, #content_sesa td address>strong+strong, #content_sesa td div address strong",
+        "names":"#content_sesa address>strong",
         "lattes":"#content_sesa address a:contains(\"lattes\")"
     }
   },
@@ -71,7 +72,7 @@
         "names":"td.views-field.views-field-title a",
         "emails":"td.views-field.views-field-field-docente-email-value",
         "embedded":{
-            "lattes":"div.field-item a:contains(\"Currículo\"), div.field-item a:contains(\"currículo\")",
+            "lattes":"div.field-item a",
             "researchLine":"div.field-field-docente-atuacao>div>div"
         }
     }
@@ -89,7 +90,7 @@
     "thesisDissertation":"-",
     "course":"-",
     "crawlerSchema":{
-        "names":"table td:first-child>*:first-child",
+        "names":"table td span:first-of-type",
         "lattes":"table td:last-of-type a"
     }
   },
@@ -157,7 +158,7 @@
     "thesisDissertation":"-",
     "course":"-",
     "crawlerSchema":{
-        "names":"tr:nth-child(n+4) td:not(:has(span span))>span.texto_ocre:not(:contains(\"PROFESSORES\"))",
+        "names":"td[colspan]:not(:has(span span))>span.texto_ocre",
         "lattes":"a:contains(\"Veja\")"
     }
   },
@@ -186,13 +187,15 @@
     "D":"-",
     "F":"-",
     "homepage":"http://www.dct.ufms.br/index.php?section=education&course=mestrado",
-    "researchers":"http://www.dct.ufms.br/index.php?section=item.course&course=mestrado&fatherId=0&itemId=24",
+    "researchers":"http://www.dct.ufms.br/index.php?section=teachers",
     "researchLine":"-",
     "thesisDissertation":"-",
     "course":"-",
     "crawlerSchema":{
-        "names":"div.conteudo-geral table tr:nth-child(n+3) td:first-child",
-        "lattes":""
+        "names":"div#conteudo-texto h2 a",
+        "embedded":{
+            "lattes": "a:contains(\"Clique aqui\")"
+        }
     }
   },
   "15001016047P9":{
@@ -224,7 +227,7 @@
     "course":"-",
     "crawlerSchema":{
         "names":"td.goog-ws-list-url a",
-        "lattes":""
+        "lattes":"td.goog-ws-list-url a"
     }
   },
   "21001014031P2":{
@@ -276,7 +279,7 @@
     "thesisDissertation":"http://www.din.uem.br/pos-graduacao/mestrado-em-ciencia-da-computacao/dissertacoes-1",
     "course":"-",
     "crawlerSchema":{
-        "names":"#parent-fieldname-text li a:not(:empty)",
+        "names":"li a.external-link",
         "embedded":{
             "lattes":"a:contains(\"cnpq\")"
         }
@@ -295,7 +298,7 @@
     "thesisDissertation":"http://www3.pucrs.br/portal/page/portal/facinppg/ppgcc/teses-e-dissertassoes-2014|http://www3.pucrs.br/portal/page/portal/facinppg/ppgcc/ppgccTesesDefendidas",
     "course":"-",
     "crawlerSchema":{
-        "names":"tr:not(:contains(\"Docente\")) td.nome",
+        "names":"td.nome",
         "lattes":"td.docente:nth-child(2) a"
     }
   },
@@ -312,10 +315,8 @@
     "thesisDissertation":"https://www.sigaa.ufs.br/sigaa/public/programa/defesas.jsf?lc=pt_BR&id=710",
     "course":"-",
     "crawlerSchema":{
-        "names":"table#table_lt tr td:nth-child(1) a",
-        "embedded":{
-            "lattes":"a:contains(\"cnpq.br\"):not(:contains(\"PKG_MENU.menu\"))"
-        }
+        "names":"table#table_lt tr td a",
+        "lattes":""
     }
   },
   "33001014008P4":{
@@ -332,7 +333,9 @@
     "course":"-",
     "crawlerSchema":{
         "names":"td:first-child a.internal-link",
-        "lattes":""
+        "embedded":{
+            "lattes":"a:contains(\"Lattes\")"
+        }
     }
   },
   "33001014044P0":{
@@ -384,7 +387,7 @@
     "crawlerSchema":{
         "names":"div.content>div>ul>li>a",
         "embedded":{
-            "lattes":""
+            "lattes":"a:contains(\"cnpq.br\")"
         }
     }
   },
@@ -402,8 +405,8 @@
     "thesisDissertation":"http://www.ibilce.unesp.br/#!/pos-graduacao/programas-de-pos-graduacao/ciencia-da-computacao/dissertacoes-defendidas/",
     "course":"-",
     "crawlerSchema":{
-        "names":"td:first-child:not(:contains(\"Docente\"))",
-        "lattes":""
+        "names":"td:first-child",
+        "lattes":"td:last-child.tabela-linha a"
     }
   },
   "33009015079P0":{
@@ -419,7 +422,7 @@
     "thesisDissertation":"-",
     "course":"-",
     "crawlerSchema":{
-        "names":"div.field-content td:contains(\"Prof\")",
+        "names":"td>*:first-of-type",
         "lattes":"a:contains(\"Lattes\")"
     }
   },
@@ -436,7 +439,7 @@
     "thesisDissertation":"http://poscomp.ufabc.edu.br/?Disserta%E7%F5es_Defendidas",
     "course":"-",
     "crawlerSchema":{
-        "names":"li>h4:contains(\"Prof\"), li>span:contains(\"Prof\"), div>h4:contains(\"Prof\")",
+        "names":"li h4",
         "lattes":"a:contains(\"Lattes\")"
     }
   },
@@ -473,7 +476,7 @@
     "course":"-",
     "crawlerSchema":{
         "names":"li.lista a:first-child",
-        "lattes":""
+        "lattes":"li.lista a:first-child"
     }
   },
   "28001010090P1":{
@@ -559,9 +562,8 @@
     "F":"-",
     "homepage":"http://mdcc.ufc.br/",
     "researchers":"http://mdcc.ufc.br/static/prof.php",
-    "researchersHTML":"http://mdcc.ufc.br/corpo-docentefaculty",
-    "researchLine":"http://mdcc.ufc.br/linhas-de-pesquisa",
-    "thesisDissertation":"-",
+    "researchLine":"http://mdcc.ufc.br/corpodocente",
+    "thesisDissertation":"http://mdcc.ufc.br/linhas-de-pesquisa",
     "course":"http://mdcc.ufc.br/teses-e-dissertacoes",
     "crawlerSchema":{
         "names":"a",
@@ -578,10 +580,7 @@
     "D":"7",
     "F":"-",
     "homepage":"http://www.dcc.ufmg.br/pos/",
-    "researchers":[
-        "http://www.dcc.ufmg.br/pos/pessoas/professores2.php?tipo=PE",
-        "http://www.dcc.ufmg.br/pos/pessoas/professores2.php?tipo=CO"
-    ],
+    "researchers":"http://www.dcc.ufmg.br/pos/pessoas/professores2.php?tipo=PE",
     "researchersHTML":"http://www.dcc.ufmg.br/pos/pessoas/professores2.php?tipo=PE|http://www.dcc.ufmg.br/pos/pessoas/professores2.php?tipo=CO",
     "researchLine":"http://www.dcc.ufmg.br/pos/cursos/mestrado.php|http://www.dcc.ufmg.br/pos/cursos/doutorado.php",
     "thesisDissertation":"-",
@@ -605,7 +604,7 @@
     "thesisDissertation":"-",
     "course":"-",
     "crawlerSchema":{
-        "names":".conteudo div div:nth-child(n+3):not(:has(br))",
+        "names":".conteudo div div",
         "lattes":""
     }
   },
@@ -622,7 +621,7 @@
     "thesisDissertation":"-",
     "course":"-",
     "crawlerSchema":{
-        "names":".conteudo div div:nth-child(n+3):not(:has(br))",
+        "names":".conteudo div div",
         "lattes":""
     }
   },
@@ -639,8 +638,8 @@
     "thesisDissertation":"-",
     "course":"-",
     "crawlerSchema":{
-        "names":"div.post-9502 div.entry p:not(:contains(\"Sala\")) span:not(:contains(\"Telefone\")) strong:first-child:not(:contains(\"E-mail\")), p strong strong span span, td:nth-child(27) p strong strong span",
-        "lattes":"a:contains(\"ulo Lattes\")"
+        "names":"div.post-9502 div.entry p span strong",
+        "lattes":"a:contains(\"Currículo Lattes\")"
     }
   },
   "33002045004P1":{
@@ -656,7 +655,7 @@
     "thesisDissertation":"-",
     "course":"-",
     "crawlerSchema":{
-        "names":".textContent p:has(img), .textContent>p:nth-child(2n+226)",
+        "names":".textContent p:has(img)",
         "lattes":""
     }
   },
@@ -673,7 +672,7 @@
     "thesisDissertation":"http://www.ic.uff.br/index.php/pt/pos-graduacao/teses-e-dissertacoes",
     "course":"-",
     "crawlerSchema":{
-        "names":"#middle-column tr:nth-child(n+3) td:nth-child(2)",
+        "names":"#middle-column td:nth-child(2)",
         "lattes":"#middle-column td:nth-child(5) a"
     }
   },
@@ -762,7 +761,7 @@
     "thesisDissertation":"-",
     "course":"-",
     "crawlerSchema":{
-        "names":"#content_sesa table td:first-child p:first-child:not(:contains(\"Nome\")) span:not(:empty)",
+        "names":"#content_sesa table td:first-child p span",
         "lattes":""
     }
   },
@@ -864,7 +863,7 @@
     "thesisDissertation":"-",
     "course":"-",
     "crawlerSchema":{
-        "names":"div#textoCorpo2 p strong:first-of-type, div#textoCorpo2 div.prof p b, div#textoCorpo2 div strong:first-child",
+        "names":"div#textoCorpo2 p strong",
         "lattes":"a:contains(\"Currículo Lattes\")"
     }
   },
@@ -898,7 +897,7 @@
     "thesisDissertation":"-",
     "course":"-",
     "crawlerSchema":{
-        "names":"div.dmbs-main p:not(:has(strong))",
+        "names":"div.dmbs-main p",
         "lattes":""
     }
   },
@@ -945,8 +944,8 @@
     "thesisDissertation":"-",
     "course":"-",
     "crawlerSchema":{
-        "names":"#p_texto p a:first-of-type",
-        "lattes":""
+        "names":"#p_texto p  a",
+        "lattes":"#p_texto p  a"
     }
   },
   "23001011071P0":{
@@ -1017,7 +1016,7 @@
     "thesisDissertation":"-",
     "course":"http://ppgi.unb.br/index.php/curso/disciplinas",
     "crawlerSchema":{
-        "names":"table.docentes tr:not(:nth-child(24)) a:first-child",
+        "names":"table.docentes a:first-child",
         "lattes":"a:contains(\"Lattes\")"
     }
   },
@@ -1087,7 +1086,7 @@
     "thesisDissertation":"-",
     "course":"-",
     "crawlerSchema":{
-        "names":"table.vertical.listing td:first-child strong:first-child",
+        "names":"table.vertical.listing:first-of-type td:first-child strong:first-child",
         "lattes":"table.vertical.listing:first-of-type td:last-child a"
     }
   },
@@ -1156,8 +1155,8 @@
     "thesisDissertation":"-",
     "course":"-",
     "crawlerSchema":{
-        "names":"div.prof_nome:nth-child(n+2):not(:contains(\"Professor Assistente\"))",
-        "lattes":"a:contains(\"cnpq.br\")"
+        "names":"div.prof_nome:not(:contains(\"Professor Assistente\"))",
+        "lattes":"a:contains(\"cnpq\")"
     }
   },
   "31021018009P9":{
@@ -1190,8 +1189,10 @@
     "thesisDissertation":"-",
     "course":"-",
     "crawlerSchema":{
-        "names":".entry-text li",
-        "lattes": ""
+        "names":".entry-text li a",
+        "embedded": {
+            "lattes":".entry-text a:contains(\"cnpq\")"
+        }
     }
   },
   "22002014002P1":{
@@ -1224,8 +1225,8 @@
     "thesisDissertation":"-",
     "course":"-",
     "crawlerSchema":{
-        "names":"td.contentdescription a:not(:empty)",
-        "lattes":"td.contentdescription a:not(:empty)"
+        "names":"td.contentdescription a",
+        "lattes":"td.contentdescription a"
     }
   },
   "33002010214P0":{
@@ -1258,7 +1259,7 @@
     "thesisDissertation":"-",
     "course":"-",
     "crawlerSchema":{
-        "names":"td:not(:contains(\"PROFESSORES\")) strong:first-child",
+        "names":"td strong:first-child",
         "lattes":""
     }
   },

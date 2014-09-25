@@ -1,319 +1,343 @@
 {
-  "52001016027P2": {
-    "0513724372523279": {
-      "names": "Fernando Marques Federson",
-      "emails": "fernandofederson@inf.ufg.br",
-      "lattes": "http://buscatextual.cnpq.br/buscatextual/visualizacv.do?id=K4709089Z1",
-      "researchLine": "Modelagem e Otimização de Sistemas",
-      "lattesId16": "http://lattes.cnpq.br/0513724372523279",
-      "lattesName": "Fernando Marques Federson",
-      "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4709089Z1"
-    },
-    "0188685041571480": {
-      "names": "Humberto José Longo",
-      "emails": "longo@inf.ufg.br",
-      "lattes": "http://buscatextual.cnpq.br/buscatextual/visualizacv.do?id=K4723632J1",
-      "researchLine": "Algoritmos e Otimização",
-      "lattesId16": "http://lattes.cnpq.br/0188685041571480",
-      "lattesName": "Humberto José Longo",
-      "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4723632J1"
-    },
-    "1646629818203057": {
-      "names": "Deller James Ferreira",
-      "emails": "deller@inf.ufg.br",
-      "lattes": "http://buscatextual.cnpq.br/buscatextual/visualizacv.do?id=K4784226A7",
-      "researchLine": "Informática e Educação",
-      "lattesId16": "http://lattes.cnpq.br/1646629818203057",
-      "lattesName": "Deller James Ferreira",
-      "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4784226A7"
-    },
-    "4480334653242457": {
-      "names": "Plínio de Sá Leitão Júnior",
-      "emails": "plinio@inf.ufg.br",
-      "lattes": "http://buscatextual.cnpq.br/buscatextual/visualizacv.do?id=K4727363U2",
-      "researchLine": "Teste de Software e Banco de Dados",
-      "lattesId16": "http://lattes.cnpq.br/4480334653242457",
-      "lattesName": "Plinio de Sa Leitao Junior",
-      "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4727363U2"
-    },
-    "4808440233209979": {
-      "names": "Ricardo Couto Antunes da Rocha",
-      "emails": "ricardo@inf.ufg.br",
-      "lattes": "http://buscatextual.cnpq.br/buscatextual/visualizacv.do?id=K4710178U0",
-      "researchLine": "Middleware, Computação Móvel, Computação Ubíqua e Computação Sensível ao Contexto",
-      "lattesId16": "http://lattes.cnpq.br/4808440233209979",
-      "lattesName": "Ricardo Couto Antunes da Rocha",
-      "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4710178U0"
-    },
-    "7281746801238526": {
-      "names": "João Carlos da Silva",
-      "emails": "jcs@inf.ufg.br",
-      "lattes": "http://buscatextual.cnpq.br/buscatextual/visualizacv.do?id=K4797873Y0",
-      "researchLine": "Banco de Dados, Sistemas de Informação e Recuperação de Informações",
-      "lattesId16": "http://lattes.cnpq.br/7281746801238526",
-      "lattesName": "João Carlos da Silva",
-      "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4797873Y0"
-    },
-    "4414718560764818": {
-      "names": "Thierson Couto Rosa",
-      "emails": "thierson@inf.ufg.br",
-      "lattes": "http://buscatextual.cnpq.br/buscatextual/visualizacv.do?id=K4794706Z2",
-      "researchLine": "Recuperação de Informação, Mineração de dados na Web e Sistemas Distribuídos",
-      "lattesId16": "http://lattes.cnpq.br/4414718560764818",
-      "lattesName": "Thierson Couto Rosa",
-      "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4794706Z2"
-    },
-    "4148896613580056": {
-      "names": "Vagner José do Sacramento Rodrigues",
-      "emails": "vagner@inf.ufg.br",
-      "lattes": "http://buscatextual.cnpq.br/buscatextual/visualizacv.do?id=K4764641U6",
-      "researchLine": "Redes e Sistemas Distribuídos",
-      "lattesId16": "http://lattes.cnpq.br/4148896613580056",
-      "lattesName": "Vagner José do Sacramento Rodrigues",
-      "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4764641U6"
-    },
-    "9389487015938509": {
-      "names": "Erika Morais Martins Coelho",
-      "emails": "erikamorais@inf.ufg.br",
-      "lattes": "http://lattes.cnpq.br/9389487015938509",
-      "researchLine": "Análise de Algoritmos, Complexidade de Computação e Teoria dos Grafos",
-      "lattesId16": "http://lattes.cnpq.br/9389487015938509",
-      "lattesName": "Erika Morais Martins Coelho",
-      "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4732930U7"
-    },
-    "6296363436468330": {
-      "names": "Telma Woerle de Lima Soares",
-      "emails": "telma@inf.ufg.br",
-      "lattes": "http://buscatextual.cnpq.br/buscatextual/visualizacv.do?id=K4717638T6",
-      "researchLine": "Algoritmos e Computação Evolutiva",
-      "lattesId16": "http://lattes.cnpq.br/6296363436468330",
-      "lattesName": "Telma Woerle de Lima Soares",
-      "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4717638T6"
-    },
-    "5009392667450875": {
-      "names": "Rogerio Lopes Salvini",
-      "emails": "rogeriosalvini@inf.ufg.br",
-      "lattes": "http://lattes.cnpq.br/5009392667450875",
-      "researchLine": "Lógica e Inteligência Artificial: Aprendizado de Máquina, Mineração de Dados, Sistemas Híbridos e Algoritmos Genéticos",
-      "lattesId16": "http://lattes.cnpq.br/5009392667450875",
-      "lattesName": "Rogerio Lopes Salvini",
-      "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4701256D0"
-    },
-    "0900834483461062": {
-      "names": "Ana Paula Laboissière Ambrósio",
-      "emails": "apaula@inf.ufg.br",
-      "lattes": "http://buscatextual.cnpq.br/buscatextual/visualizacv.do?id=K4784281P7",
-      "researchLine": "Banco de Dados, Sistemas de Informação e Recuperação de Informações",
-      "lattesId16": "http://lattes.cnpq.br/0900834483461062",
-      "lattesName": "Ana Paula Laboissière Ambrósio",
-      "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4784281P7"
-    },
-    "3041686206689904": {
-      "names": "Wellington Santos Martins",
-      "emails": "wellington@inf.ufg.br",
-      "lattes": "http://buscatextual.cnpq.br/buscatextual/visualizacv.do?id=K4782112U1",
-      "researchLine": "Computação Paralela e Distribuída e Biologia Computacional",
-      "lattesId16": "http://lattes.cnpq.br/3041686206689904",
-      "lattesName": "Wellington Santos Martins",
-      "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4782112U1"
-    },
-    "3737395828552021": {
-      "names": "Leslie Richard Foulds",
-      "emails": "lesfoulds@inf.ufg.br",
+  "28001010095P3": {
+    "1740519812135230": {
+      "names": "Adolfo Almeida Duran",
+      "image": "http://wiki.dcc.ufba.br/pub/PGComp/CorpoDocente/ProfAdolfoDuran.jpg",
       "lattes": "undefined",
-      "researchLine": "Interação Homem-Computador, Otimização Combinatória, Matemática Discreta e Combinatória e Teoria dos Grafos",
-      "lattesId16": "http://lattes.cnpq.br/3737395828552021",
-      "lattesName": "Les Foulds",
-      "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4202000Z8"
+      "lattesId16": "1740519812135230",
+      "lattesId10": "K4790093H6",
+      "lattesName": "Adolfo Almeida Duran",
+      "scholarship": "-",
+      "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4790093H6"
     },
-    "4090131106212286": {
-      "names": "Cedric Luiz de Carvalho",
-      "emails": "cedric@inf.ufg.br",
-      "lattes": "http://buscatextual.cnpq.br/buscatextual/visualizacv.do?id=K4721613D5",
-      "researchLine": "Web Semântica, Inteligência Artificial Aplicada e Desenvolvimento de Sistemas para a Web",
-      "lattesId16": "http://lattes.cnpq.br/4090131106212286",
-      "lattesName": "Cedric Luiz de Carvalho",
-      "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4721613D5"
+    "8529510757160217": {
+      "names": "Alírio Santos de Sá",
+      "image": "http://homes.dcc.ufba.br/~alirio/images/alirio.jpg",
+      "lattes": "http://lattes.cnpq.br/8529510757160217",
+      "lattesId16": "8529510757160217",
+      "lattesId10": "K4739983Z3",
+      "lattesName": "Alirio Santos de Sá",
+      "scholarship": "-",
+      "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4739983Z3"
     },
-    "3386409577930822": {
-      "names": "Sand Luz Corrêa",
-      "emails": "sand@inf.ufg.br",
-      "lattes": "http://lattes.cnpq.br/3386409577930822",
-      "researchLine": "Tolerância a Falhas, Middleware para Gerenciamento de Recursos Distribuídos e Computação Autonômica",
-      "lattesId16": "http://lattes.cnpq.br/3386409577930822",
-      "lattesName": "Sand Luz Correa",
-      "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4792179P2"
+    "5075736089100544": {
+      "names": "Cássio Vinícius Serafim Prazeres",
+      "image": "/pub/DCC/ProfCassioPrazeres/holanda.jpg",
+      "lattes": "http://lattes.cnpq.br/5075736089100544",
+      "lattesId16": "5075736089100544",
+      "lattesId10": "K4706665U9",
+      "lattesName": "Cássio Vinicius Serafim Prazeres",
+      "scholarship": "-",
+      "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4706665U9"
     },
-    "6228227125338610": {
-      "names": "Rommel Melgaço Barbosa",
-      "emails": "rommel@inf.ufg.br",
-      "lattes": "http://buscatextual.cnpq.br/buscatextual/visualizacv.do?id=K4786013D6",
-      "researchLine": "Mineração de Dados e  Teoria dos Grafos",
-      "lattesId16": "http://lattes.cnpq.br/6228227125338610",
-      "lattesName": "Rommel Melgaço Barbosa",
-      "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4786013D6"
+    "0612005197639506": {
+      "names": "Aline Maria Santos Andrade",
+      "image": "http://wiki.dcc.ufba.br/pub/DCC/ProfAlineAndrade/aline_p.jpg",
+      "lattes": "http://lattes.cnpq.br/0612005197639506",
+      "lattesId16": "0612005197639506",
+      "lattesId10": "K4786483H2",
+      "lattesName": "Aline Maria Santos Andrade",
+      "scholarship": "-",
+      "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4786483H2"
     },
-    "0611031507120144": {
-      "names": "Leizer de Lima Pinto",
-      "emails": "leizer@inf.ufg.br",
-      "lattes": "http://lattes.cnpq.br/0611031507120144",
-      "researchLine": "Otimização Combinatória",
-      "lattesId16": "http://lattes.cnpq.br/0611031507120144",
-      "lattesName": "Leizer de Lima PintoBolsista de Produtividade em Pesquisa do CNPq - Nível 2",
-      "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4737339D5"
+    "2847901878340953": {
+      "names": "Antonio Lopes Apolinário Junior",
+      "image": "/pub/DCC/ProfAntonioApolinario/CarnavalNaChapada-219.jpg",
+      "lattes": "http://buscatextual.cnpq.br/buscatextual/visualizacv.do?id=K4790060E8",
+      "lattesId16": "2847901878340953",
+      "lattesId10": "K4790060E8",
+      "lattesName": "Antonio Lopes Apolinario Junior",
+      "scholarship": "-",
+      "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4790060E8"
     },
-    "2590620617848677": {
-      "names": "Cássio Leonardo Rodrigues",
-      "emails": "cassio@inf.ufg.br",
-      "lattes": "http://lattes.cnpq.br/2590620617848677",
-      "researchLine": "Engenharia de Software",
-      "lattesId16": "http://lattes.cnpq.br/2590620617848677",
-      "lattesName": "Cássio Leonardo Rodrigues",
-      "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4768240A8"
+    "6875886650307656": {
+      "names": "Ecivaldo Matos",
+      "image": "http://wiki.dcc.ufba.br/pub/DCC/ProfessoresDcc/ECIVALDO.jpg",
+      "lattes": "http://lattes.cnpq.br/6875886650307656",
+      "lattesId16": "6875886650307656",
+      "lattesId10": "K4706271D0",
+      "lattesName": "Ecivaldo de Souza Matos",
+      "scholarship": "-",
+      "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4706271D0"
     },
-    "6904676677900593": {
-      "names": "Vinicius da Cunha Martins Borges",
-      "emails": "vinicius@inf.ufg.br",
-      "lattes": "http://lattes.cnpq.br/6904676677900593",
-      "researchLine": "Redes e Sistemas Distribuídos (Redes Sem Fio)",
-      "lattesId16": "http://lattes.cnpq.br/6904676677900593",
-      "lattesName": "Vinicius da Cunha Martins Borges",
-      "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4711554A3"
+    "1827829018668226": {
+      "names": "Christina von Flach Garcia Chavez",
+      "image": "http://wiki.dcc.ufba.br/pub/PGComp/CorpoDocente/ProfChristinaFlach.jpg",
+      "lattes": "http://lattes.cnpq.br/1827829018668226",
+      "lattesId16": "1827829018668226",
+      "lattesId10": "K4784254H1",
+      "lattesName": "Christina von Flach Garcia Chavez",
+      "scholarship": "-",
+      "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4784254H1"
     },
-    "8181318469884254": {
-      "names": "Eduardo Simões de Albuquerque",
-      "emails": "eduardo@inf.ufg.br",
-      "lattes": "http://buscatextual.cnpq.br/buscatextual/visualizacv.do?id=K4723296A1",
-      "researchLine": "Arquitetura de Sistemas de Computação",
-      "lattesId16": "http://lattes.cnpq.br/8181318469884254",
-      "lattesName": "Eduardo Simões de Albuquerque",
-      "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4723296A1"
+    "0147487762250438": {
+      "names": "Débora Abdalla Santos",
+      "image": "/pub/DCC/ProfDeboraAbdalla/debora_p.jpg",
+      "lattes": "http://lattes.cnpq.br/0147487762250438",
+      "lattesId16": "0147487762250438",
+      "lattesId10": "K4723774T8",
+      "lattesName": "Débora Abdalla Santos",
+      "scholarship": "-",
+      "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4723774T8"
     },
-    "2920005922426876": {
-      "names": "Hugo Alexandre Dantas do Nascimento",
-      "emails": "hadn@inf.ufg.br",
-      "lattes": "http://buscatextual.cnpq.br/buscatextual/visualizacv.do?id=K4798562T1",
-      "researchLine": "Engenharia de Software, Visualização de Informações, Interação Homem-Computador e Otimização Combinatória",
-      "lattesId16": "http://lattes.cnpq.br/2920005922426876",
-      "lattesName": "Hugo Alexandre Dantas do Nascimento",
-      "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4798562T1"
+    "0120615995402345": {
+      "names": "Fabíola Gonçalves Pereira Greve",
+      "image": "/pub/DCC/ProfFabiolaGreve/fabiolagreve.jpg",
+      "lattes": "http://buscatextual.cnpq.br/buscatextual/visualizacv.do?id=K4723012U6",
+      "lattesId16": "0120615995402345",
+      "lattesId10": "K4723012U6",
+      "lattesName": "Fabíola Gonçalves Pereira Greve",
+      "scholarship": "-",
+      "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4723012U6"
     },
-    "4418446095942420": {
-      "names": "Gustavo Teodoro Laureano",
-      "emails": "gustavo@inf.ufg.br",
-      "lattes": "http://lattes.cnpq.br/4418446095942420",
-      "researchLine": "Visão Computacional: Reconhecimento de Padrões, Aprendizagem de Máquina, Extração de Características",
-      "lattesId16": "http://lattes.cnpq.br/4418446095942420",
-      "lattesName": "Gustavo Teodoro Laureano",
-      "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4732640Y1"
+    "8538761803577291": {
+      "names": "Eduardo Santana de Almeida",
+      "image": "/pub/DCC/ProfEduardoAlmeida/esa.jpg",
+      "lattes": "http://buscatextual.cnpq.br/buscatextual/visualizacv.do?id=N183593",
+      "lattesId16": "8538761803577291",
+      "lattesId10": "K4700644Z0",
+      "lattesName": "Eduardo Santana de Almeida",
+      "scholarship": "Bolsista de Produtividade em Pesquisa do CNPq - Nível 2",
+      "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4700644Z0"
     },
-    "1096941114079527": {
-      "names": "Anderson da Silva Soares",
-      "emails": "anderson@inf.ufg.br",
-      "lattes": "http://lattes.cnpq.br/1096941114079527",
-      "researchLine": "Reconhecimento de Padrões, Processamento de Sinais e Análise Multivariada",
-      "lattesId16": "http://lattes.cnpq.br/1096941114079527",
-      "lattesName": "Anderson da Silva Soares",
-      "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4732642H1"
+    "3228159608138969": {
+      "names": "Cláudio Nogueira Sant'Anna",
+      "image": "/pub/DCC/ProfClaudioSantanna/claudiosantanna.JPG",
+      "lattes": "http://buscatextual.cnpq.br/buscatextual/visualizacv.do?metodo=apresentar&id=K4755862D6",
+      "lattesId16": "3228159608138969",
+      "lattesId10": "K4755862D6",
+      "lattesName": "Cláudio Nogueira Sant`Anna",
+      "scholarship": "-",
+      "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4755862D6"
     },
-    "4036932351063584": {
-      "names": "Leonardo Andrade Ribeiro",
-      "emails": "laribeiro@inf.ufg.br",
-      "lattes": "http://lattes.cnpq.br/4036932351063584",
-      "researchLine": "Metodologia e Técnicas da Computação, Banco de Dados e Sistemas de Informação",
-      "lattesId16": "http://lattes.cnpq.br/4036932351063584",
-      "lattesName": "Leonardo Andrade Ribeiro",
-      "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4706341J2"
+    "9217378047217370": {
+      "names": "Daniela Barreiro Claro",
+      "image": "http://homes.dcc.ufba.br/~dclaro/images/moi2.jpg",
+      "lattes": "http://lattes.cnpq.br/9217378047217370",
+      "lattesId16": "9217378047217370",
+      "lattesId10": "K4773078J7",
+      "lattesName": "Daniela Barreiro Claro",
+      "scholarship": "-",
+      "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4773078J7"
     },
-    "0925150626762308": {
-      "names": "Fábio Moreira Costa",
-      "emails": "fmc@inf.ufg.br",
-      "lattes": "http://buscatextual.cnpq.br/buscatextual/visualizacv.do?id=K4720552Y8",
-      "researchLine": "Middleware e Sistemas Distribuídos",
-      "lattesId16": "http://lattes.cnpq.br/0925150626762308",
-      "lattesName": "Fabio Moreira Costa",
-      "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4720552Y8"
+    "6271096128174325": {
+      "names": "Frederico Araujo Durão",
+      "image": "/pub/DCC/ProfFredDurao/eu.jpg",
+      "lattes": "http://lattes.cnpq.br/6271096128174325",
+      "lattesId16": "6271096128174325",
+      "lattesId10": "K4138068Y7",
+      "lattesName": "Frederico Araujo Durão",
+      "scholarship": "-",
+      "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4138068Y7"
     },
-    "7080590204832262": {
-      "names": "Ronaldo Martins da Costa",
-      "emails": "ronaldocosta@inf.ufg.br",
-      "lattes": "http://lattes.cnpq.br/7080590204832262",
-      "researchLine": "Visão Computacional, Processamento de Imagens e Sinais e Linguagens de Programação",
-      "lattesId16": "http://lattes.cnpq.br/7080590204832262",
-      "lattesName": "Ronaldo Martins da CostaBolsista de Pós-doutorado no Exterior do CNPq",
-      "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4794188A7"
+    "9876422309721833": {
+      "names": "Flávio Morais de Assis",
+      "image": "/pub/DCC/ProfFlavioAssis/flaviosilva.jpg",
+      "lattes": "http://buscatextual.cnpq.br/buscatextual/visualizacv.do?id=K4727933E2",
+      "lattesId16": "9876422309721833",
+      "lattesId10": "K4727933E2",
+      "lattesName": "Flávio Morais de Assis Silva",
+      "scholarship": "-",
+      "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4727933E2"
     },
-    "5899392002875573": {
-      "names": "Leandro Luís Galdino de Oliveira",
-      "emails": "leandroluis@inf.ufg.br",
-      "lattes": "http://buscatextual.cnpq.br/buscatextual/visualizacv.do?id=K4761539Z6",
-      "researchLine": "Visão por Computador, Sistemas Inteligentes e Linguagens de Programação",
-      "lattesId16": "http://lattes.cnpq.br/5899392002875573",
-      "lattesName": "Leandro Luís Galdino de Oliveira",
-      "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4761539Z6"
+    "1972531466861737": {
+      "names": "Lais do Nascimento Salvador",
+      "image": "http://wiki.dcc.ufba.br/pub/LES/LaisSalvadorPt/lais_p.JPG",
+      "lattes": "undefined",
+      "lattesId16": "1972531466861737",
+      "lattesId10": "K4723774J6",
+      "lattesName": "Laís do Nascimento Salvador",
+      "scholarship": "-",
+      "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4723774J6"
     },
-    "7206645857721831": {
-      "names": "Fabrízzio Alphonsus Alves de Melo Nunes Soares",
-      "emails": "fabrizzio@inf.ufg.br",
-      "lattes": "http://lattes.cnpq.br/7206645857721831",
-      "researchLine": "Visão Computacional, Processamento de Imagens e Sinais, Estrutura de Dados e Arquitetura de Software",
-      "lattesId16": "http://lattes.cnpq.br/7206645857721831",
-      "lattesName": "Fabrízzio Alphonsus Alves de Melo Nunes Soares",
-      "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4739327A2"
+    "2204147669620762": {
+      "names": "Gustavo Bittencourt Figueiredo",
+      "image": "/pub/DCC/ProfGustavoBittencourt/gutolattes.jpg",
+      "lattes": "undefined",
+      "lattesId16": "2204147669620762",
+      "lattesId10": "K4765308J5",
+      "lattesName": "Gustavo Bittencourt Figueiredo",
+      "scholarship": "-",
+      "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4765308J5"
     },
-    "6776569904919279": {
-      "names": "Celso Gonçalves Camilo Junior",
-      "emails": "celso@inf.ufg.br",
-      "lattes": "http://lattes.cnpq.br/6776569904919279",
-      "researchLine": "Redes Sociais, Inteligência Computacional (Redes Neurais e Algoritmo Genético), Inteligência Artificial Distribuída, Metaheurísticas e Otimização.",
-      "lattesId16": "http://lattes.cnpq.br/6776569904919279",
-      "lattesName": "Celso Gonçalves Camilo Junior",
-      "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4736184D1"
+    "1952937182023132": {
+      "names": "Leobino Nascimento Sampaio",
+      "image": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4777204A3",
+      "lattes": "http://lattes.cnpq.br/1952937182023132",
+      "lattesId16": "1952937182023132",
+      "lattesId10": "K4777204A3",
+      "lattesName": "Leobino Nascimento Sampaio",
+      "scholarship": "-",
+      "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4777204A3"
     },
-    "0268732896111424": {
-      "names": "Kleber Vieira Cardoso",
-      "emails": "kleber@inf.ufg.br",
-      "lattes": "http://lattes.cnpq.br/0268732896111424",
-      "researchLine": "Redes de Comunicação e Sistemas Distribuídos",
-      "lattesId16": "http://lattes.cnpq.br/0268732896111424",
-      "lattesName": "Kleber Vieira Cardoso",
-      "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4767436Y4"
+    "5391801774050611": {
+      "names": "George Marconi de Araújo Lima",
+      "image": "/pub/DCC/ProfGeorgeLima/georgelima.jpg",
+      "lattes": "http://buscatextual.cnpq.br/buscatextual/visualizacv.do?id=K4791036A4",
+      "lattesId16": "5391801774050611",
+      "lattesId10": "K4791036A4",
+      "lattesName": "George Marconi de Araújo Lima",
+      "scholarship": "-",
+      "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4791036A4"
     },
-    "3693296350551971": {
-      "names": "Iwens Gervasio Sene Junior",
-      "emails": "iwens@inf.ufg.br",
-      "lattes": "http://lattes.cnpq.br/3693296350551971",
-      "researchLine": "Sistemas de Computação (Sistemas Operacionais, Redes de Computadores, Sistemas Distribuídos)",
-      "lattesId16": "http://lattes.cnpq.br/3693296350551971",
-      "lattesName": "Iwens Gervasio Sene Junior",
-      "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4790677J7"
+    "0372650483087124": {
+      "names": "Luciano Rebouças",
+      "image": "http://wiki.dcc.ufba.br/pub/MMCC/ProfLucianoReboucasDeOliveira/lucianoreboucas.png",
+      "lattes": "http://lattes.cnpq.br/0372650483087124",
+      "lattesId16": "0372650483087124",
+      "lattesId10": "K4794339E6",
+      "lattesName": "Luciano Rebouças de Oliveira",
+      "scholarship": "-",
+      "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4794339E6"
     },
-    "5627556088346425": {
-      "names": "Renato de Freitas Bulcão Neto",
-      "emails": "renato@inf.ufg.br",
-      "lattes": "http://lattes.cnpq.br/5627556088346425",
-      "researchLine": "Computação Ubíqua, Hipermídia, Web Semântica, Engenharia de Documentos e Informática Médica",
-      "lattesId16": "http://lattes.cnpq.br/5627556088346425",
-      "lattesName": "Renato de Freitas Bulcão Neto",
-      "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4708369E3"
+    "9402272133670888": {
+      "names": "Maurício Pamplona Segundo",
+      "image": "http://homes.dcc.ufba.br/~mauricio/images/mauricio.jpg",
+      "lattes": "http://lattes.cnpq.br/9402272133670888",
+      "lattesId16": "9402272133670888",
+      "lattesId10": "K4590637H0",
+      "lattesName": "Maurício Pamplona Segundo",
+      "scholarship": "-",
+      "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4590637H0"
     },
-    "2721053239592051": {
-      "names": "Sérgio Teixeira de Carvalho",
-      "emails": "sergio@inf.ufg.br",
-      "lattes": "http://lattes.cnpq.br/2721053239592051",
-      "researchLine": "Sistemas Distribuídos, Arquitetura de Software, Engenharia de Software",
-      "lattesId16": "http://lattes.cnpq.br/2721053239592051",
-      "lattesName": "Sérgio Teixeira de Carvalho",
-      "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4701978Z5"
+    "1608062196337851": {
+      "names": "Manoel Gomes de Mendonça Neto",
+      "image": "/pub/DCC/ProfManoelMendonca/manoelmendonca.jpg",
+      "lattes": "http://lattes.cnpq.br/1608062196337851",
+      "lattesId16": "1608062196337851",
+      "lattesId10": "K4781674U8",
+      "lattesName": "Manoel Gomes de Mendonça Neto",
+      "scholarship": "-",
+      "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4781674U8"
     },
-    "0611351138131709": {
-      "names": "Auri Marcelo Rizzo Vincenzi",
-      "emails": "auri@inf.ufg.br",
-      "lattes": "http://lattes.cnpq.br/0611351138131709",
-      "researchLine": "Teste de Software",
-      "lattesId16": "http://lattes.cnpq.br/0611351138131709",
-      "lattesName": "Auri Marcelo Rizzo Vincenzi",
-      "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4763450Y6"
+    "1490220147133263": {
+      "names": "Paul Denis Etienne Regnier",
+      "lattes": "undefined",
+      "lattesId16": "1490220147133263",
+      "lattesId10": "K4504157T3",
+      "lattesName": "Paul Denis Etienne Regnier",
+      "scholarship": "-",
+      "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4504157T3"
+    },
+    "2919125967043242": {
+      "names": "Marcos Ennes Barreto",
+      "image": "/pub/DCC/ProfMarcosBarreto/MarcosBarreto.jpg",
+      "lattes": "http://lattes.cnpq.br/2919125967043242",
+      "lattesId16": "2919125967043242",
+      "lattesId10": "K4795458D4",
+      "lattesName": "Marcos Ennes Barreto",
+      "scholarship": "-",
+      "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4795458D4"
+    },
+    "1039996010768964": {
+      "names": "Perfilino Ferreira Junior",
+      "image": "http://wiki.dcc.ufba.br/pub/MMCC/Figures/3X4-perfilino.png",
+      "lattes": "http://buscatextual.cnpq.br/buscatextual/visualizacv.do?id=B552298",
+      "lattesId16": "1039996010768964",
+      "lattesId10": "K4794331Z5",
+      "lattesName": "Perfilino Eugenio Ferreira Junior",
+      "scholarship": "-",
+      "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4794331Z5"
+    },
+    "9840346055970503": {
+      "names": "Raimundo José de Araújo Macêdo",
+      "image": "/pub/DCC/ProfRaimundoMacedo/raimundomacedo.jpg",
+      "lattes": "http://lattes.cnpq.br/9840346055970503",
+      "lattesId16": "9840346055970503",
+      "lattesId10": "K4787894H9",
+      "lattesName": "Raimundo José de Araújo Macêdo",
+      "scholarship": "-",
+      "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4787894H9"
+    },
+    "4117373032501782": {
+      "names": "Rafael Augusto de Melo",
+      "image": "http://wiki.dcc.ufba.br/pub/DCC/ProfRafaelMelo/picturermelo.JPG",
+      "lattes": "http://buscatextual.cnpq.br/buscatextual/visualizacv.do?id=K4123490D6",
+      "lattesId16": "4117373032501782",
+      "lattesId10": "K4123490D6",
+      "lattesName": "Rafael Augusto de Melo",
+      "scholarship": "-",
+      "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4123490D6"
+    },
+    "0427387583450747": {
+      "names": "Ricardo Rios",
+      "image": "/pub/DCC/ProfRicardoRios/1e73908.jpg",
+      "lattes": "http://lattes.cnpq.br/0427387583450747",
+      "lattesId16": "0427387583450747",
+      "lattesId10": "K4237121D1",
+      "lattesName": "Ricardo Araújo Rios",
+      "scholarship": "-",
+      "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4237121D1"
+    },
+    "0290950513716961": {
+      "names": "Rita Suzana Pitangueira Maciel",
+      "image": "/pub/DCC/ProfRitaMaciel/RitaSuzanaFoto.jpg",
+      "lattes": "http://buscatextual.cnpq.br/buscatextual/visualizacv.do?metodo=apresentar&id=K4790513A0",
+      "lattesId16": "0290950513716961",
+      "lattesId10": "K4790513A0",
+      "lattesName": "Rita Suzana Pitangueira Maciel",
+      "scholarship": "-",
+      "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4790513A0"
+    },
+    "4230260717556147": {
+      "names": "Rubisley de Paula Lemes",
+      "image": "http://homes.dcc.ufba.br/~rubisley/rubis.jpeg",
+      "lattes": "http://lattes.cnpq.br/4230260717556147",
+      "lattesId16": "4230260717556147",
+      "lattesId10": "K4713044Z8",
+      "lattesName": "Rubisley de Paula Lemes",
+      "scholarship": "-",
+      "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4713044Z8"
+    },
+    "0133757419649661": {
+      "names": "Steffen Lewitzka",
+      "image": "http://wiki.dcc.ufba.br/pub/PGComp/CorpoDocente/ProfSteffenLewitzka.jpg",
+      "lattes": "undefined",
+      "lattesId16": "0133757419649661",
+      "lattesId10": "K4703501J2",
+      "lattesName": "Steffen Lewitzka",
+      "scholarship": "-",
+      "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4703501J2"
+    },
+    "8771587306163921": {
+      "names": "Sérgio Gorender",
+      "image": "/pub/DCC/ProfSergioGorender/DSC_0179-v2.jpg",
+      "lattes": "http://buscatextual.cnpq.br/buscatextual/visualizacv.do?id=K4784764Z3",
+      "lattesId16": "8771587306163921",
+      "lattesId10": "K4784764Z3",
+      "lattesName": "Sérgio Gorender",
+      "scholarship": "-",
+      "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4784764Z3"
+    },
+    "0851148137941240": {
+      "names": "Tatiane Nogueira Rios",
+      "image": "/pub/DCC/ProfTatianeNogueira/TatianeNogueira.jpg",
+      "lattes": "http://lattes.cnpq.br/0851148137941240",
+      "lattesId16": "0851148137941240",
+      "lattesId10": "K4260228H5",
+      "lattesName": "Tatiane Nogueira Rios",
+      "scholarship": "-",
+      "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4260228H5"
+    },
+    "6378801493656275": {
+      "names": "Vinicius Mello",
+      "image": "http://wiki.dcc.ufba.br/pub/PGComp/CorpoDocente/3x4vmello.jpg",
+      "lattes": "http://lattes.cnpq.br/6378801493656275",
+      "lattesId16": "6378801493656275",
+      "lattesId10": "K4703877J8",
+      "lattesName": "Vinicius Moreira Mello",
+      "scholarship": "-",
+      "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4703877J8"
+    },
+    "7992586996463223": {
+      "names": "Vaninha Vieira",
+      "image": "http://wiki.dcc.ufba.br/pub/MMCC/ProfVaninhaVieira/vaninha.jpg",
+      "lattes": "http://lattes.cnpq.br/7992586996463223",
+      "lattesId16": "7992586996463223",
+      "lattesId10": "K4704012Z9",
+      "lattesName": "Vaninha Vieira dos Santos",
+      "scholarship": "Bolsista de Pós-doutorado no Exterior do CNPq",
+      "lattesImage": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4704012Z9"
     }
   }
 }

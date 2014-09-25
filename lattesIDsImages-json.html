@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/theme-style-tablesorter.css">
+  <link rel="stylesheet" href="css/pure-min.css">
+  <style>
+    .program {
+      width: 80%;
+      margin: auto;
+    }
+    .tablesorter td:nth-child(1) {
+      width: 5%;
+    }
+    .tablesorter td:nth-child(2) {
+      width: 30%;
+    }
+    tr:hover td {
+      background-color: #eee !important; 
+    }
+    img {
+      border: 1px solid #A0BAD5;
+      border-radius: 8px;
+      width: 95px;
+      height: 120px;
+    }
+    div.research {
+      display: inline-block;
+      width: 250px;
+      text-align: center;
+      height: 190px;
+    }
+    .scholarship {
+      border: 4px solid #A0BAD5;
+      border-radius: 10px;
+    }
+    .pq {
+      border: 4px solid #000;
+    }
+  </style>
+</head>
+<body>
+  <div id="lattes">
+    
+  </div>
+  <script src="js/jquery-1.11.1.min.js"></script>
+  <script src="js/jquery.tablesorter.min.js"></script>
+  <script>
+    createResearches();
+
+    function createResearches(){
+      $.getJSON("data/ids.json", function(lattes){
+        $.each(lattes, function(id,research){
+          var program = '';
+          var scholarship = (research['scholarship'] != '-')?"scholarship":""
+          var pq = (research['scholarship'] != '-' &&
+          research['scholarship'].indexOf('Bolsista de Produtividade em Pesquisa do CNPq') != -1)?"pq":""
+          program +=
+            '<div id="'+research['lattesId16']+'" class="research '+scholarship+' '+pq+'">'+
+              '<a href="http://lattes.cnpq.br/'+research['lattesId16']+'" target="_blank">'+
+                '<img src="'+research['lattesImage']+'">'+
+              '</a>'+
+              '<div>'+research['lattesName']+'</div>'+
+              '<div><b>'+((research['scholarship'] != '-')?research['scholarship']:"")+'</b></div>'+
+            '</div>';
+          document.querySelector('div#lattes').innerHTML += program;
+        });
+      });  
+    }
+  </script>
+</body>
+</html>

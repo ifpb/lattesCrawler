@@ -12,7 +12,7 @@ require 'open-uri'
 def get_field(field, element)
 	# TODO: try dymanic calling
 	if(field.include? 'name')
-		get_name(element)
+		get_name(element, true)
 	elsif(field.include? 'lattes')
 		get_lattes(element)
 	elsif(field.include? 'image')
@@ -24,13 +24,51 @@ def get_field(field, element)
 	end
 end
 
-def get_name(element)
-	element.content.strip
+def get_name(element, sub)
+	name = element.content.strip
+	if(sub)
+		name.gsub!(/Mestre.*/, "")
+		name.gsub!(/\s+/, " ")
+		name.gsub!(/\(.*/, "")
+		name.sub! "   ", ""
+		name.sub! "   ", " "
+		name.sub! "  ", " "
+		name.gsub!(/ */, "") #FACCAMP 160.chr "\xA0"
+		name.gsub! /\n.*/, ""
+		# name.sub! /Dr /, ""
+		# name.sub! /Dr\./, ""
+		name.sub!(/,.*/, "")
+		name.sub! /Doutor.*/, ""
+		name.sub! /.*[D]r[aª]?\.? /, ""
+		name.sub! /.*dr[a]?\. /, ""
+		name.sub! /Durante.*/, ""
+		name.sub! /.*Profa. Dra./,""
+		name.sub! /\(Lattes\).*/, ""
+		# name.sub! /Prof /, ""
+		name.sub! /.*Prof[aª]?\.? ?/, ""
+		name.sub! "• ", ""
+		name.sub! /:.*/, ""
+		name.sub! "d´", "d'"
+		name.sub!(/\w*@.*/, "") #ufmg
+		name.sub!(/ -.*/, "")
+		name.sub!(/ ?\(.*\)/, "")
+		name.sub!(/ \[e-mail.*/, "") #ufpb
+		name.gsub!(/^\s*/, "")
+		name.gsub!(/\s?Área/, "")
+		name.sub! "Durante os 3 anos seu PhD", ""
+		name.sub! "Professor Departamento Ciencia Computacao Universidade Brasilia", ""
+	end
+	name
 end
 
 def get_lattes(element)
 	unless element == 'undefined' || element[:href] == 'http://lattes.cnpq.br/'
-		element[:href]
+		url = element[:href]
+		format = "buscatextual.cnpq.br/buscatextual/visualizacv.jsp"
+		if url.include? format
+			url.sub! format, "buscatextual.cnpq.br/buscatextual/visualizacv.do"
+		end
+		url
 	else
 		'undefined'
 	end
@@ -50,50 +88,82 @@ end
 
 def get_url(url)
 	uri = URI.parse(url)
-	uri.scheme+'://'+uri.host
+	url = uri.scheme+'://'+uri.host
 end
 
-# def generate_stat()
-	# file = File.read('../data/pos.json').sub('var pos = ', '')
-	# programsInfo = JSON.parse(file)
-
-	# file = File.read('../data/lattes.json')
-	# lattes = JSON.parse(file)
-def generate_stat(programsInfo, lattes)
-	researchers = []
-
-	lattes.each{|key, program|
-		puts programsInfo[key].values[0..2].join(' '), program.length
-		program.each{|key, research|
-			researchers << key
-		}
+def process_sex()
+	$researchersDump.each{|index, r|
+		file = File.read('../data/namesMas.txt')
+		names  = file.split("\n")
+		if names.include? r['lattesName']
+			$researchersDump[index]['gender'] = "M"
+		else
+			$researchersDump[index]['gender'] = "F"
+		end
 	}
-
-	puts "\nTotal de pesquisadores #{researchers.length} #{researchers.uniq.length}"
-
+	
 end
 
-def open_page(page, kind)
+def open_page(page, kind, idProgram)
 	(0..10).each{|i|
 		begin
 			if (1..9).to_a.include? i
 				sleep i*2
 			end
-			return Nokogiri::HTML(open(page.strip))
+			opened = ''
+			if idProgram != nil
+				if kind == '!'
+					filename = "../data/pages/embedded/#{Digest::MD5.hexdigest(page)}.html"
+				else
+					filename = "../data/pages/#{idProgram}.html"
+				end
+				unless File.file?(filename)
+					file = File.open(filename, "w")
+				  open("#{page.strip}") do |uri|
+				     file.write(uri.read)
+				  end
+				  print " [D] "
+				end
+				if [
+					'28001010095P3', #UFBA
+					'33002010176P0', #USP
+					'33144010008P1', #UFABC ok
+					'23002018002P4', #UERN ok 
+					'28001010090P1', #UFBA ok [embedded]
+					'28001010061P1', #UFBA ok [embedded]
+					'22001018031P5', #UFC ok [embedded]
+  				'25004018011P1', #FESP/UPE ok [nolattes]
+  				'32008015011P7', #PUC/MG ok [embedded]
+				].include? idProgram
+					opened = File.read(filename, :encoding => 'iso-8859-1')	
+				elsif [
+					'32001010004P61','32001010004P62' #UFMG ok [nolattes]
+				].include? idProgram
+					open(filename, "r:ISO-8859-1:UTF-8") do |io|
+					  opened = io.read
+					end
+				else
+					opened = File.read(filename)	
+				end
+			else
+				opened = open(page.strip)
+			end
+			return Nokogiri::HTML(opened)
 		rescue
 			if i == 10
 				print " ##{i}#{kind} " 
-				puts "\n"+page.inspect # unless page[0..100].include? "\r\n\r\n\r\n\r"
+				puts "\n"+page.inspect
 				return nil
 			else
 				print " *#{i}#{kind} "
-				# puts "\n#{page}" if ["_", "!"].include? kind
+				#puts "\n#{page}" #if ["_", "!"].include? kind
 			end
 		end
 	}
 end
 
-def open_page_rest(name)
+
+def open_page_rest(name, idProgram)
 	(0..10).each{|i|
 		begin
 			if (1..9).to_a.include? i
@@ -104,6 +174,7 @@ def open_page_rest(name)
 				'metodo=buscar&filtros.buscaNome=true&buscarDoutores=true&textoBusca='+name,
 				:verify_ssl => false
 			)
+
 			return page
 		rescue
 			if i == 10
@@ -116,9 +187,65 @@ def open_page_rest(name)
 	}
 end
 
-def extract_researchers_info(idProgram, doc, programInfo)
+def extract_id_lattes(url)
+	uri = URI.parse(url)
+	if uri.host == nil
+		rand(100)
+	elsif uri.path[1..-1].length == 16
+		uri.path[1..-1]
+	elsif [10,7].include? CGI::parse(uri.query)['id'][0].length
+		CGI::parse(uri.query)['id'][0]
+	end
+end
+
+def extract_page(programsIds, researchers)
+	threadsResearchPool = Thread.pool(73)
+	programResearchersInfo = {}
+
+	programsIds.each_with_index do |idProgram, index|
+		threadsResearchPool.process do
+			begin
+				researchers[idProgram] = {}
+				programInfo = $programsInfo[idProgram]
+
+				# puts "\n"+(index+1).to_s+" - "+programInfo.values[0..2].join(' ')+"\n"
+				# print " #{(index+1).to_s} "
+				$mutex.synchronize do
+					print " #{$countResearch} "
+					$countResearch+=1
+				end
+
+				# genarating Researchers Info
+				programResearchersInfo[idProgram] = []
+				if ['31001017004P3', '32001010004P6'].include? idProgram #UFRJ, UFMG multiple pages
+					count = 0
+					programInfo['researchers'].each{ |page|
+						count+=1
+						doc = open_page(page, '_', idProgram+count.to_s)
+						programResearchersInfo[idProgram].concat extract_researchers_info(idProgram, doc)
+					}
+				else
+					page = programInfo['researchers']
+					doc = open_page(page, '_', idProgram)
+					programResearchersInfo[idProgram] = extract_researchers_info(idProgram, doc)
+				end
+				# puts "================="
+				# puts programResearchersInfo[idProgram].inspect
+			rescue
+				puts $!, $@
+			end
+		end
+	end
+
+	threadsResearchPool.shutdown
+	programResearchersInfo
+end
+
+
+def extract_researchers_info(idProgram, doc)
 
 	programResearchersInfo = []
+	programInfo = $programsInfo[idProgram]
 
 	unless idProgram == "15001016047P9" # UFPA PDF
 		fields = {}
@@ -127,74 +254,119 @@ def extract_researchers_info(idProgram, doc, programInfo)
 		programInfo['crawlerSchema'].each { |field|
 			next if field[0] == 'embedded'
 			
+			# without lattes
 			if field[0] == 'lattes' && field[1] == ""
 				length = fields['names'].length
 				fields['lattes'] = Array.new(length){|i| "undefined"}
 				next 
 			end
-			
 			fields[field[0]] = doc.css(field[1])
-
-			if field[0] == 'names'
-				fields['names'] = drop_empty_names(fields['names'])
-			end
+			# if field[0] == 'names'
+			# 	fields['names'] = drop_empty_names(fields['names'])
+			# end
 		}	
+		# puts fields['names'].length
+		# puts fields['lattes'].length
+
+		if(['53001010098P3', '25019015001P0'].include? idProgram) #unb, cesar
+			temp = ''
+			if(idProgram == '53001010098P3')
+				temp = JSON.parse(File.read('../data/lattes-unb.json'))
+			elsif(idProgram == '25019015001P0')
+				temp = JSON.parse(File.read('../data/lattes-cesar.json'))
+			end
+			fields['names'] = []
+			fields['lattes'] = []
+			temp.each{|r|
+				fields['names'] << r['names']
+				fields['lattes'] << r['lattes']
+			}
+		end
+
+		# puts fields.inspect
 
 		# infos form crawlerSchema and extract embedded
 		threadsField = []
+		
+		$sizes[idProgram] = fields['names'].length
 		fields['names'].each_with_index do |name, index|
 			researcher = {}
 			
 			programInfo['crawlerSchema'].keys.each do |field|
 				if(field != 'embedded')
 					# puts field, fields[field][index].inspect
-					researcher[field] = get_field(field, fields[field][index])
+					if(field == 'lattes' && ([
+						'Hannu Tapio Ahonen',
+						'Edilson de Aguiar',
+						'Joan Climent Vilaró',
+						'Marina Groshaus',
+						].include? researcher['names']))
+						researcher['lattes'] = 'undefined'
+					else
+						if(['53001010098P3', '25019015001P0'].include? idProgram)
+							researcher[field] = fields[field][index]
+						else
+							researcher[field] = get_field(field, fields[field][index])
+						end
+					end
 					# puts researcher[field]
 				else
 					# Open researcher homepage embedded
 					threadsField << Thread.new do
-						if name[:href] == "http://rocha.ucpel.tche.br/" #UFRGS
-							name[:href] = "/https://www.google.com/" # não tem lattes
-						end
 
 						path = name[:href]
 						path = "/"+path unless path[0] == "/"
-						url = get_url(programInfo['homepage'])+path
-						url = "http://mdcc.ufc.br/static"+path[2..-1] if programInfo['homepage'] == "http://mdcc.ufc.br/"
-						url = path[1..-1] if programInfo['homepage'] == "http://ppgc.inf.ufrgs.br/"
-						url = "http://www.ic.unicamp.br"+path if programInfo['homepage'] == "http://www.ic.unicamp.br/pos"
-						url = path[1..-1] if programInfo['homepage'] == "http://w3.ufsm.br/ppgi/"
-						url = "http://ppgcc.dc.ufscar.br/pessoas/docentes-1"+path if programInfo['homepage'] == "http://ppgcc.dc.ufscar.br/"
-						url = "http://www.din.uem.br"+path[6..-1] if programInfo['homepage'] == "http://www.din.uem.br/pos-graduacao/mestrado-em-ciencia-da-computacao/"
-						# puts url
 						
+						url = get_url(programInfo['homepage'])+path
+
+						if(["22001018031P5", "33003017005P8", "27001016029P4", "42001013004P4", "42002010036P3", "33001014008P4", "40004015019P5",].include? idProgram)
+							if idProgram == "22001018031P5" #ufc
+								url = "http://mdcc.ufc.br/static"+path[2..-1] 
+							elsif idProgram == "33003017005P8" #unicamp
+								url = "http://www.ic.unicamp.br"+path 
+							elsif idProgram == "27001016029P4" #ufs
+								url = "https://www.sigaa.ufs.br"+path 
+							elsif idProgram == "42001013004P4" #ufrgs
+								url = path[1..-1] 
+							elsif idProgram == "42002010036P3" #ufsm
+								url = path[1..-1] 
+							elsif idProgram == "33001014008P4" #ppgcc ufscar
+								url = "http://ppgcc.dc.ufscar.br/pessoas/docentes-1"+path 
+							elsif idProgram == "40004015019P5" #uem
+								url = "http://www.din.uem.br"+path[6..-1]
+							end 
+						else
+							url = name[:href] if(name[:href].include? "cnpq.br")
+						end
+						# puts url
+
 						begin
-							if [
+							if (([
+								"ttp://rocha.ucpel.tche.br/", #ufrgs
 								"http://www.cos.ufrj.br/http://orion.lcg.ufrj.br/roma",
 								"http://www.cos.ufrj.br/http://www.lcg.ufrj.br/Members/esperanc",
 								"http://www.cos.ufrj.br/http://www.lcg.ufrj.br/Members/ricardo",
 								"http://ppgcc.dc.ufscar.br/pessoas/docentes-1/joao-paulo-papa"
-							].include? url
+							].include? url) || (url.include? "mailto"))
 								raise "Invalid URL" #TODO
 							end
 							# open(url)
-							homepage = open_page(url, '!')
+							# get_url_embedded(name[:href])
+							homepage = open_page(url, '!', idProgram)
 							programInfo['crawlerSchema']['embedded'].each do |field|
-								if(homepage.css(field[1]).size != 0)
+								if([
+									'Paul Denis Etienne Regnier',
+								].include? researcher['names']) # Não possui lattes
+									researcher['lattes'] = 'undefined'
+								elsif(homepage.css(field[1]).size != 0)
 									value = get_field(field[0], homepage.css(field[1])[0])
 									if(field[0] == 'name')
 										researcher['names'] = value
-									elsif(field[0] == 'lattes2')
-										if(value != 'undefined')
-											researcher['lattes'] = value
-										end
 									else
 										researcher[field[0]] = value
 									end
 								else
-									if(field[0] != 'lattes2')
-										researcher[field[0]] = 'undefined'
-									end
+									researcher[field[0]] = 'undefined'
 								end
 								# puts researcher[field[0]]
 							end	
@@ -221,103 +393,48 @@ def extract_researchers_info(idProgram, doc, programInfo)
 	programResearchersInfo
 end
 
-def drop_empty_names(values)
-	values.reject do |element|
-		[
-			" ",
-			"PROFESSORES CO-ORIENTADORES",
-			"Docente",
-			"",
-			"Sala:",
-			"E-mail:",
-			"Professor",
-			"orientar D.Sc.?",
-		 	"temporario01", #regex TODO
-			"temporario02", #regex TODO
-			"temporario03", #regex TODO
-			"temporario04", #regex TODO
-			"colaborador05", #regex TODO
-			"Nelson Castro Machado",
-			"http://www.meira.com",
-			"www.engenhariadevendas.com.br",
-			"http://aisapereira.blogspot.com",
-			" O mestrado profissional é formado por:",
-			"Vice Coordenadora - MPCOMP",#UECE
-			"Coordenador Geral MPCOMP",
-			"  -Coordenador de Área - REDES",
-			"PROFESSORES COLABORADORESÂ ",
-			"Nome",
-			"Permanentes (Aprovados pela CAPES)", #UEMA
-			"Colaboradores",
-		].include? get_name(element)  
-	end
-end
-
-def extract_id_lattes(url)
-	uri = URI.parse(url)
-	if uri.host == nil
-		rand(100)
-	elsif uri.path[1..-1].length == 16
-		uri.path[1..-1]
-	elsif [10,7].include? CGI::parse(uri.query)['id'][0].length
-		CGI::parse(uri.query)['id'][0]
-	end
-end
-
-def get_info_from_lattes_page(name)
-	
-	name.sub! " -Â ", "" #unifacs
-	name.sub! "Â ", ""
-	name.sub! "Ã©", "e"
-	name.sub! "Ã¡", "a"
-	name.sub! "Ã­", "i"
-	name.sub! "Ã¨", "e"
-
-	name = name.tr(
-		"ÀÁÂÃÄÅàáâãäåĀāĂăĄąÇçĆćĈĉĊċČčÐðĎďĐđÈÉÊËèéêëĒēĔĕĖėĘęĚěĜĝĞğĠġĢģĤĥĦħÌÍÎÏìíîïĨĩĪīĬĭĮįİıĴĵĶķĸĹĺĻļĽľĿŀŁłÑñŃńŅņŇňŉŊŋÒÓÔÕÖØòóôõöøŌōŎŏŐőŔŕŖŗŘřŚśŜŝŞşŠšſŢţŤťŦŧÙÚÛÜùúûüŨũŪūŬŭŮůŰűŲųŴŵÝýÿŶŷŸŹźŻżŽž",
-		"AAAAAAaaaaaaAaAaAaCcCcCcCcCcDdDdDdEEEEeeeeEeEeEeEeEeGgGgGgGgHhHhIIIIiiiiIiIiIiIiIiJjKkkLlLlLlLlLlNnNnNnNnnNnOOOOOOooooooOoOoOoRrRrRrSsSsSsSssTtTtTtUUUUuuuuUuUuUuUuUuUuWwYyyYyYZzZzZz"
-	)
-	name.sub! "   ", ""
-	name.sub! "   ", " "
-	name.sub! "  ", " "
-	name.gsub! /\n.*/, ""
-	name.sub! /Doutor.*/, ""
-	name.sub! /Drª /, ""
-	name.sub! /Dr./, ""
-	name.sub! /Dra\. /, ""
-	name.sub! /dr\. /, ""
-	name.sub! /Profª /, ""
-	name.sub! /.*Prof(a)?\. /, ""
-	name.sub! "• ", ""
-	name.sub! /:.*/, ""
-	name.gsub!(/ d[ao]s/, "")
-	name.gsub!(/ d[eao]/, "")
-	name.gsub!(/ [A-W]\./, "")
-	name.sub! "d´", "d'"
-	name.sub!(/ -.*/, "")
-	name.sub!(/,.*/, "")
-	name.sub!(/ \(.*\)/, "")
-	name.sub! /colaborador0\d/, ""
-	name.sub! "Durante os 3 anos seu PhD", ""
-	name.sub! "Leslie Richard Foulds", "Les Foulds"
-	name.sub! "Professor Departamento Ciencia Computacao Universidade Brasilia", ""
-	name.sub! "Ronaldo Farias Ramos", "Ronaldo Fernandes Ramos" #uece
-	name.sub! "Maria Giovanise Oliveira Pontes", "Maria Gilvanise Oliveira Pontes" #uece
-	name.sub! "Givandenys Leite Sales", "Gilvandenys Leite Sales" #uece
-	name.sub! "Antonio Wendel Oliveira Rodrigues", "Antonio Wendell Oliveira Rodrigues" #uece
-	name.sub! "Joao Porto Albuquerque Pereira", "Joao Porto Albuquerque" #usp
-	name.sub! "Marcio Costa Perreira Brandao", "Marcio Costa Pereira Brandao" #unb
-	name.sub! "Ricardo Pezzoul Jacobi", "Ricardo Pezzuol Jacobi"#unb
-	name.sub! "Dr. Joao Mello Silva", "Joao Mello Silva"#unb
-	name.sub! "Jussara Marques Almeida Goncalves", "Jussara Marques Almeida"
-	name.sub! "Roberto Souto Maior de Barros Filho", "Roberto Souto Maior de Barros" #ufpe
-	# puts
-	# puts name
-	# puts
+def get_info_from_lattes_page(name, idProgram)
 	info = {}
-	# t = Thread.new do
+	# print name
+	# puts "\n&&&&&#{$researchersDump[idProgram]}"
+	unless $ids.keys.include? name
+		name = name.tr(
+			"ÀÁÂÃÄÅàáâãäåĀāĂăĄąÇçĆćĈĉĊċČčÐðĎďĐđÈÉÊËèéêëĒēĔĕĖėĘęĚěĜĝĞğĠġĢģĤĥĦħÌÍÎÏìíîïĨĩĪīĬĭĮįİıĴĵĶķĸĹĺĻļĽľĿŀŁłÑñŃńŅņŇňŉŊŋÒÓÔÕÖØòóôõöøŌōŎŏŐőŔŕŖŗŘřŚśŜŝŞşŠšſŢţŤťŦŧÙÚÛÜùúûüŨũŪūŬŭŮůŰűŲųŴŵÝýÿŶŷŸŹźŻżŽž",
+			"AAAAAAaaaaaaAaAaAaCcCcCcCcCcDdDdDdEEEEeeeeEeEeEeEeEeGgGgGgGgHhHhIIIIiiiiIiIiIiIiIiJjKkkLlLlLlLlLlNnNnNnNnnNnOOOOOOooooooOoOoOoRrRrRrSsSsSsSssTtTtTtUUUUuuuuUuUuUuUuUuUuWwYyyYyYZzZzZz"
+		)
+		name.gsub!(/ d[ao]s/, "")
+		name.gsub!(/ d[eao]/, "")
+		name.gsub!(/ [A-W]\./, "")
+		# name.gsub!(/'/, "'")
+		name.sub! "Luis Marianol Val Cura", "Luis Mariano Del Val Cura"
+		name.sub! "Aleardo Manacero Jr", "Aleardo Manacero Junior"
+		name.sub! "Nelson Delfino d`Avila Mascarenhas", "Nelson Delfino Mascarenhas"
+		name.sub! "Rosangela Aparecida Delloso Penteado", "Rosangela Aparecida Dellosso Penteado"
+		name.sub! "Andrey Elision Monteiro Brito", "Andrey Elisio Monteiro Brito"
+		name.sub! "Leslie Richard Foulds", "Les Foulds"
+		name.sub! "Thelma Elita Colanzi Lopes", "Thelma Elita Colanzi" #uem
+		name.sub! "Linnyer Beatrys Ruiz Aylon", "Linnyer Beatrys Ruiz"#uem
+		name.sub! "Ronaldo Farias Ramos", "Ronaldo Fernandes Ramos" #uece
+		name.sub! "Maria Giovanise Oliveira Pontes", "Maria Gilvanise Oliveira Pontes" #uece
+		name.sub! "Givandenys Leite Sales", "Gilvandenys Leite Sales" #uece
+		name.sub! "Antonio Wendel Oliveira Rodrigues", "Antonio Wendell Oliveira Rodrigues" #uece
+		name.sub! "Joao Porto Albuquerque Pereira", "Joao Porto Albuquerque" #usp
+		name.sub! "Marcio Costa Perreira Brandao", "Marcio Costa Pereira Brandao" #unb
+		name.sub! "Ricardo Pezzoul Jacobi", "Ricardo Pezzuol Jacobi"#unb
+		name.sub! "Dr. Joao Mello Silva", "Joao Mello Silva"#unb
+		name.sub! "Jussara Marques Almeida Goncalves", "Jussara Marques Almeida"
+		name.sub! "Roberto Souto Maior Barros Filho", "Roberto Souto Maior Barros" #ufpe
+		# puts
+		# puts name
+		# puts
 
-		page = Nokogiri(open_page_rest(name))
+		page = Nokogiri(open_page_rest(name, idProgram))
+
+		if 'Judith Kelner' == name #ufpe
+			info[:name] = 'Judith Kelner'
+			info[:id10] = 'K4787292T5'
+			return info
+		end
 
 		return nil if page == nil
 
@@ -335,6 +452,8 @@ def get_info_from_lattes_page(name)
 						'Computação', 
 						'Engenharia', 
 						'Doutorado em Medicina (Clínica Médica) - Ribeirão Preto',
+						'Doutorado em Engenharia Elétrica pela University of Southern California, Estados Unidos', #ufscar
+						'Doutorado em Filosofia pela Universidade Estadual de Campinas, Brasil(2005)',
 						'Doutorado em Matemática pelo Technische Universität Berlin, Alemanha(1994)', #http://buscatextual.cnpq.br/buscatextual/visualizacv.do?metodo=apresentar&id=K4787082A4
 						'Doutorado em Administração pela Universidade Federal do Rio de Janeiro' #http://buscatextual.cnpq.br/buscatextual/visualizacv.do?id=K4796353Z8
 						].any? { |word| r.content.strip.include?(word) } 
@@ -345,42 +464,135 @@ def get_info_from_lattes_page(name)
 			}
 		end
 		print '+'
-	# end
-	# t.join
+	else
+		# puts $ids[name]
+		# puts $researchersDump[$ids[name]].inspect
+		info[:name] = $researchersDump[$ids[name]]['lattesName']
+		info[:id10] = $researchersDump[$ids[name]]['lattesId10']
+		return nil if info[:id10] == '-'
+	end
 	info
 end
 
-def extract_info_from_field_lattes(url, name)
+def extract_info_from_field_lattes(url, name, idProgram)
 	if(url == 'undefined' || !url.include?("cnpq.br") || (url.include?("buscatextual") && !url.include?("id")))
-		info = get_info_from_lattes_page(name)
+		info = get_info_from_lattes_page(name, idProgram)
+		# puts info.inspect
 		if info == {} || info == nil
 			# puts "Não foi encotrado na base de Doutores do Lattes"
-			print "x"
-			# print "x#{name}"
+			# print "x"
+			puts "\nx#{name}#{$programsInfo[idProgram]['IES']}"
 			return nil 
 		end
 		url = 'http://buscatextual.cnpq.br/buscatextual/visualizacv.do?id='+info[:id10]
 	end
 	infos = {}
-	format = "http://buscatextual.cnpq.br/buscatextual/visualizacv.jsp"
-	if url.include? format
-		url.sub! format, "http://buscatextual.cnpq.br/buscatextual/visualizacv.do"
+	# puts "\n\n#{idProgram} #{url} #{name}\n"
+	id = ''
+	if(url.include? "http://lattes.cnpq.br/")
+		id = url.strip.sub("http://lattes.cnpq.br/", "")
+	elsif(url.include? "http://buscatextual.cnpq.br/buscatextual/visualizacv.do?metodo=apresentar&id=")
+		id = url.strip.sub("http://buscatextual.cnpq.br/buscatextual/visualizacv.do?metodo=apresentar&id=", "")
+	else
+		id = url.strip.sub("http://buscatextual.cnpq.br/buscatextual/visualizacv.do?id=", "")
 	end
-	# TODO corrigir thread
-	# t = Thread.new do
-		lattes = open_page(url, '.')
+	lattes = open_page(url.strip, '.', id)
+	content = lattes.css('li:has(span.icone-informacao-autor.img_link)')[0].content.strip
+	infos[:id16] = content.split('http://lattes.cnpq.br/')[1]
 
-		content = lattes.css('li:has(span.icone-informacao-autor.img_link)')[0].content.strip
-		infos[:id16] = content.split('http://lattes.cnpq.br/')[1]
+	# TODO name local & name lattes
+	name = lattes.css('h2.nome')[0].content.strip
+	if name.include? 'Bolsista'
+		name = name.split 'Bolsista'
+		infos[:name] = name[0]
+		infos[:scholarship] = 'Bolsista'+name[1]
+	else
+		infos[:name] = name
+		infos[:scholarship] = '-'
+	end
 
-		# TODO name local & name lattes
-		infos[:name] = lattes.css('h2.nome')[0].content.strip
+	# TODO images
+	infos[:image] = lattes.css('img.foto')[0][:src]
 
-		# TODO images
-		infos[:image] = lattes.css('img.foto')[0][:src]
+	infos[:id10] = infos[:image].sub("http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=", "")
 
-		print '.'
-	# end
-	# t.join
+	print '.'
 	infos
+end
+
+# extract Info from Lattes
+def extract_lattes(programResearchersInfo, researchers)
+	threadsLattesPool = Thread.pool(300)
+	programResearchersInfo.each_key do |idProgram|
+		programResearchersInfo[idProgram].each do|researcher|
+			threadsLattesPool.process do
+				begin
+					# puts "\n===\nname - "+researcher['names']+"\nlattes - "+researcher['lattes']
+
+					lattesInfo = extract_info_from_field_lattes(researcher['lattes'], researcher['names'], idProgram)
+
+					next if lattesInfo == nil
+
+					researcher['lattesId16'] = lattesInfo[:id16]
+					researcher['lattesId10'] = lattesInfo[:id10]
+					researcher['lattesName'] = lattesInfo[:name]
+					researcher['scholarship'] = lattesInfo[:scholarship]
+					researcher['lattesImage'] = lattesInfo[:image]
+					
+					
+					researchers[idProgram][lattesInfo[:id16]] = researcher
+					$mutex.synchronize do
+						print " [#{$count}] "
+						$count += 1
+					end
+
+					$researchersDump[lattesInfo[:id16]] = {}
+					$researchersDump[lattesInfo[:id16]]['lattesId16'] = lattesInfo[:id16]
+					$researchersDump[lattesInfo[:id16]]['lattesId10'] = lattesInfo[:id10]
+					$researchersDump[lattesInfo[:id16]]['siteName'] = researcher['names']
+					$researchersDump[lattesInfo[:id16]]['scholarship'] = lattesInfo[:scholarship]
+					$researchersDump[lattesInfo[:id16]]['lattesName'] = lattesInfo[:name]
+					$researchersDump[lattesInfo[:id16]]['lattesImage'] = lattesInfo[:image]
+
+					# puts researcher.inspect
+				rescue
+					puts $!, $@
+				end
+			end
+		end
+		# puts researchers[idProgram]
+	end
+	threadsLattesPool.shutdown
+
+	researchers
+end
+
+
+# def generate_stat()
+# 	file = File.read('../data/pos.json').sub('var pos = ', '')
+# 	$programsInfo = JSON.parse(file)
+
+# 	file = File.read('../data/lattes-temp.json')
+# 	lattes = JSON.parse(file)
+def generate_stat(lattes)
+	researchers = []
+
+	lattes.each{|key, program|
+		puts $programsInfo[key].values[0..2].join(' ')
+		if $sizes[key] == program.length
+			puts "======="
+			puts program.length
+		else
+			puts "<<<<<<<", 
+			$sizes[key], 
+			">>>>>>>", 
+			program.length
+		end
+		program.each{|key, research|
+			researchers << key
+		}
+	}
+
+	puts "\nTotal de pesquisadores #{researchers.length} #{researchers.uniq.length}"
+
 end

@@ -11,19 +11,6 @@
       width: 80%;
       margin: auto;
     }
-    /*
-    http://www.princexml.com/doc/tables/
-    table { 
-      counter-reset: row 
-    }
-    tbody tr { 
-      counter-increment: row 
-    }
-    tbody tr::before {
-        content: counter(row);
-        display: table-cell
-    }
-    */
     .tablesorter td:nth-child(1) {
       width: 5%;
     }
@@ -61,33 +48,12 @@
   <script src="js/jquery-1.11.1.min.js"></script>
   <script src="js/jquery.tablesorter.min.js"></script>
   <script>
-    $(function(){
-      $.getJSON("data/pos.json", function(pos){
-        createResearches(pos);
-      });
-    });
+    createResearches();
 
-    function createResearches(pos){
-      $.getJSON("data/lattes.json", function(lattes){
-        $.each(lattes, function(idPos,researchs){
-          var program = '<div id="id'+idPos+'" class="program">'+
-            '<header>'+
-              '<a href="'+pos[idPos]['researchers']+'" target="_blank" class="pure-button pure-button-primary">'+
-                pos[idPos]['program']+' - '+pos[idPos]['IES']+
-              '</a> \
-            </header><section>';
-          var researchsByName = [];
-          var names = []
-          for(var idResearch in researchs){
-            var research = researchs[idResearch];
-            researchsByName[research['lattesName']] = research['lattesId16'].replace("http://lattes.cnpq.br/", "");
-            names.push(research['lattesName'])
-          };
-          names.sort();
-          console.log(names);
-          for(var index in names){
-            // TODO destacar com uma class estilizada o PQ
-            var research = researchs[researchsByName[names[index]]];
+    function createResearches(){
+      $.getJSON("data/lattesPQ2013.json", function(lattes){
+        $.each(lattes, function(id,research){
+          var program = '';
             var scholarship = (research['scholarship'] != '-')?"scholarship":""
             var pq = (research['scholarship'] != '-' &&
               research['scholarship'].indexOf('Bolsista de Produtividade em Pesquisa do CNPq') != -1)?"pq":""
@@ -99,12 +65,8 @@
                 '<div>'+research['lattesName']+'</div>'+
                 '<div><b>'+((research['scholarship'] != '-')?research['scholarship']:"")+'</b></div>'+
               '</div>';
-          };
-          
           program += '</section></div>';
-
           document.querySelector('div#lattes').innerHTML += program;
-
         });
       });  
     }
