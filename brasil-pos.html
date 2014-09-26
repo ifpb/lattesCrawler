@@ -1,0 +1,50 @@
+<html>
+<head>
+  <script type='text/javascript' src='https://www.google.com/jsapi'></script>
+  <script type='text/javascript'>
+   google.load('visualization', '1', {'packages': ['geomap']});
+   google.setOnLoadCallback(drawMap);
+
+    function drawMap() {
+      var data = google.visualization.arrayToDataTable([
+        ['City', 'Programas'],
+        ['Pernambuco', '5'],
+        ['Rio de Janeiro', '6'],
+        ['Paraiba', '2'],
+        ['Alagoas', '1'],
+        ['Parana', '6'],
+        ['Rio Grande do Sul', '7'],
+        ['Sao Paulo', '10'],
+        ['Sergipe', '1'],
+        ['Bahia', '4'],
+        ['Minas Gerais', '8'],
+        ['Ceara', '5'],
+        ['Distrito Federal', '2'],
+        ['Espirito Santo', '1'],
+        ['Amazonas', '1'],
+        ['Paraiba', '2'],
+        ['Santa Catarina', '3'],
+        ['Maranhao', '2'],
+        ['Mato Grosso', '3'],
+        ['Goias', '1'],
+        ['Rio Grando do Norte', '3'],
+        ['Piaui', '1']
+      ]);
+
+      var options = {};
+      options['region'] = 'BR';
+      options['dataMode'] = 'regions';
+
+      var container = document.getElementById('map_canvas');
+      var geomap = new google.visualization.GeoMap(container);
+      geomap.draw(data, options);
+    };
+
+  </script>
+</head>
+
+<body>
+    <div id='map_canvas'></div>
+</body>
+
+</html>

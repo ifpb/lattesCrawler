@@ -1,3 +1,15 @@
+
+
+
+
+
+
+
+
+
+
+
+
 Abel Guilhermino da Silva Filho
 Abilio Pereira de Lucena Filho
 Adalberto Cajueiro de Farias
@@ -30,6 +42,7 @@ Alan Robert Resende de Freitas
 Alan Salvany Felinto
 Albert Einstein Fernandes Muritiba
 Alberto Barbosa Raposo
+Alberto Cesar Cavalcanti Franca
 Alberto Costa Neto
 Alberto Egon Schaeffer Filho
 Alberto Ferreira De Souza
@@ -37,14 +50,17 @@ Alberto Henrique Frade Laender
 Alberto Nogueira de Castro Junior
 Alceu de Souza Britto Jr
 Alcides Calsavara
+Alcione de Paiva Oliveira
 Aldebaro Barreto da Rocha Klautau Júnior
 Aldo von Wangenheim
 Aldri Luiz dos Santos
 Aleardo Manacero Junior
 Aledir Silveira Pereira
 Alejandro Rafael Garcia Ramirez
+Alejandro César Frery Orgambide
 Alessandro Fabricio Garcia
 Alessandro Lameiras Koerich
+Alessandro Monteiro Lima
 Alessandro de Lima Bicho
 Alex Borges Vieira
 Alex Fernandes da Veiga Machado
@@ -67,6 +83,7 @@ Alexandre Noma
 Alexandre Nóbrega Duarte
 Alexandre Plastino de Carvalho
 Alexandre Reis Graeml
+Alexandre Rodrigues Gomes
 Alexandre Rossi Paschoal
 Alexandre Salles da Cunha
 Alexandre Xavier Falcão
@@ -76,6 +93,7 @@ Alexandro José Baldassin
 Alfredo Goldman vel Lejbman
 Alirio Santos de Sá
 Alisson Vasconcelos de Brito
+Allan Rodrigo dos Santos Araujo
 Alneu de Andrade Lopes
 Altair Olivo Santin
 Altamiro Amadeu Susin
@@ -175,7 +193,6 @@ Augusto Cezar Alves Sampaio
 Augusto José Venâncio Neto
 Auri Marcelo Rizzo Vincenzi
 Autran Macêdo
-Avanilde Kemczinski
 Avelino Francisco Zorzo
 Baldoino Fonseca dos Santos Neto
 Benhur de Oliveira Stein
@@ -217,6 +234,7 @@ Carlos Eduardo Fisch de Brito
 Carlos Eduardo Pereira
 Carlos Eduardo Santos Pires
 Carlos Eduardo da Silva
+Carlos Henrique Costa Ribeiro
 Carlos Henrique Aguena Higa
 Carlos Henrique Valério de Moraes
 Carlos Hitoshi Morimoto
@@ -264,6 +282,8 @@ Claudomiro de Souza de Sales Junior
 Clauirton de Albuquerque Siebra
 Cleber Zanchettin
 Cleidson Ronald Botelho de Souza
+Cleo Zanella Billa
+Cleumar da Silva Moreira
 Cleonilson Protásio de Souza
 Clodoaldo Aparecido de Moraes Lima
 Clodoveu Augusto Davis Junior
@@ -273,6 +293,7 @@ Cláudio Nogueira Sant`Anna
 Cláudio Rosito Jung
 Cláudio de Souza Baptista
 Creto Augusto Vidal
+Credine Silva de Menezes
 Cristiano André da Costa
 Cristiano Coêlho de Araújo
 Cristiano Damiani Vasconcellos
@@ -291,12 +312,14 @@ Daniel Carlos Guimarães Pedronette
 Daniel Carvalho da Cunha
 Daniel Fernandes Macedo
 Daniel Gomes Mesquita
+Daniel Gregorio Alfaro Vigo
 Daniel Lucrédio
 Daniel Macêdo Batista
 Daniel Morgato Martin
 Daniel Ratton Figueiredo
 Daniel Sabino Amorim de Araújo
 Daniel Schwabe
+Daniel Sadoc Menasche
 Daniel Weingaertner
 Daniel dos Santos Kaster
 Danilo Henrique Spadoti
@@ -356,9 +379,11 @@ Edson Prestes e Silva Júnior
 Edson Takashi Matsubara
 Edson dos Santos Moreira
 Eduardo Antonio Guimaraes Tavares
+Eduardo Araujo Oliveira
 Eduardo Augusto Bezerra
 Eduardo Barrere
 Eduardo Candido Xavier
+Eduardo Camponogara
 Eduardo Coelho Cerqueira
 Eduardo Cunha de Almeida
 Eduardo Fontoura Costa
@@ -393,8 +418,10 @@ Eloi Luiz Favero
 Elvio João Leonardo
 Emerson Cabrera Paraiso
 Emerson Carlos Pedrino
+Emerson Luiz do Monte Carmelo
 Enzo Seraphim
 Eraldo Luís Rezende Fernandes
+Eric Bruno Perazzo Mariz
 Erick Baptista Passos
 Ernesto Julián Goldberg Birgin
 Ernesto Prado Lopes
@@ -431,8 +458,10 @@ Felipe Maia Galvão França
 Felipe Martins Müller
 Felipe Rech Meneguzzi
 Felipe Santana Furtado Soares
+Felipe Silva Ferraz
 Felipe de Souza Marques
 Fernando Antonio Mota Trinta
+Fernando Antonio Vanini
 Fernando Antonio de Carvalho Gomes
 Fernando Barreto
 Fernando Buarque de Lima Neto
@@ -504,10 +533,10 @@ Gerson Zaverucha
 Giancarlo Guizzardi
 Gibeon Soares de Aquino Junior
 Gilberto Amado de Azevedo Cysneiros Filho
+Gilson Antonio Giraldi
 Gilvandenys Leite Sales
 Giordano Ribeiro Eulalio Cabral
 Giovani Rubert Librelotto
-Gisele Lobo Pappa
 Gladston Juliano Prates Moreira
 Gladston Luiz da Silva
 Glaucio Haroldo Silva de Carvalho
@@ -515,7 +544,6 @@ Glauco de Figueiredo Carneiro
 Gleison dos Santos Souza
 Gleydson de Azevedo Ferreira Lima
 Glêdson Elias da Silveira
-Graçaliz Pereira Dimuro
 Guido Costa Souza de Araújo
 Guido Lemos de Souza Filho
 Guilherme Horta Travassos
@@ -529,7 +557,9 @@ Gustavo Alberto Giménez Lugo
 Gustavo Augusto Lima de Campos
 Gustavo Bittencourt Figueiredo
 Gustavo Carlos Buscaglia
+Gustavo de Souza Alves
 Gustavo Enrique de Almeida Prado Alves Batista
+Gustavo Henrique da Silva Alexandre
 Gustavo Henrique Matos Bezerra Motta
 Gustavo Maciel Dias Vieira
 Gustavo Pessin
@@ -538,6 +568,7 @@ Gustavo Teodoro Laureano
 Hannu Tapio Ahonen
 Hans Kurt Edmund Liesenberg
 Harlen Costa Batagelo
+Haroldo Fraga de Campos Velho
 Haroldo Gambini Santos
 Heder Soares Bernardino
 Heitor Augustus Xavier Costa
@@ -563,11 +594,11 @@ Humberto Torres Marques Neto
 Hyggo Oliveira de Almeida
 Hélio Crestana Guardia
 Hélio Pedrini
+I Shih Liu
 Idalmis Milián Sardiña Martins
 Ig Ibert Bittencourt Santana Pinto
 Igor Monteiro Moraes
 Iguatemi Eduardo da Fonseca
-Ingrid Oliveira de Nunes
 Irineu Sotoma
 Isaac Pinheiro dos Santos
 Italo Fernando Scotá Cunha
@@ -625,6 +656,7 @@ Jorge Henrique Cabral Fernandes
 Jorge Luis Nicolas Audy
 Jorge Luis Victória Barbosa
 Jorge Luiz de Castro e Silva
+Jorge Petrúcio Viana
 Jorge Stolfi
 Jose Antonio Moreira Xexeo
 Jose Antonio Trindade Borges da Costa
@@ -637,10 +669,13 @@ Jose Marcos Silva Nogueira
 Jose Maria Nazar David
 Jose Mauricio Cunha Fernandes
 Jose Neuman de Souza
+Jose Orlando Gomes
 Jose Remo Ferreira Brega
 Jose Ricardo de Almeida Torreao
 Joseana Macêdo Fechine Régis de Araújo
+Josefino Cabral MELO LIMA
 Josivaldo de Souza Araújo
+Josenildo Costa da Silva
 José Aires de Castro Filho
 José Alberto Cuminato
 José Alexandre de Seixas
@@ -655,6 +690,7 @@ José Elias Claudio Arroyo
 José Eustáquio Rangel de Queiroz
 José Everardo Bessa Maia
 José Fernando Rodrigues Júnior
+José Ferreira de Rezende
 José Francisco Julião
 José Francisco de Magalhães Netto
 José Gonçalves Pereira Filho
@@ -692,7 +728,6 @@ João Porto de Albuquerque
 João Vicente Ferreira Lima
 João da Rocha-Lima Junior
 João do Espirito Santo Batista Neto
-Judith Kelner
 Juergen Rochol
 Jugurta Lisboa Filho
 Jugurta Rosa Montalvao Filho
@@ -709,7 +744,6 @@ Jurandy Gomes de Almeida Junior
 Jó Ueyama
 Júlio Carlos Balzano de Mattos
 Júlio Cezar Estrella
-Karin Becker
 Kelson Romulo Teixeira Aires
 Kelvin Lopes Dias
 Kiev Santos da Gama
@@ -747,7 +781,6 @@ Leonelo Dell Anhol Almeida
 Les Foulds
 Levi Henrique Santana de Lelis
 Li Weigang
-Linnyer Beatrys Ruiz
 Lisandro Zambenedetti Granville
 Loïc Pascal Gilles Cerf
 Lucas Ferrari de Oliveira
@@ -773,6 +806,7 @@ Luis Carlos de Sousa Menezes
 Luis Enrique Zárate
 Luis Felipe Magalhães de Moraes
 Luis Gustavo Nonato
+Luis Henrique Maciel Kosmalski Costa
 Luis Mariano del Val Cura
 Luiz André Portes Paes Leme
 Luiz Antonio Celiberto Junior
@@ -788,6 +822,7 @@ Luiz Eduardo Soares de Oliveira
 Luiz Eugênio Fernandes Tenório
 Luiz Fernando Bittencourt
 Luiz Fernando Gomes Soares
+Luiz Fernando Rust da Costa Carmo
 Luiz Filipe Menezes Vieira
 Luiz Gonzaga da Silveira Junior
 Luiz Gustavo Leão Fernandes
@@ -795,6 +830,7 @@ Luiz Henrique Andrade Correia
 Luiz Henrique da Costa Araujo
 Luiz Henrique de Campos Merschmann
 Luiz Leduino de Salles Neto
+Luis Menasché Schechter
 Luiz Nacamura Júnior
 Luiz Paulo Luna de Oliveira
 Luiz Satoru Ochi
@@ -825,6 +861,7 @@ Marcelo Finger
 Marcelo Garcia Manzato
 Marcelo Gattass
 Marcelo Gomes de Queiroz
+Marcello Goulart Teixeira
 Marcelo Henriques de Carvalho
 Marcelo Ladeira
 Marcelo Schiavon Porto
@@ -855,8 +892,10 @@ Marco Túlio Chella
 Marcone Jamilson Freitas Souza
 Marcos Alexandre Castilho
 Marcos André Gonçalves
+Marcos Antonio Simplicio Junior
 Marcos Augusto Menezes Vieira
 Marcos Cesar Madruga Alves Pinheiro
+Marcos Cordeiro d'Ornellas
 Marcos Didonet Del Fabro
 Marcos Ennes Barreto
 Marcos Evandro Cintra
@@ -875,7 +914,6 @@ Marcus Theodor Schilling
 Marcus Vinicius Soledade Poggi de Aragao
 Marcus Vinícius Alvim Andrade
 Mariano Pimentel
-Marilde Terezinha Prado Santos
 Marilton Sanchotene de Aguiar
 Mario Alexandre Gazziro
 Mario Antonio Ribeiro Dantas
@@ -890,22 +928,20 @@ Martin Alejandro Musicante
 Mateus Beck Rutzig
 Mauricio Ayala Rincon
 Mauricio Kischinhevsky
+Mauro Antonio Rincon
 Mauro Nacif Rocha
 Mauro Roisenberg
 Mauro Sergio Pereira Fonseca
 Maurício Aronne Pillon
+Maurício Ferreira Magalhães
 Maurício Lima Pilla
 Maurício Pamplona Segundo
 Methanias Colaco Rodrigues Junior
 Michel dos Santos Soares
-Michele Fúlvia Angelo
-Michele Nogueira Lima
-Michelle Silva Wangham
 Miguel Franklin de Castro
-Milene Selbach Silveira
 Milton Brown Do Coutto Filho
 Milton Ernesto Romero Romero
-Mirella Moura Moro
+Mitre Costa Dourado
 Moacir Pereira Ponti Junior
 Moacyr Cunha Filho
 Murillo Rodrigo Petrucelli Homem
@@ -936,8 +972,8 @@ Nelson Maculan Filho
 Nelson Souto Rosa
 Newton José Vieira
 Ney Laert Vilar Calazans
+Nicolas Maillard
 Nivio Ziviani
-Noemi de La Rocque Rodriguez
 Norian Marranghello
 Norton Trevisan Roman
 Nunzio Marco Torrisi
@@ -969,10 +1005,13 @@ Paulo Cesar Centoducatte
 Paulo Cesar Masiero
 Paulo César Crepaldi
 Paulo Cézar Stadzisz
+Paulo Costa Carvalho
+Paulo de Figueiredo Pires
 Paulo Estevão Cruvinel
 Paulo Fernando Ferreira Rosa
 Paulo Francisco Butzen
 Paulo Gustavo Soares da Fonseca
+Paulo Henrique da Fonseca Melo
 Paulo Henrique Lemelle Fernandes
 Paulo Henrique Mendes Maia
 Paulo Henrique Monteiro Borba
@@ -990,6 +1029,8 @@ Paulo Romero Martins Maciel
 Paulo Salgado Gomes de Mattos Neto
 Paulo Sergio Marques dos Santos
 Paulo Sérgio Lopes de Souza
+Paulo Sérgio Sausen
+Paulo Victor Rodrigues de Carvalho
 Pedro Fernandes Ribeiro Neto
 Pedro Frosi Rosa
 Pedro Henrique Bugatti
@@ -1005,6 +1046,7 @@ Perfilino Eugenio Ferreira Junior
 Philippe Olivier Alexandre Navaux
 Plinio de Sa Leitao Junior
 Plácido Rogério Pinheiro
+Rafael de Albuquerque Ribeiro
 Rafael Augusto de Melo
 Rafael Castro de Andrade
 Rafael Dueire Lins
@@ -1109,6 +1151,7 @@ Rodrigo Luis de Souza da Silva
 Rodrigo Minetto
 Rodrigo Oliveira Spínola
 Rodrigo Palucci Pantoni
+Rodrigo Penteado Ribeiro de Toledo
 Rodrigo Zelir Azzolin
 Rodrigo da Rosa Righi
 Rodrigo de Alencar Hausen
@@ -1144,7 +1187,6 @@ Rummenigge Rudson Dantas
 Ruy Alberto Pisani Altafim
 Ruy José Guerra Barretto de Queiroz
 Ruy Luiz Milidiu
-Sahudy Montenegro González
 Said Sadique Adi
 Samyr Beliche Vale
 Sanderson Lincohn Gonzaga de Oliveira
@@ -1211,6 +1253,7 @@ Tomasz Kowaltowski
 Tsang Ing Ren
 Uira Kulesza
 Ulrich Schiel
+Ulisses Admar Barbosa Vicente Monteiro
 Umberto Souza da Costa
 Vagner José do Sacramento Rodrigues
 Vagner Pedrotti
@@ -1229,6 +1272,7 @@ Victor Almeida Campos
 Victor Hugo Costa de Albuquerque
 Victor Ströele de Andrade Menezes
 Vinicius Cardoso Garcia
+Vinícius Gusmão Pereira de Sá
 Vinicius Moreira Mello
 Vinicius Ponte Machado
 Vinicius da Cunha Martins Borges

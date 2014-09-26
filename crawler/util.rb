@@ -48,6 +48,7 @@ def get_name(element, sub)
 		name.sub! /.*Prof[aª]?\.? ?/, ""
 		name.sub! "• ", ""
 		name.sub! /:.*/, ""
+		name.sub! "d’", "d'"
 		name.sub! "d´", "d'"
 		name.sub!(/\w*@.*/, "") #ufmg
 		name.sub!(/ -.*/, "")
@@ -55,6 +56,7 @@ def get_name(element, sub)
 		name.sub!(/ \[e-mail.*/, "") #ufpb
 		name.gsub!(/^\s*/, "")
 		name.gsub!(/\s?Área/, "")
+		name.gsub!(/\s*$/, "")
 		name.sub! "Durante os 3 anos seu PhD", ""
 		name.sub! "Professor Departamento Ciencia Computacao Universidade Brasilia", ""
 	end
@@ -163,7 +165,7 @@ def open_page(page, kind, idProgram)
 end
 
 
-def open_page_rest(name, idProgram)
+def open_page_rest(name)
 	(0..10).each{|i|
 		begin
 			if (1..9).to_a.include? i
@@ -248,32 +250,14 @@ def extract_researchers_info(idProgram, doc)
 	programInfo = $programsInfo[idProgram]
 
 	unless idProgram == "15001016047P9" # UFPA PDF
-		fields = {}
+		fields = {}	
 
-		# extract infos form crawlerSchema
-		programInfo['crawlerSchema'].each { |field|
-			next if field[0] == 'embedded'
-			
-			# without lattes
-			if field[0] == 'lattes' && field[1] == ""
-				length = fields['names'].length
-				fields['lattes'] = Array.new(length){|i| "undefined"}
-				next 
-			end
-			fields[field[0]] = doc.css(field[1])
-			# if field[0] == 'names'
-			# 	fields['names'] = drop_empty_names(fields['names'])
-			# end
-		}	
-		# puts fields['names'].length
-		# puts fields['lattes'].length
-
-		if(['53001010098P3', '25019015001P0'].include? idProgram) #unb, cesar
+		if(['53001010098P3', 'fff'].include? idProgram) #unb, cesar
 			temp = ''
 			if(idProgram == '53001010098P3')
 				temp = JSON.parse(File.read('../data/lattes-unb.json'))
-			elsif(idProgram == '25019015001P0')
-				temp = JSON.parse(File.read('../data/lattes-cesar.json'))
+			elsif(idProgram == 'fff')
+				temp = JSON.parse(File.read('../data/lattes-pq.json'))
 			end
 			fields['names'] = []
 			fields['lattes'] = []
@@ -281,8 +265,23 @@ def extract_researchers_info(idProgram, doc)
 				fields['names'] << r['names']
 				fields['lattes'] << r['lattes']
 			}
+		else
+			# extract infos form crawlerSchema
+			programInfo['crawlerSchema'].each { |field|
+				next if field[0] == 'embedded'
+				
+				# without lattes
+				if field[0] == 'lattes' && field[1] == ""
+					length = fields['names'].length
+					fields['lattes'] = Array.new(length){|i| "undefined"}
+					next 
+				end
+				fields[field[0]] = doc.css(field[1])
+			}
 		end
 
+		# puts fields['names'].length
+		# puts fields['lattes'].length
 		# puts fields.inspect
 
 		# infos form crawlerSchema and extract embedded
@@ -303,7 +302,7 @@ def extract_researchers_info(idProgram, doc)
 						].include? researcher['names']))
 						researcher['lattes'] = 'undefined'
 					else
-						if(['53001010098P3', '25019015001P0'].include? idProgram)
+						if(['53001010098P3', 'fff'].include? idProgram)
 							researcher[field] = fields[field][index]
 						else
 							researcher[field] = get_field(field, fields[field][index])
@@ -393,10 +392,8 @@ def extract_researchers_info(idProgram, doc)
 	programResearchersInfo
 end
 
-def get_info_from_lattes_page(name, idProgram)
+def get_info_from_lattes_page(name)
 	info = {}
-	# print name
-	# puts "\n&&&&&#{$researchersDump[idProgram]}"
 	unless $ids.keys.include? name
 		name = name.tr(
 			"ÀÁÂÃÄÅàáâãäåĀāĂăĄąÇçĆćĈĉĊċČčÐðĎďĐđÈÉÊËèéêëĒēĔĕĖėĘęĚěĜĝĞğĠġĢģĤĥĦħÌÍÎÏìíîïĨĩĪīĬĭĮįİıĴĵĶķĸĹĺĻļĽľĿŀŁłÑñŃńŅņŇňŉŊŋÒÓÔÕÖØòóôõöøŌōŎŏŐőŔŕŖŗŘřŚśŜŝŞşŠšſŢţŤťŦŧÙÚÛÜùúûüŨũŪūŬŭŮůŰűŲųŴŵÝýÿŶŷŸŹźŻżŽž",
@@ -428,12 +425,70 @@ def get_info_from_lattes_page(name, idProgram)
 		# puts name
 		# puts
 
-		page = Nokogiri(open_page_rest(name, idProgram))
+		page = Nokogiri(open_page_rest(name))
 
 		if 'Judith Kelner' == name #ufpe
-			info[:name] = 'Judith Kelner'
+			info[:name] = name
 			info[:id10] = 'K4787292T5'
 			return info
+		end
+
+		if 'Josenildo Costa Silva' == name #uema
+			info[:name] = name
+			info[:id10] = 'K4761150H5'
+			return info
+		end
+
+		if 'Cicero Costa Quarto' == name #uema
+			info[:name] = name
+			info[:id10] = 'K4131583U3'
+			return info
+		end
+
+		if 'Reinaldo Jesus Silva' == name #uema
+			info[:name] = name
+			info[:id10] = 'K4717514U8'
+			return info
+		end
+
+		if 'Sindo Vasquez Dias' == name #unicamp
+			info[:name] = name
+			info[:id10] = 'K4776798Y3'
+			return info
+		end
+
+		if 'Thelma Cecilia Chiossi' == name #unicamp
+			info[:name] = name
+			info[:id10] = 'K4780712U9'
+			return info
+		end
+
+		if 'Fernando Antonio Vanini' == name #unicamp
+			info[:name] = name
+			info[:id10] = 'K8150979U6'
+			return info
+		end
+
+		if 'Hemerson Pistori' == name #unicamp
+			info[:name] = name
+			info[:id10] = 'K4765793Y9'
+			return info
+		end
+
+		if 'Renata Araujo' == name #unirio
+			info[:name] = name
+			info[:id10] = 'K4723617A6'
+			return info
+		end
+
+		if 'Alexandre Rodrigues Gomes' == name #unb
+			info[:name] = name
+			info[:id10] = 'K4750654Z1'
+			return info
+		end
+
+		if 'Ulisses Barbosa' == name
+			return nil
 		end
 
 		return nil if page == nil
@@ -476,7 +531,7 @@ end
 
 def extract_info_from_field_lattes(url, name, idProgram)
 	if(url == 'undefined' || !url.include?("cnpq.br") || (url.include?("buscatextual") && !url.include?("id")))
-		info = get_info_from_lattes_page(name, idProgram)
+		info = get_info_from_lattes_page(name)
 		# puts info.inspect
 		if info == {} || info == nil
 			# puts "Não foi encotrado na base de Doutores do Lattes"
@@ -546,13 +601,21 @@ def extract_lattes(programResearchersInfo, researchers)
 						$count += 1
 					end
 
-					$researchersDump[lattesInfo[:id16]] = {}
-					$researchersDump[lattesInfo[:id16]]['lattesId16'] = lattesInfo[:id16]
-					$researchersDump[lattesInfo[:id16]]['lattesId10'] = lattesInfo[:id10]
-					$researchersDump[lattesInfo[:id16]]['siteName'] = researcher['names']
-					$researchersDump[lattesInfo[:id16]]['scholarship'] = lattesInfo[:scholarship]
-					$researchersDump[lattesInfo[:id16]]['lattesName'] = lattesInfo[:name]
-					$researchersDump[lattesInfo[:id16]]['lattesImage'] = lattesInfo[:image]
+					if $researchersDump[lattesInfo[:id16]] != nil
+						unless $researchersDump[lattesInfo[:id16]]['idProgram'].include? idProgram
+							$researchersDump[lattesInfo[:id16]]['idProgram'] << idProgram
+						end
+					else
+						$researchersDump[lattesInfo[:id16]] = {}
+						$researchersDump[lattesInfo[:id16]]['lattesId16'] = lattesInfo[:id16]
+						$researchersDump[lattesInfo[:id16]]['lattesId10'] = lattesInfo[:id10]
+						# $researchersDump[lattesInfo[:id16]]['siteName'] = researcher['names']
+						$researchersDump[lattesInfo[:id16]]['scholarship'] = lattesInfo[:scholarship]
+						$researchersDump[lattesInfo[:id16]]['lattesName'] = lattesInfo[:name]
+						$researchersDump[lattesInfo[:id16]]['lattesImage'] = lattesInfo[:image]
+						$researchersDump[lattesInfo[:id16]]['idProgram'] = []
+						$researchersDump[lattesInfo[:id16]]['idProgram'] << idProgram
+					end
 
 					# puts researcher.inspect
 				rescue
@@ -593,6 +656,26 @@ def generate_stat(lattes)
 		}
 	}
 
+	ufCount = {}
+	genderMale = 0
+	$researchersDump.each{|k,r|
+		genderMale += 1 if r['gender'] == 'M'
+		r['idProgram'].each {|p|
+			uf = $programsInfo[p]['UF']
+			if uf != ""
+				if ufCount[uf] == "nil"
+					ufCount[uf] = 1
+				else
+					ufCount[uf] = ufCount[uf].to_i + 1
+				end
+			end
+		}
+	}
+	
+	total = $researchersDump.length
+	genderMale = (genderMale / total.to_f)*100
+	puts "\nMasculino #{genderMale.round(2)}%"
 	puts "\nTotal de pesquisadores #{researchers.length} #{researchers.uniq.length}"
+	p ufCount.inspect
 
 end

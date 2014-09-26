@@ -21,53 +21,88 @@
       background-color: #eee !important; 
     }
     img {
+      margin: 5px;
       border: 1px solid #A0BAD5;
       border-radius: 8px;
       width: 95px;
       height: 120px;
     }
-    div.research {
+    li.research {
       display: inline-block;
-      width: 250px;
+      vertical-align: bottom;
+      width: 23%;
       text-align: center;
-      height: 190px;
-    }
-    .scholarship {
-      border: 4px solid #A0BAD5;
+      height: 350px;
+      border: 4px solid #fff;
       border-radius: 10px;
     }
-    .pq {
+    li.scholarship {
+      border: 4px solid #A0BAD5;
+    }
+    li.pq {
       border: 4px solid #000;
+    }
+    li.mas {
+      background-color: #bce0e9;
+    }
+    li.mas:hover {
+      background-color: #ebf7f8;
+    }
+    li.fem {
+      background-color: #f3e2dc;
+    }
+    li.fem:hover {
+      background-color: #f5fbf2;
+    }
+    div.description{
+      height: 95px;
+      vertical-align: middle;
     }
   </style>
 </head>
 <body>
-  <div id="lattes">
-    
+  <div id="content">
+      <ul class="content">
+      </ul>
   </div>
   <script src="js/jquery-1.11.1.min.js"></script>
-  <script src="js/jquery.tablesorter.min.js"></script>
   <script>
     createResearches();
-
     function createResearches(){
+    $.getJSON("data/pos.json", function(pos){
+      var programs = [];
+
+      for(var k in pos){
+        programs[k] = '<a href="'+pos[k]['researchers']+'">'+pos[k]['program']+'-'+pos[k]['IES']+'</a>';
+      }
+
       $.getJSON("data/ids.json", function(lattes){
         $.each(lattes, function(id,research){
+          programsName = '<ul>';
+          for(var k in research['idProgram']){
+            programsName += '<li>'+programs[research['idProgram'][k]]+'</li>';
+          }
+          programsName += '</ul>';
           var program = '';
+          var gender = (research['gender'] == 'M')?'mas':'fem'
           var scholarship = (research['scholarship'] != '-')?"scholarship":""
           var pq = (research['scholarship'] != '-' &&
           research['scholarship'].indexOf('Bolsista de Produtividade em Pesquisa do CNPq') != -1)?"pq":""
           program +=
-            '<div id="'+research['lattesId16']+'" class="research '+scholarship+' '+pq+'">'+
+            '<li id="'+research['lattesId16']+'" class="research '+scholarship+' '+pq+' '+gender+'">'+
               '<a href="http://lattes.cnpq.br/'+research['lattesId16']+'" target="_blank">'+
                 '<img src="'+research['lattesImage']+'">'+
               '</a>'+
-              '<div>'+research['lattesName']+'</div>'+
-              '<div><b>'+((research['scholarship'] != '-')?research['scholarship']:"")+'</b></div>'+
-            '</div>';
-          document.querySelector('div#lattes').innerHTML += program;
+              '<div class="description"><div class="name">'+research['lattesName']+'</div>'+
+              '<div> Participa de '+research['idProgram'].length+' programa(s):<br>'+
+                programsName+
+              '</div>'+
+              '<div class="scholarshipName"><b>'+((research['scholarship'] != '-')?research['scholarship']:"")+'</b></div></div>'+
+            '</li>';
+          document.querySelector('ul.content').innerHTML += program;
         });
       });  
+    });
     }
   </script>
 </body>

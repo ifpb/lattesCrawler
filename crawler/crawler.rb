@@ -44,6 +44,7 @@ $researchersDump.map{|a, b| $ids[$researchersDump[a]['siteName']] = $researchers
 # puts $ids.inspect
 
 programsIds1 = [
+  'fff',
 	'28001010095P3', #UFBA ok [embedded] 6 undefined lattes 
 	'22003010018P1', #UECE ok 
 	'22008012004P2', #IFCE ok
@@ -148,6 +149,9 @@ file.write(JSON.pretty_generate(researchers))
 puts "\n\n===>Gerando o arquivo ids.json"
 file = File.open("../data/ids.json", "w")
 process_sex()
+temp = $researchersDump.sort_by {|k, v| v['lattesName']}
+$researchersDump = {}
+temp.each{|k, v| $researchersDump[k] = v}
 file.write(JSON.pretty_generate($researchersDump))
 
 generate_stat(researchers)

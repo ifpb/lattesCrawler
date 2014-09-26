@@ -1,0 +1,50 @@
+<html>
+<head>
+  <script type='text/javascript' src='https://www.google.com/jsapi'></script>
+  <script type='text/javascript'>
+   google.load('visualization', '1', {'packages': ['geomap']});
+   google.setOnLoadCallback(drawMap);
+
+    function drawMap() {
+      var data = google.visualization.arrayToDataTable([
+        ['City', 'Pesquisadores'],
+        ['Pernambuco', '186'],
+        ['Rio de Janeiro', '175'],
+        ['Paraiba', '75'],
+        ['Alagoas', '20'],
+        ['Parana', '121'],
+        ['Rio Grande do Sul', '182'],
+        ['Sao Paulo', '326'],
+        ['Sergipe', '20'],
+        ['Bahia', '89'],
+        ['Minas Gerais', '156'],
+        ['Ceara', '93'],
+        ['Distrito Federal', '44'],
+        ['Espirito Santo', '32'],
+        ['Amazonas', '26'],
+        ['Paraiba', '17'],
+        ['Santa Catarina', '55'],
+        ['Maranhao', '27'],
+        ['Mato Grosso', '88'],
+        ['Goias', '35'],
+        ['Rio Grando do Norte', '63'],
+        ['Piaui', '12']
+      ]);
+
+      var options = {};
+      options['region'] = 'BR';
+      options['dataMode'] = 'regions';
+
+      var container = document.getElementById('map_canvas');
+      var geomap = new google.visualization.GeoMap(container);
+      geomap.draw(data, options);
+    };
+
+  </script>
+</head>
+
+<body>
+    <div id='map_canvas'></div>
+</body>
+
+</html>

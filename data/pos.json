@@ -939,14 +939,14 @@
     "M":"-",
     "D":"-",
     "F":"3",
-    "homepage":"http://www.cesar.edu.br/mpes-sobre/",
-    "researchers":"http://www.cesar.edu.br/mestrado_profissional/docentes.php",
+    "homepage":"http://www.cesar.edu.br/course/mestrado-profissional-em-engenharia-de-software/",
+    "researchers":"http://www.cesar.edu.br/course/mestrado-profissional-em-engenharia-de-software/#docentes",
     "researchLine":"-",
     "thesisDissertation":"-",
     "course":"-",
     "crawlerSchema":{
-        "names":"#p_texto p a:first-of-type",
-        "lattes":""
+        "names":"div.pane:last-child h1",
+        "lattes":"div.pane:last-child a"
     }
   },
   "23001011071P0":{
@@ -1132,13 +1132,13 @@
     "M":"4",
     "D":"4",
     "F":"-",
-    "homepage":"http://portal.nce.ufrj.br/ | https://sites.google.com/a/ppgi.ufrj.br/selecao/",
-    "researchers":"http://portal.nce.ufrj.br/index.php?option=com_content&view=article&id=81&Itemid=53",
+    "homepage":"http://aracaju.voip.ufrj.br/?page_id=2202 | http://portal.nce.ufrj.br/ | https://sites.google.com/a/ppgi.ufrj.br/selecao/",
+    "researchers":"http://aracaju.voip.ufrj.br/?page_id=2202",
     "researchLine":"-",
     "thesisDissertation":"-",
     "course":"-",
     "crawlerSchema":{
-        "names":"p:contains(\"D.\"), p:contains(\"Dr.\")",
+        "names":"div.personnal-title.gdl-title",
         "lattes":""
     }
   },
@@ -1296,6 +1296,17 @@
         "embedded":{
             "lattes":"a:contains(\"cnpq.br\")"
         }
+    }
+  },
+  "fff":{
+    "program":"SEM PROGRAMA",
+    "IES":"",
+    "UF":"",
+    "homepage":"http://www.cnpq.br/web/guest/noticiasviews/-/journal_content/56_INSTANCE_a6MO/10157/1692632",
+    "researchers":"http://www.cnpq.br/web/guest/noticiasviews/-/journal_content/56_INSTANCE_a6MO/10157/1692632",
+    "crawlerSchema":{
+        "names":"",
+        "lattes":""
     }
   }
 }
