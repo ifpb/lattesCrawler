@@ -1,0 +1,27 @@
+http://buscatextual.cnpq.br/buscatextual/sevletcaptcha?&ts=1412098389388
+'Cookie: JSESSIONID=2E0F05A85A0A9987A496F8948118B45E.jb_buscacv_247; BIGipServerpool_buscatextual.cnpq.br=503316490.36895.0000'
+
+
+http://buscatextual.cnpq.br/buscatextual/download.do;jsessionid=2E0F05A85A0A9987A496F8948118B45E.jb_buscacv_247
+'BIGipServerpool_buscatextual.cnpq.br=503316490.36895.0000'
+--data 'metodo=enviar&idcnpq=5094477354953391&palavra=DBVM2' 
+
+
+echo $(date +%s)
+
+
+####TODO
+
+curl \
+'http://buscatextual.cnpq.br/buscatextual/sevletcaptcha;jsessionid=C28D93642BC9AF8E6E6A8B6F080E59DB.jb_buscacv_247' \
+-H 'Cookie: BIGipServerpool_buscatextual.cnpq.br=503316490.36895.0000' \
+-o captcha.png
+
+tesseract captcha.png text; cat text.txt; rm captcha.png text.txt
+
+curl \
+'http://buscatextual.cnpq.br/buscatextual/download.do;jsessionid=C28D93642BC9AF8E6E6A8B6F080E59DB.jb_buscacv_247' \
+-H 'Cookie: BIGipServerpool_buscatextual.cnpq.br=503316490.36895.0000' \
+-H 'Content-Type: application/x-www-form-urlencoded' \
+--data 'metodo=enviar&idcnpq=5094477354953391&palavra=L25TN' \
+-o curriculo.zip;unzip curriculo.zip; rm curriculo.zip
