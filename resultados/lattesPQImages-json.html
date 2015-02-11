@@ -51,7 +51,7 @@
     createResearches();
 
     function createResearches(){
-      $.getJSON("data/lattesPQ2013.json", function(lattes){
+      $.getJSON("../data/lattesPQ2013.json", function(lattes){
         $.each(lattes, function(id,research){
           var program = '';
             var scholarship = (research['scholarship'] != '-')?"scholarship":""

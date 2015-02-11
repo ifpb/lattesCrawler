@@ -69,14 +69,14 @@
   <script>
     createResearches();
     function createResearches(){
-    $.getJSON("data/pos.json", function(pos){
+    $.getJSON("../data/pos.json", function(pos){
       var programs = [];
 
       for(var k in pos){
         programs[k] = '<a href="'+pos[k]['researchers']+'">'+pos[k]['program']+'-'+pos[k]['IES']+'</a>';
       }
 
-      $.getJSON("data/ids.json", function(lattes){
+      $.getJSON("../data/ids.json", function(lattes){
         $.each(lattes, function(id,research){
           programsName = '<ul>';
           for(var k in research['idProgram']){
